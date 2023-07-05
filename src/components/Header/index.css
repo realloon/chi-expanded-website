@@ -12,6 +12,7 @@
   background-color: #000000cc;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
 
   /* website title */
   & h1 {
