@@ -1,0 +1,8 @@
+.banner {
+  user-select: none;
+
+  & img {
+    display: block;
+    width: 100vw;
+  }
+}

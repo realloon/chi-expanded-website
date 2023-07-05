@@ -1,0 +1,28 @@
+.summary {
+  display: flex;
+  gap: 32px;
+
+  & .paragraph-wrapper {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 160em;
+
+    & h2 {
+      line-height: 1;
+      margin: 0 0 1rem;
+    }
+  }
+
+  & .cover-wrapper {
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    & img {
+      display: inline-block;
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+}
