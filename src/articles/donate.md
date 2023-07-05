@@ -7,4 +7,3 @@ However, developing these mods is a long-term and voluntary effort. If you enjoy
 By donating, you not only help us continue developing and providing free game mods but also become a part of our team, collectively creating a better gaming world.
 
 We sincerely appreciate your support and generous donations!
-
