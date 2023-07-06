@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* GLOBAL CUSTOM CSS ATTRIBUTE */
   --serif: Georgia, 'Times New Roman', 'Source Han Serif', 'Source Han Serif SC',
@@ -5,23 +9,28 @@ body {
   --sans: 'Helvetica Neue', Helvetica, 'Source Han Sans' 'Source Han Sans SC',
     'Microsoft Yahei', sans-serif;
   --monospace: 'Cascadia Code', Monaco, Consolas, monospace;
+  --page-background-color: #080b10;
+  --page-font-color: #eee;
+  --footer-background-color: #0e131b;
   --header-height: 56px;
   --detail-wrapper-gap: 56px;
   /* unnormal */
   margin: 0;
-  background-color: #080b10;
+  background-color: var(--page-background-color);
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
   /* font */
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
-  color: #eee;
+  color: var(--page-font-color);
 }
 
 main {
   box-sizing: content-box;
   max-width: 1080px;
+  min-height: calc(100vh - var(--header-height));
   padding: 16px;
   margin: 32px auto 0;
 }

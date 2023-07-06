@@ -1,18 +1,36 @@
 // components
 import { Link } from 'react-router-dom'
+import { IconLinks } from 'components'
 // config
 import pageConfig from 'configs/pageConfig.json'
-import headerNavLinks from 'configs/headerNavLinks.json'
 // image
 import love from 'assets/love.svg'
+import steam from 'assets/steam-logo.svg'
+import bilibili from 'assets/bilibili-logo.svg'
+import developer from 'assets/developer.svg'
 // style
 import './index.css'
+
+const iconLinks = [
+  {
+    icon: developer,
+    URL: 'developer',
+  },
+  {
+    icon: steam,
+    URL: 'steam',
+  },
+  {
+    icon: bilibili,
+    URL: 'bilibili',
+  },
+]
 
 export default function Header() {
   return (
     <header className="header">
       <h1>
-        <Link to={'/'}>{pageConfig.websiteTitle}</Link>
+        <Link to={'/'}>{pageConfig.headerTitle}</Link>
       </h1>
 
       <nav className="view-nav">
@@ -20,18 +38,12 @@ export default function Header() {
         <Link to={'/update'}>Update</Link>
         <Link to={'/donate'}>
           Donate
-          <img src={love} alt="" />
+          <img src={love} alt="click to donate page" />
         </Link>
       </nav>
 
       <nav className="link-nav">
-        <ul>
-          {headerNavLinks.map(link => (
-            <li key={link.text}>
-              <a href={link.href}>{link.text}</a>
-            </li>
-          ))}
-        </ul>
+        <IconLinks iconLinks={iconLinks} />
       </nav>
     </header>
   )

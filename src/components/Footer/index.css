@@ -1,5 +1,38 @@
 .footer {
-  display: none; /* TODO: wait */
-  max-width: 1080px;
-  margin: 32px auto 0;
+  padding: 32px 24px;
+  background-color: #0e131b;
+  display: flex;
+  gap: 2rem;
+
+  & .copyright {
+    & p {
+      margin: 0;
+    }
+  }
+
+  & .text-links {
+    & ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 0.5rem;
+
+      & li {
+        list-style: none;
+
+        & a {
+          color: inherit;
+          text-decoration: unset;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  & .more-links {
+    margin-left: auto;
+  }
 }

@@ -1,6 +1,6 @@
 // components
 import { Routes, Route } from 'react-router-dom'
-import { Header, Donate, Footer } from 'components'
+import { Header, Footer } from 'components'
 // views
 import { HomeView, DonateView, UpdateView } from 'views'
 // style
@@ -16,8 +16,6 @@ export default function App() {
         <Route path="/donate" element={<DonateView />} />
         <Route path="/update" element={<UpdateView />} />
       </Routes>
-
-      {/* <Donate /> */}
 
       <Footer />
     </div>
