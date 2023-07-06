@@ -17,7 +17,7 @@ export default function UpdateView() {
 
   return (
     <main>
-      {/* <h2>Updates</h2> */}
+      <h2 hidden>Updates history</h2>
 
       <article
         className="updates"

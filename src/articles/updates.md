@@ -1,4 +1,4 @@
-### Ultra-Pack v3.5.3 Update Notes
+### Ultra-Pack [v3.5.3] Update Notes
 
 #### New Additions
 
@@ -24,7 +24,7 @@
 
 ---
 
-### Ultra-Pack v3.5.2 Update Notes
+### Ultra-Pack [v3.5.2] Update Notes
 
 #### New Additions
 
