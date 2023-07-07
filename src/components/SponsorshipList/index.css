@@ -1,0 +1,17 @@
+.sponsorship-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  & span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'LXGW WenKai Screen';
+    line-height: 1.5;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

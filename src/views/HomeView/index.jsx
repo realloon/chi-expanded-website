@@ -14,6 +14,7 @@ import { marked } from 'marked'
 import { useEffect, useState } from 'react'
 
 export default function HomeView() {
+  // TODO: use ReactMarkdown instanceof markde
   const useMarkdown = paths => {
     const [contents, setContents] = useState([])
 

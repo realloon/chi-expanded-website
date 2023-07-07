@@ -1,3 +1,20 @@
+.sponsorship-list-wrapper {
+  margin: 56px 0;
+
+  & h2 {
+    text-align: center;
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+.heart-warpper {
+  text-align: center;
+
+  & img {
+    animation: scale 2s ease-in-out infinite;
+  }
+}
+
 .donate {
   margin: 56px 0;
 
@@ -25,5 +42,17 @@
         height: 240px;
       }
     }
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

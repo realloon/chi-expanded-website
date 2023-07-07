@@ -1,5 +1,5 @@
-import { marked } from 'marked'
 import { useEffect, useState } from 'react'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 // articles
 import updatesPath from 'articles/updates.md'
 // style
@@ -11,18 +11,14 @@ export default function UpdateView() {
   useEffect(() => {
     fetch(updatesPath)
       .then(res => res.text())
-      .then(markdown => marked(markdown, { mangle: false, headerIds: false }))
-      .then(html => setContent(html))
+      .then(markdown => setContent(markdown))
   }, [])
 
   return (
     <main>
       <h2 hidden>Updates history</h2>
 
-      <article
-        className="updates"
-        dangerouslySetInnerHTML={{ __html: content }}
-      ></article>
+      <ReactMarkdown className="updates">{content}</ReactMarkdown>
     </main>
   )
 }
