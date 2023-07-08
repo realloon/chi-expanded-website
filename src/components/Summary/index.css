@@ -11,6 +11,16 @@
       line-height: 1;
       margin: 0 0 1rem;
     }
+
+    & .link {
+      color: inherit;
+      text-decoration: unset;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   & .cover-wrapper {

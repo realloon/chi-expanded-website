@@ -4,7 +4,6 @@ import { IconLinks } from 'components'
 // config
 import pageConfig from 'configs/pageConfig.json'
 // image
-import love from 'assets/love.svg'
 import steam from 'assets/steam-logo.svg'
 import bilibili from 'assets/bilibili-logo.svg'
 import developer from 'assets/developer.svg'
@@ -14,15 +13,15 @@ import './index.css'
 const iconLinks = [
   {
     icon: developer,
-    URL: 'developer',
+    URL: pageConfig.links.modDeveloperURL,
   },
   {
     icon: steam,
-    URL: 'steam',
+    URL: pageConfig.links.modHomepageURL,
   },
   {
     icon: bilibili,
-    URL: 'bilibili',
+    URL: pageConfig.links.bilibiliProfileURL,
   },
 ]
 
@@ -36,10 +35,7 @@ export default function Header() {
       <nav className="view-nav">
         <Link to={'/'}>Home</Link>
         <Link to={'/update'}>Update</Link>
-        <Link to={'/donate'}>
-          Donate
-          <img src={love} alt="click to donate page" />
-        </Link>
+        <Link to={'/donate'}>Donate</Link>
       </nav>
 
       <nav className="link-nav">

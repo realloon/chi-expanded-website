@@ -1,5 +1,17 @@
 {
   "headerTitle": "Chi-Expanded Series of mods",
   "websiteName": "ShenZhou-Website",
-  "modeHomeLink": ""
+  "links": {
+    "modHomepageURL": "https://steamcommunity.com/workshop/filedetails/?id=2411388723",
+    "modDeveloperURL": "https://steamcommunity.com/profiles/76561198335073703",
+    "bilibiliProfileURL": "https://space.bilibili.com/1892182231"
+  },
+  "modURL": {
+    "animal": "https://steamcommunity.com/sharedfiles/filedetails/?id=2942068661",
+    "equipment": "https://steamcommunity.com/sharedfiles/filedetails/?id=2597175850",
+    "faction": "https://steamcommunity.com/sharedfiles/filedetails/?id=2894159932",
+    "music": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589811788",
+    "narrator": "https://steamcommunity.com/sharedfiles/filedetails/?id=2826251071",
+    "storytellers": "https://steamcommunity.com/sharedfiles/filedetails/?id=2430092725"
+  }
 }
