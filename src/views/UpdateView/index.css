@@ -2,50 +2,49 @@
   margin: 56px 0;
   line-height: 1.5;
 
-  & h3 {
-    font-size: 1.25rem;
-    margin: 1rem 0;
-    position: relative;
+  & section {
+    margin-bottom: 56px;
 
-    &::before {
-      content: '#';
-      position: absolute;
-      left: -0.75em;
-      opacity: 0;
-    }
-
-    &:hover {
-      text-decoration: underline;
+    & h1 {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+      position: relative;
 
       &::before {
-        opacity: 1;
+        content: '#';
+        position: absolute;
+        left: -0.75em;
+        opacity: 0;
+      }
+
+      &:hover {
+        text-decoration: underline;
+
+        &::before {
+          opacity: 1;
+        }
       }
     }
-  }
 
-  & h4 {
-    font-size: 1rem;
-    margin: 1rem 0;
-  }
+    & h2 {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
 
-  & ul,
-  ol {
-    padding-left: 2em;
-  }
+    & ul,
+    ol {
+      padding-left: 2em;
+    }
 
-  /* date of update */
-  & p > em {
-    font-weight: bold;
-    opacity: 0.7;
-    font-style: normal;
-  }
+    /* date of update */
+    & p > em {
+      font-weight: bold;
+      opacity: 0.7;
+      font-style: normal;
+    }
 
-  & img {
-    max-width: 100%;
-  }
-
-  & hr {
-    border: 0.5px solid #504949;
-    margin: 3rem 0;
+    & img {
+      max-width: 100%;
+    }
   }
 }

@@ -1,17 +1,30 @@
-import { Summary, Detail, Banner } from 'components'
-// cover
-import banner from 'images/banner.jpg'
-import beast from 'images/beast.jpg'
-import music from 'images/music.jpg'
-import faction from 'images/faction.jpg'
+// img
+import banner from 'assets/images/banner.jpg'
+import animal from 'assets/images/animal.jpg'
+import music from 'assets/images/music.jpg'
+import faction from 'assets/images/faction.jpg'
+import equipment from 'assets/images/equipment.png'
+import narrator from 'assets/images/narrator.png'
+import storytellers from 'assets/images/storytellers.png'
 // articles
 import summaryPath from 'articles/summary.md'
-import beastPath from 'articles/beast.md'
+import animalPath from 'articles/animal.md'
 import musicPath from 'articles/music.md'
 import factionPath from 'articles/faction.md'
 // methods
 import { marked } from 'marked'
 import { useEffect, useState } from 'react'
+// components
+import { Summary, Preview, Banner } from 'components'
+
+const summaryCovers = [
+  animal,
+  music,
+  faction,
+  equipment,
+  narrator,
+  storytellers,
+] // The order here determines the order of display.
 
 export default function HomeView() {
   // TODO: use ReactMarkdown instanceof markde
@@ -33,27 +46,31 @@ export default function HomeView() {
     return contents
   }
 
-  const [summaryContent, beastContent, musicContent, factionContent] =
-    useMarkdown([summaryPath, beastPath, musicPath, factionPath])
+  // use 'useMarkdown' hook
+  const [animalContent, musicContent, factionContent] = useMarkdown([
+    animalPath,
+    musicPath,
+    factionPath,
+  ])
 
   return (
     <div>
       <Banner img={banner} />
 
       <main>
-        <Summary>{summaryContent}</Summary>
+        <Summary covers={summaryCovers} filePath={summaryPath} />
 
-        <Detail title="Beast" cover={beast}>
-          {beastContent}
-        </Detail>
+        <Preview title="Animal" cover={animal} to="animal">
+          {animalContent}
+        </Preview>
 
-        <Detail title="Music" cover={music}>
+        <Preview title="Music" cover={music} to="music">
           {musicContent}
-        </Detail>
+        </Preview>
 
-        <Detail title="Faction" cover={faction}>
+        <Preview title="Faction" cover={faction} to="faction">
           {factionContent}
-        </Detail>
+        </Preview>
       </main>
     </div>
   )

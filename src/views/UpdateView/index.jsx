@@ -6,19 +6,27 @@ import updatesPath from 'articles/updates.md'
 import './index.css'
 
 export default function UpdateView() {
-  const [content, setContent] = useState(null)
+  const [contents, setContents] = useState(null)
 
   useEffect(() => {
     fetch(updatesPath)
       .then(res => res.text())
-      .then(markdown => setContent(markdown))
+      .then(markdown => markdown.split('---')) // split each update log.
+      .then(contents => setContents(contents))
   }, [])
 
   return (
     <main>
       <h2 hidden>Updates history</h2>
 
-      <ReactMarkdown className="updates">{content}</ReactMarkdown>
+      <article className="updates">
+        {contents &&
+          contents.map(content => (
+            <section key={crypto.randomUUID()}>
+              <ReactMarkdown>{content}</ReactMarkdown>
+            </section>
+          ))}
+      </article>
     </main>
   )
 }

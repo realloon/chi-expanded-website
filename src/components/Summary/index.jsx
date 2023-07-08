@@ -1,26 +1,32 @@
-// cover
-import beast from 'images/beast.jpg'
-import music from 'images/music.jpg'
-import faction from 'images/faction.jpg'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import { useEffect, useState } from 'react'
 // style
 import './index.css'
 
-const summaryImages = [beast, music, faction, faction, beast, music] // The order here determines the order of display.
-
 const getFileNameFromPath = path => path.split('/').pop().split('.')[0]
 
-export default function Summary({ children }) {
+export default function Summary({ covers, filePath }) {
+  const [content, setContent] = useState(null)
+
+  useEffect(() => {
+    fetch(filePath)
+      .then(res => res.text())
+      .then(markdown => setContent(markdown))
+  }, [])
+
   return (
     <article className="summary">
-      <section
-        className="paragraph-wrapper"
-        dangerouslySetInnerHTML={{ __html: children }}
-      ></section>
+      <section className="paragraph-wrapper">
+        <ReactMarkdown>{content}</ReactMarkdown>
+      </section>
 
       <section className="cover-wrapper">
-        {summaryImages.map(img => (
-          <a key={Math.random()} href={'#' + getFileNameFromPath(img)}>
-            <img src={img} alt={getFileNameFromPath(img) + ' mode review'} />
+        {covers.map(cover => (
+          <a key={Math.random()} href={'#' + getFileNameFromPath(cover)}>
+            <img
+              src={cover}
+              alt={getFileNameFromPath(cover) + ' mode review'}
+            />
           </a>
         ))}
       </section>
