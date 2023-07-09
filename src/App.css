@@ -30,7 +30,8 @@ body {
 main {
   box-sizing: content-box;
   max-width: 1080px;
-  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height) - var(--main-wrapper-gap) * 2);
   padding: 0 16px;
-  margin: calc(var(--header-height) + var(--main-wrapper-gap)) auto 56px;
+  margin: calc(var(--header-height) + var(--main-wrapper-gap)) auto
+    var(--main-wrapper-gap);
 }

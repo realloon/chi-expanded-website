@@ -1,8 +1,8 @@
 // components
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { Header, Footer } from 'components'
 // views
-import { HomeView, DonateView, UpdateView } from 'views'
+import { HomeView, DonateView, UpdateView, DetailView } from 'views'
 // style
 import './App.css'
 
@@ -13,8 +13,10 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomeView />} />
-        <Route path="/donate" element={<DonateView />} />
         <Route path="/update" element={<UpdateView />} />
+        <Route path="/donate" element={<DonateView />} />
+        <Route path="/detail/:affiliation" element={<DetailView />} />
+        <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
 
       <Footer />

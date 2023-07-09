@@ -1,7 +1,10 @@
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { useEffect, useState } from 'react'
+// components
+import { Link } from 'react-router-dom'
 //
 import pageConfig from 'configs/pageConfig.json'
+//
 import './index.css'
 
 export default function Preview({ title, affiliation }) {
@@ -27,7 +30,7 @@ export default function Preview({ title, affiliation }) {
   return (
     <article id={title.toLowerCase()} className="preview">
       <h1>
-        <a href={modURL}>{title}</a>
+        <a href={`#${affiliation}`}>{title}</a>
       </h1>
 
       <div className="content-wrapper">
@@ -41,7 +44,7 @@ export default function Preview({ title, affiliation }) {
           <ReactMarkdown>{content}</ReactMarkdown>
 
           <div className="button-wrapper">
-            <a href={modURL}>Learn more</a>
+            <Link to={`/detail/${affiliation}`}>Learn more</Link>
           </div>
         </section>
       </div>
