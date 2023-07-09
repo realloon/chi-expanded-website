@@ -35,9 +35,9 @@ export default function Preview({ title, affiliation }) {
 
       <div className="content-wrapper">
         <figure>
-          <a href={modURL}>
+          <Link to={`/detail/${affiliation}`}>
             <img src={cover} alt={`${affiliation} mod cover`} />
-          </a>
+          </Link>
         </figure>
 
         <section className="paragraph-wrapper">

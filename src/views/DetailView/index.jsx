@@ -1,11 +1,15 @@
 // hooks
+import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 // components
-import { Link } from 'react-router-dom'
 import { Detail } from 'components'
+// config
+import pageConfig from 'configs/pageConfig.json'
+//
+import steam from 'assets/steam-logo.svg'
+import download from 'assets/download.svg'
 // style
 import './index.css'
-import { useEffect } from 'react'
 
 export default function DetailView() {
   const { affiliation } = useParams()
@@ -18,9 +22,32 @@ export default function DetailView() {
     <main>
       <h2 hidden>{`${affiliation} mod detail`}</h2>
 
-      <Detail affiliation={affiliation} />
+      <div className="detail-view-wrapper">
+        <article>
+          <Detail affiliation={affiliation} />
+        </article>
 
-      <Link to="/">Back to Home</Link>
+        <aside>
+          <figure>
+            <img src={pageConfig.imageHosting[affiliation]} alt="" />
+          </figure>
+
+          <nav>
+            <a
+              href={pageConfig.modURL[affiliation]}
+              title="Subscribe on the Workshop"
+              data-name="subscribe"
+            >
+              <img src={steam} data-name="steam" alt="steam icon" />
+              Subscribe
+            </a>
+            <a href="/download/:affiliation" title="Download to local">
+              <img src={download} alt="cloud download icon" />
+              Download
+            </a>
+          </nav>
+        </aside>
+      </div>
     </main>
   )
 }
