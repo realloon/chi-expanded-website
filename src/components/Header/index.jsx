@@ -1,5 +1,5 @@
 // components
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { IconLinks } from 'components'
 // config
 import pageConfig from 'configs/pageConfig.json'
@@ -33,9 +33,9 @@ export default function Header() {
       </h1>
 
       <nav className="view-nav">
-        <Link to={'/'}>Home</Link>
-        <Link to={'/update'}>Update</Link>
-        <Link to={'/donate'}>Donate</Link>
+        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'/update'}>Update</NavLink>
+        <NavLink to={'/donate'}>Donate</NavLink>
       </nav>
 
       <nav className="link-nav">

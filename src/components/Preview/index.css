@@ -1,6 +1,5 @@
 .preview {
   padding-top: var(--detail-wrapper-gap);
-  margin-bottom: var(--detail-wrapper-gap);
 
   & > h1 {
     font-size: 1.25rem;

@@ -13,7 +13,8 @@ body {
   --page-font-color: #eee;
   --footer-background-color: #0e131b;
   --header-height: 56px;
-  --detail-wrapper-gap: 56px;
+  --main-wrapper-gap: 56px;
+  --detail-wrapper-gap: 64px;
   /* unnormal */
   margin: 0;
   background-color: var(--page-background-color);
@@ -31,5 +32,5 @@ main {
   max-width: 1080px;
   min-height: calc(100vh - var(--header-height));
   padding: 0 16px;
-  margin: 32px auto 0;
+  margin: calc(var(--header-height) + var(--main-wrapper-gap)) auto 56px;
 }
