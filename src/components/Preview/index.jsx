@@ -1,22 +1,47 @@
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import { useEffect, useState } from 'react'
+//
+import pageConfig from 'configs/pageConfig.json'
 import './index.css'
 
-export default function Preview({ title, cover, children }) {
+export default function Preview({ title, affiliation }) {
+  const modURL = pageConfig.modURL[affiliation]
+
+  const [content, setContent] = useState(null)
+  const [cover, setCover] = useState(null)
+
+  useEffect(() => {
+    // text content
+    import(`articles/${affiliation}.md`)
+      .then(module => module.default)
+      .then(markdownPath => fetch(markdownPath))
+      .then(res => res.text())
+      .then(markdown => setContent(markdown))
+
+    // cover
+    import(`assets/images/${affiliation}.jpg`)
+      .then(module => module.default)
+      .then(coverPath => setCover(coverPath))
+  }, [affiliation])
+
   return (
     <article id={title.toLowerCase()} className="preview">
-      <h2>{title}</h2>
+      <h1>
+        <a href={modURL}>{title}</a>
+      </h1>
 
       <div className="content-wrapper">
-        <section className="photo-wrapper">
-          <a href="#123">
-            <img src={cover} alt="" />
+        <figure>
+          <a href={modURL}>
+            <img src={cover} alt={`${affiliation} mod cover`} />
           </a>
-        </section>
+        </figure>
 
         <section className="paragraph-wrapper">
-          <div dangerouslySetInnerHTML={{ __html: children }}></div>
-          
+          <ReactMarkdown>{content}</ReactMarkdown>
+
           <div className="button-wrapper">
-            <a href="#321">Learn more</a>
+            <a href={modURL}>Learn more</a>
           </div>
         </section>
       </div>

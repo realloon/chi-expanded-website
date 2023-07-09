@@ -15,7 +15,7 @@ export default function Summary({ covers, filePath }) {
     fetch(filePath)
       .then(res => res.text())
       .then(markdown => setContent(markdown))
-  }, [])
+  }, [filePath])
 
   return (
     <article className="summary">

@@ -1,5 +1,3 @@
-### Aperiam deleniti dolorum atque
+# Ancient Chinese Beast And Gene Expanded
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quia, ipsa ab asperiores dolore modi hic, voluptatum quas et totam necessitatibus, omnis ipsum soluta alias id autem accusamus expedita fuga?
-
-Sequi enim blanditiis quo nihil nemo consectetur neque iste assumenda! Reiciendis dolore, pariatur saepe illo iure odio iusto fugit rem atque nulla.
+The new narrator, Sejia, an ultimate weapon created through genetic engineering. She brings destruction to Shenzhou colonies, leaving behind ruins and legends of her deadly minions and shape-shifting abilities. Sejia enjoys unpredictable stories with random events as the main theme. To satisfy her bloodlust, she arranges attacks by Shenzhou ferocious beasts every fifteen days.

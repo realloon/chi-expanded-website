@@ -1,5 +1,3 @@
-### Aperiam deleniti dolorum atque
+# Finale Ya-Shenzhou Music Pack
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam deleniti dolorum atque nostrum fugiat facere earum laboriosam inventore neque ipsum! Eum ipsam tempora error delectus beatae quia consequatur rerum hic.
-
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odio minus itaque impedit quidem? Eius aspernatur dolores voluptatibus aut id? Dolore tempora eveniet iusto et quidem corrupti dicta assumenda optio.
+This mod enhances the in-game music by adding traditional Chinese melodies played with various traditional instruments. It also includes pure ancient music, creating a seamless and immersive experience. The mod is compatible with other mods and does not disrupt the game's atmosphere. Suitable for all players, it enhances the overall enjoyment without any sense of violation.

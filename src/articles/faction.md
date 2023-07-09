@@ -1,5 +1,7 @@
-### Aperiam deleniti dolorum atque
+# Mengwushiwei Mengwu faction and related expansion
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsum sint nobis, rem eligendi laudantium commodi assumenda pariatur labore aliquam soluta ratione, magni quo quidem cupiditate alias tenetur veritatis tempora?
+The Mongolian and Wu civilizations are offshoots of the Mongolian civilization in the ancient Shenzhou region. They chose to settle in the frontier world alongside the Shining World spacecraft, while still maintaining their traditional nomadic culture and customs.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam accusamus amet ipsa recusandae placeat esse reprehenderit quo, debitis autem, in facere assumenda optio, obcaecati laboriosam perferendis voluptatum vel nobis.
+This expansion features the Mongolian and Wu factions, distinct caravans, narrators, costumes and armor, weapons, space weapons, background stories, four unique animals, characteristic dry food, furniture, cultural origins, and memes of the Mongolian and Wu civilizations.
+
+Experience the essence of Mongolian and Wu culture in a concise and elegant manner.
