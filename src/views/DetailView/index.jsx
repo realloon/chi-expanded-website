@@ -1,5 +1,5 @@
 // hooks
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 // components
 import { Detail } from 'components'
@@ -14,8 +14,14 @@ import './index.css'
 export default function DetailView() {
   const { affiliation } = useParams()
 
+  const [cover, setCover] = useState(null)
+
   useEffect(() => {
     window.scrollTo(0, 0, 'instant')
+
+    import(`assets/images/${affiliation}.jpg`)
+      .then(module => module.default)
+      .then(cover => setCover(cover))
   }, [])
 
   return (
@@ -29,10 +35,7 @@ export default function DetailView() {
 
         <aside>
           <figure>
-            <img
-              src={pageConfig.imageHosting[affiliation]}
-              alt={`${affiliation} mod cover`}
-            />
+            <img src={cover} alt={`${affiliation} mod cover`} />
           </figure>
 
           <nav>
