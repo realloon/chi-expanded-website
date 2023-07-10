@@ -15,8 +15,8 @@ export default function Detail({ affiliation }) {
   }, [affiliation])
 
   return (
-    <section className="typography">
+    <>
       <ReactMarkdown>{content}</ReactMarkdown>
-    </section>
+    </>
   )
 }

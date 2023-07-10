@@ -23,13 +23,16 @@ export default function DetailView() {
       <h2 hidden>{`${affiliation} mod detail`}</h2>
 
       <div className="detail-view-wrapper">
-        <article>
+        <article className="typography">
           <Detail affiliation={affiliation} />
         </article>
 
         <aside>
           <figure>
-            <img src={pageConfig.imageHosting[affiliation]} alt="" />
+            <img
+              src={pageConfig.imageHosting[affiliation]}
+              alt={`${affiliation} mod cover`}
+            />
           </figure>
 
           <nav>
