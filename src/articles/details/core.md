@@ -1,0 +1,3 @@
+# Chinese Traditional Cultural Things Expanded
+
+While maintaining the equilibrium of the original version, this mod introduces an extensive array of Chinese-themed items, animals, plants, and their corresponding technologies, along with distinctive cuisine and furniture. Whether you are a medieval player or delving into the advanced realms of Colony Manager, this mod will seamlessly enhance your gameplay experience.

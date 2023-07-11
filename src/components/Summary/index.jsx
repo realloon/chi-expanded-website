@@ -22,7 +22,7 @@ export default function Summary({ covers, filePath }) {
       <section className="paragraph-wrapper">
         <ReactMarkdown>{content}</ReactMarkdown>
 
-        <a className="link" href={pageConfig.modHomepageURL}>
+        <a className="button" href={pageConfig.modHomepageURL}>
           Try it!
         </a>
       </section>

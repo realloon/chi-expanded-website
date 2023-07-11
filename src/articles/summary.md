@@ -1,3 +1,5 @@
 # Summary
 
-Adding to the balance of the original version, this module introduces a plethora of Chinese-inspired items, animals, plants, corresponding technologies, as well as unique cuisine and furniture. These additions aim to infuse an authentic and elegant touch of Chinese culture.
+Enhancing the equilibrium of the original version, this module brings forth a wide array of Chinese-inspired items, animals, plants, associated technologies, and even distinctive cuisine and furniture.
+
+These additions seek to imbue the game with an authentic and refined essence of Chinese culture.

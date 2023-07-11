@@ -2,6 +2,12 @@
   user-select: none;
   margin-bottom: -56px;
 
+  @media (max-width: 425px) {
+    & {
+      display: none;
+    }
+  }
+
   & img {
     display: block;
     width: 100vw;

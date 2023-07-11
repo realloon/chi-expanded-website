@@ -2,7 +2,7 @@
   padding-top: var(--detail-wrapper-gap);
 
   & > h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     position: relative;
     width: fit-content;
     margin-top: 0;
@@ -31,14 +31,19 @@
     display: flex;
     gap: 32px;
 
+    @media (max-width: 425px) {
+      & {
+        flex-direction: column;
+      }
+    }
+
     & .paragraph-wrapper {
       line-height: 1.5;
       flex: 1.5;
 
       & h1 {
-        font-size: 1rem;
-        line-height: 1;
-        margin: 0 0 1rem;
+        font-size: 1.25rem;
+        margin: 0 0 -0.5rem;
       }
 
       & .button-wrapper {
@@ -66,7 +71,7 @@
   }
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   .detail .content-wrapper {
     flex-direction: column;
 
@@ -74,4 +79,4 @@
       max-width: 100%;
     }
   }
-}
+} */

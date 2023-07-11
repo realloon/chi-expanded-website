@@ -1,0 +1,5 @@
+@media (max-width: 425px) {
+  main {
+    margin-top: calc(var(--header-height) + 24px) !important;
+  }
+}

@@ -1,8 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+:root {
   /* GLOBAL CUSTOM CSS ATTRIBUTE */
   --serif: Georgia, 'Times New Roman', 'Source Han Serif', 'Source Han Serif SC',
     serif;
@@ -11,10 +7,18 @@ body {
   --monospace: 'Cascadia Code', Monaco, Consolas, monospace;
   --page-background-color: #080b10;
   --page-font-color: #eee;
+  --primary-color: #fff;
   --footer-background-color: #0e131b;
   --header-height: 56px;
   --main-wrapper-gap: 56px;
   --detail-wrapper-gap: 64px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   /* unnormal */
   margin: 0;
   background-color: var(--page-background-color);

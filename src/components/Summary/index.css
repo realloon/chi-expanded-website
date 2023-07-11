@@ -1,6 +1,13 @@
 .summary {
   display: flex;
+  align-items: self-start;
   gap: 32px;
+
+  @media (max-width: 425px) {
+    & {
+      flex-direction: column;
+    }
+  }
 
   & .paragraph-wrapper {
     font-size: 16px;
@@ -8,15 +15,16 @@
     flex: 1;
 
     & h1 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       line-height: 1;
       margin: 0 0 1rem;
     }
 
-    & .link {
-      color: inherit;
+    & .button {
+      color: white;
       text-decoration: unset;
       font-weight: bold;
+      cursor: pointer;
 
       &:hover {
         text-decoration: underline;
@@ -29,7 +37,7 @@
     flex: 1.5;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 8px;
 
     & img {
       display: inline-block;
@@ -38,4 +46,26 @@
       border-radius: 4px;
     }
   }
+}
+
+@media (max-width: 425px) {
+  .summary .cover-wrapper {
+    /* display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow-x: auto;
+    margin: 0 -16px;
+    order: 1; */
+    display: none;
+  }
+
+  /* .summary .paragraph-wrapper {
+    order: 2;
+  } */
+
+  /* .summary .cover-wrapper img {
+    flex-shrink: 0;
+    width: 90vw;
+    border-radius: 0;
+  } */
 }

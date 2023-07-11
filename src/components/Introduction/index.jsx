@@ -1,21 +1,17 @@
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { useEffect, useState } from 'react'
 // components
 import { Link } from 'react-router-dom'
-//
-import pageConfig from 'configs/pageConfig.json'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 //
 import './index.css'
 
 export default function Preview({ title, affiliation }) {
-  const modURL = pageConfig.modURL[affiliation]
-
-  const [content, setContent] = useState(null)
   const [cover, setCover] = useState(null)
+  const [content, setContent] = useState(null)
 
   useEffect(() => {
     // text content
-    import(`articles/${affiliation}.md`)
+    import(`articles/introductions/${affiliation}.md`)
       .then(module => module.default)
       .then(markdownPath => fetch(markdownPath))
       .then(res => res.text())
