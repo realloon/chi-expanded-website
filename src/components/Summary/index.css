@@ -37,7 +37,7 @@
     flex: 1.5;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 12px;
 
     & img {
       display: inline-block;
