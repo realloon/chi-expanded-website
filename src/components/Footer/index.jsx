@@ -10,7 +10,7 @@ import './index.css'
 const iconLinks = [
   {
     icon: github,
-    URL: 'github',
+    URL: pageConfig.websiteGithubURL,
   },
 ]
 
