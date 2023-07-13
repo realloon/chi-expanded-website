@@ -11,7 +11,9 @@ import ideology from 'assets/images/covers/ideology.jpg'
 // articles
 import summaryPath from 'assets/documents/summary.md'
 // components
-import { Summary, Introduction, Banner } from 'components'
+import { Banner } from 'components'
+import Introduction from './Introduction'
+import Summary from './Summary'
 // style
 import './index.css'
 

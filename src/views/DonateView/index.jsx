@@ -2,12 +2,12 @@ import QR from 'assets/QR-demo.png'
 import heart from 'assets/heart-fill.svg'
 // text
 import contentPath from 'assets/documents/donate.md'
-import sponsorshipList from 'assets/sponsorshipList.json'
+import sponsorshipList from 'configs/sponsorshipList.json'
 // methods
 import { marked } from 'marked'
 import { useEffect, useState } from 'react'
 // components
-import { SponsorshipList } from 'components'
+import SponsorshipList from './SponsorshipList'
 // style
 import './index.css'
 

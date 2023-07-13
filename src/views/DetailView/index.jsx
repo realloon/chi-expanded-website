@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 // components
-import { Detail } from 'components'
+import Detail from './Detail'
 // config
 import pageConfig from 'configs/pageConfig.json'
 //
