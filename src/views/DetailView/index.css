@@ -4,69 +4,6 @@
 
   & article {
     width: 100%;
-
-    & .list {
-      background-color: hsl(217, 32%, 8%);
-      padding: 16px;
-      border-radius: 32px;
-
-      & h1 {
-        margin: 0 0 1rem 0;
-        text-align: center;
-        display: none;
-      }
-
-      & .item {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 16px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        background-color: hsl(217, 32%, 10%);
-        padding: 16px;
-        border-radius: 16px;
-        gap: 16px;
-
-        & figure {
-          margin: 0;
-
-          & img {
-            width: 80px;
-            aspect-ratio: 1 / 1;
-          }
-
-          & figcaption {
-            font-size: 1.25rem;
-            font-family: 'LXGW WenKai Screen';
-            line-height: 1.25;
-            text-align: center;
-            margin-top: 0.25em;
-          }
-        }
-
-        & .description {
-          line-height: 1.5;
-          font-family: 'LXGW WenKai Screen';
-          text-align: justify;
-          margin: 0;
-        }
-
-        & tbody {
-          & > tr > td {
-            padding: 0 0.25em 0.25em 0;
-
-            &:last-child {
-              text-align: right;
-              padding-right: 0;
-              font-family: var(--monospace);
-            }
-          }
-        }
-      }
-    }
   }
 
   & aside {

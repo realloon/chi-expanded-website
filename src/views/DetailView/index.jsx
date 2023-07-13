@@ -2,8 +2,8 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 // components
-import { Texture } from 'components'
 import Detail from './Detail'
+import DefPanel from './DefPanel'
 // config
 import pageConfig from 'configs/pageConfig.json'
 //
@@ -42,37 +42,7 @@ export default function DetailView() {
             <Detail affiliation={affiliation} />
           </section>
 
-          <section className="list">
-            {collection.map(item => (
-              <div className="item" key={item.defName}>
-                <figure>
-                  <figcaption>{item.label}</figcaption>
-                  <Texture
-                    texPath={item.texPath}
-                    alt={`${item.label} texture`}
-                  />
-                </figure>
-
-                <p className="description">
-                  {item.description.split('\\n\\n')[0]}
-                </p>
-
-                <table>
-                  <tbody>
-                    {Object.keys(item.stats)
-                      .filter(key => key !== 'DeteriorationRate')
-                      .toSorted((a, b) => a.localeCompare(b))
-                      .map(key => (
-                        <tr key={key}>
-                          <td>{key}</td>
-                          <td>{item.stats[key]}</td>
-                        </tr>
-                      ))}
-                  </tbody>
-                </table>
-              </div>
-            ))}
-          </section>
+          <DefPanel collection={collection} />
         </article>
 
         <aside>

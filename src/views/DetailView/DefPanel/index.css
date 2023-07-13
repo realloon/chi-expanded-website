@@ -1,0 +1,69 @@
+.def-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: hsl(217, 32%, 8%);
+  padding: 16px;
+  border-radius: 32px;
+
+  & .tool-bar {
+    & input {
+      width: 100%;
+      border-radius: 16px;
+      padding: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: hsl(217, 32%, 12%);
+      font-size: 0.875rem;
+      font-family: 'LXGW WenKai Screen';
+    }
+  }
+
+  & .item {
+    display: flex;
+    align-items: flex-start;
+    background-color: hsl(217, 32%, 10%);
+    padding: 16px;
+    border-radius: 16px;
+    gap: 16px;
+
+    & figure {
+      margin: 0;
+      width: 80px;
+      flex-shrink: 0;
+
+      & img {
+        width: 80px;
+        aspect-ratio: 1 / 1;
+      }
+
+      & figcaption {
+        font-size: 1.25rem;
+        font-family: 'LXGW WenKai Screen';
+        line-height: 1.25;
+        text-align: center;
+        margin-top: 0.25em;
+      }
+    }
+
+    & .description {
+      line-height: 1.5;
+      font-family: 'LXGW WenKai Screen';
+      text-align: justify;
+      margin: 0;
+    }
+
+    & tbody {
+      & > tr > td {
+        padding: 0 0.25em 0.25em 0;
+
+        &:last-child {
+          text-align: right;
+          padding-right: 0;
+          font-family: var(--monospace);
+        }
+      }
+    }
+  }
+}

@@ -9,5 +9,5 @@ export default function Texture({ texPath, ...rest }) {
       .then(data => setTexture(data))
   }, [texPath])
 
-  return <img src={texture} {...rest} />
+  return <img src={texture} alt='' {...rest} />
 }
