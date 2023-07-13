@@ -15,6 +15,7 @@ export default function DetailView() {
   const { affiliation } = useParams()
 
   const [cover, setCover] = useState(null)
+  const [collection, setCollection] = useState([])
 
   useEffect(() => {
     window.scrollTo(0, 0, 'instant')
@@ -22,6 +23,20 @@ export default function DetailView() {
     import(`assets/images/covers/${affiliation}.jpg`)
       .then(module => module.default)
       .then(cover => setCover(cover))
+
+    import('database/test.json')
+      .then(module => module.default)
+      .then(json => {
+        console.log(json)
+
+        json.map(item => {
+          console.log(`database/${item.texPath}.png`)
+
+          // import(`database/${texPath}`)
+        })
+
+        setCollection(json)
+      })
   }, [affiliation])
 
   return (
@@ -30,7 +45,36 @@ export default function DetailView() {
 
       <div className="detail-view-wrapper">
         <article className="typography">
-          <Detail affiliation={affiliation} />
+          <section>
+            <Detail affiliation={affiliation} />
+          </section>
+
+          <section className="list">
+            {collection.map(item => (
+              <div className="item" key={item.defName}>
+                <figure>
+                  <figcaption>{item.label}</figcaption>
+                  <img src={'XXXX'} alt={`${item.label} texture`} />
+                </figure>
+
+                <p>{item.description.split('\\n\\n')[0]}</p>
+
+                <table>
+                  <tbody>
+                    {Object.keys(item.stats)
+                      .filter(key => key !== 'DeteriorationRate')
+                      .toSorted((a, b) => a.localeCompare(b))
+                      .map(key => (
+                        <tr key={key}>
+                          <td>{key}</td>
+                          <td>{item.stats[key]}</td>
+                        </tr>
+                      ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+          </section>
         </article>
 
         <aside>
