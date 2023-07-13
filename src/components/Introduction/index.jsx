@@ -11,14 +11,14 @@ export default function Preview({ title, affiliation }) {
 
   useEffect(() => {
     // text content
-    import(`articles/introductions/${affiliation}.md`)
+    import(`assets/documents/introductions/${affiliation}.md`)
       .then(module => module.default)
       .then(markdownPath => fetch(markdownPath))
       .then(res => res.text())
       .then(markdown => setContent(markdown))
 
     // cover
-    import(`assets/images/${affiliation}.jpg`)
+    import(`assets/images/covers/${affiliation}.jpg`)
       .then(module => module.default)
       .then(coverPath => setCover(coverPath))
   }, [affiliation])

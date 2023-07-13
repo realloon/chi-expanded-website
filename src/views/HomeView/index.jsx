@@ -1,15 +1,15 @@
 // img
-import banner from 'assets/images/banner.jpg'
-import core from 'assets/images/core.jpg'
-import animal from 'assets/images/animal.jpg'
-import music from 'assets/images/music.jpg'
-import equipment from 'assets/images/equipment.jpg'
-import faction from 'assets/images/faction.jpg'
-import narrator from 'assets/images/narrator.jpg'
-import storytellers from 'assets/images/storytellers.jpg'
-import ideology from 'assets/images/ideology.jpg'
+import banner from 'assets/images/covers/banner.jpg'
+import core from 'assets/images/covers/core.jpg'
+import animal from 'assets/images/covers/animal.jpg'
+import music from 'assets/images/covers/music.jpg'
+import equipment from 'assets/images/covers/equipment.jpg'
+import faction from 'assets/images/covers/faction.jpg'
+import narrator from 'assets/images/covers/narrator.jpg'
+import storytellers from 'assets/images/covers/storytellers.jpg'
+import ideology from 'assets/images/covers/ideology.jpg'
 // articles
-import summaryPath from 'articles/summary.md'
+import summaryPath from 'assets/documents/summary.md'
 // components
 import { Summary, Introduction, Banner } from 'components'
 // style

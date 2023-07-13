@@ -1,7 +1,7 @@
 import QR from 'assets/QR-demo.png'
 import heart from 'assets/heart-fill.svg'
 // text
-import contentPath from 'articles/donate.md'
+import contentPath from 'assets/documents/donate.md'
 import sponsorshipList from 'assets/sponsorshipList.json'
 // methods
 import { marked } from 'marked'
@@ -19,7 +19,7 @@ export default function DonateView() {
       .then(res => res.text())
       .then(markdown => marked(markdown, { mangle: false, headerIds: false }))
       .then(html => setContent(html))
-  }, null)
+  }, [])
 
   return (
     <main>

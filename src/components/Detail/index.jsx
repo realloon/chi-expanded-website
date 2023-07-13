@@ -7,7 +7,7 @@ export default function Detail({ affiliation }) {
   const [content, setContent] = useState(null)
 
   useEffect(() => {
-    import(`articles/details/${affiliation}.md`)
+    import(`assets/documents/details/${affiliation}.md`)
       .then(module => module.default)
       .then(markdownPath => fetch(markdownPath))
       .then(res => res.text())

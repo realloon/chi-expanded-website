@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 // articles
-import updatesPath from 'articles/updates.md'
+import updatesPath from 'assets/documents/updates.md'
 // style
 import './index.css'
 

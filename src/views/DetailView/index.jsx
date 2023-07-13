@@ -19,10 +19,10 @@ export default function DetailView() {
   useEffect(() => {
     window.scrollTo(0, 0, 'instant')
 
-    import(`assets/images/${affiliation}.jpg`)
+    import(`assets/images/covers/${affiliation}.jpg`)
       .then(module => module.default)
       .then(cover => setCover(cover))
-  }, [])
+  }, [affiliation])
 
   return (
     <main>
