@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 // components
+import { Texture } from 'components'
 import Detail from './Detail'
 // config
 import pageConfig from 'configs/pageConfig.json'
@@ -27,14 +28,6 @@ export default function DetailView() {
     import('database/test.json')
       .then(module => module.default)
       .then(json => {
-        console.log(json)
-
-        json.map(item => {
-          console.log(`database/${item.texPath}.png`)
-
-          // import(`database/${texPath}`)
-        })
-
         setCollection(json)
       })
   }, [affiliation])
@@ -44,8 +37,8 @@ export default function DetailView() {
       <h2 hidden>{`${affiliation} mod detail`}</h2>
 
       <div className="detail-view-wrapper">
-        <article className="typography">
-          <section>
+        <article>
+          <section className="typography">
             <Detail affiliation={affiliation} />
           </section>
 
@@ -54,10 +47,15 @@ export default function DetailView() {
               <div className="item" key={item.defName}>
                 <figure>
                   <figcaption>{item.label}</figcaption>
-                  <img src={'XXXX'} alt={`${item.label} texture`} />
+                  <Texture
+                    texPath={item.texPath}
+                    alt={`${item.label} texture`}
+                  />
                 </figure>
 
-                <p>{item.description.split('\\n\\n')[0]}</p>
+                <p className="description">
+                  {item.description.split('\\n\\n')[0]}
+                </p>
 
                 <table>
                   <tbody>
