@@ -67,7 +67,7 @@ export default function DefPanel({ collection }) {
           <table>
             <tbody>
               {Object.keys(item.stats)
-                .filter(key => key !== 'DeteriorationRate')
+                // .filter(key => key !== 'DeteriorationRate')
                 .toSorted((a, b) => a.localeCompare(b))
                 .map(key => (
                   <tr key={key}>

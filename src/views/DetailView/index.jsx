@@ -25,7 +25,7 @@ export default function DetailView() {
       .then(module => module.default)
       .then(cover => setCover(cover))
 
-    import('database/test.json')
+    import(`database/${affiliation}.json`)
       .then(module => module.default)
       .then(json => {
         setCollection(json)

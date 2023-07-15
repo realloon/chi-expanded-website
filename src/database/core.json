@@ -1,0 +1,509 @@
+[
+  {
+    "defName": "Chi_Tangyuan",
+    "label": "汤圆",
+    "description": "\r\n      一碗经过精心烹调的汤圆，需要在传统炉灶上制作。它的营养值略高于原版精致食物，小人在吃了它之后会有特殊的心情收益。值得一提的是，任何阶层的人都不会拒绝这种美味的食物。\\n\\n汤圆，别称\"汤团\"\"浮元子\"，是汉族传统小吃的代表之一\r\n      。汤圆的皮就是糯米粉制成，糯米粉白色，可养肺，适合“白色养肺”的五色进补主题。因此在享用汤圆后，你可以获得一个小幅度的呼吸和移动加成。同时，汤圆也是中国的传统节日元宵节所最具有特色的食物，表达了古代人民对于幸福生活的一种向往和期盼。\\n\\n嘿，别只顾着享受汤圆的美味了，要记得常回家看看啊！",
+    "texPath": "Meals/TangYuan",
+    "stats": {
+      "DeteriorationRate": "10",
+      "MarketValue": "25",
+      "WorkToMake": "250",
+      "Nutrition": "0.95",
+      "MaxHitPoints": "80",
+      "Flammability": "1.0",
+      "Beauty": "1",
+      "Mass": "0.3"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "WorkedRawRice",
+    "label": "糯米粉",
+    "description": "将水稻经过粗制加工后脱壳制成的糯米粉，是汤圆包子等传统佳肴的主要原料，同时也可以作为其他烹饪食品的原料。",
+    "texPath": "WorkedRaw/WorkedRice",
+    "stats": {
+      "MarketValue": "0.15",
+      "Nutrition": "0.06",
+      "FoodPoisonChanceFixedHuman": "0.0095"
+    },
+    "parentName": "ChiRawProductBase"
+  },
+  {
+    "defName": "WorkedRawPotato",
+    "label": "土豆干",
+    "description": "这是在舂米杵中经过压制捣碎并晾晒制成的土豆干，易于保存且保质期长，虽然土豆干的市场价值较低，但想要压制财富和保存食物的话，将土豆做成土豆干是一个不错的选择。",
+    "texPath": "WorkedRaw/WorkedPotato",
+    "stats": {
+      "MarketValue": "0.15",
+      "Nutrition": "0",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawProductBase"
+  },
+  {
+    "defName": "WorkedRawMaize",
+    "label": "玉米干",
+    "description": "这是在舂米杵中经过压制捣碎并晾晒制成的玉米干，易于保存且保质期长，虽然玉米干的市场价值较低，但想要压制财富和保存食物的话，将玉米做成玉米干是一个不错的选择。",
+    "texPath": "WorkedRaw/WorkedMaize",
+    "stats": {
+      "MarketValue": "0.15",
+      "Nutrition": "0",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawProductBase"
+  },
+  {
+    "defName": "WorkedJingMi",
+    "label": "精米面",
+    "description": "\r\n      将水稻或者杂交水稻米经过脱壳处理的获得的精米面，这是神州殖民者们的独特创造，它既可以作为米类材料，也能被当做面粉烹饪，生吃的心情惩罚和中毒概率想对较低，同样因为精米面经过部分脱水，也能保存上月的时间。\\n\\n单份的精米面营养价值略高于普通生食、糯米粉以及其他粗加工素食，是蛋炒饭、面食和普通米饭的必备原料，也可以作为其他美食的原料。",
+    "texPath": "WorkedRaw/JingMi",
+    "stats": {
+      "Nutrition": "0",
+      "MarketValue": "1.7",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawProductBase"
+  },
+  {
+    "defName": "WorkedQingKe",
+    "label": "青稞粉",
+    "description": "将青稞杆在吹谷机中处理制得的青稞粉，属于初步处理过的生食，它的营养价值和市场价值更高，也更易于保存。",
+    "texPath": "WorkedRaw/QingKeFen",
+    "stats": {
+      "Nutrition": "0",
+      "MarketValue": "1.85",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawProductBase"
+  },
+  {
+    "defName": "WorkedRawMixture",
+    "label": "混合素食干",
+    "description": "将生的素食混合并在舂米杵中捣碎然后晾晒而成的混合素食干。它承担着生素食的功能，并且营养值和同等生食相同，但是它的储存期更长并且你可以将它批发出售以获取一大笔利润。",
+    "texPath": "WorkedRaw/WorkedMixture",
+    "stats": {
+      "MarketValue": "1.6",
+      "Nutrition": "0",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawProductBase"
+  },
+  {
+    "defName": "DaJian_LaoGanMa",
+    "label": "老干妈",
+    "description": "\r\n      这种奇特的产品需要油辣子为原材料，油辣子可在土地上种植。老干妈的市场价值尚可，保质期很长并且可替代肉食成为烹饪食物的原料，殖民者在享用含老干妈成分的食物后会有特殊的心情加成。\\n\\n另外，因为长期食用老干妈容易导致尿酸，所以在工作选择原料的时候老干妈作为肉食原料的优先级会比较低。\\n\\n需要在传统杵上进行加工。",
+    "texPath": "Seasoning/LaoGanMa",
+    "stats": {
+      "MarketValue": "10",
+      "Nutrition": "0.25",
+      "Flammability": "1",
+      "MaxHitPoints": "8",
+      "Beauty": "1",
+      "Mass": "0",
+      "DeteriorationRate": "1"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "LaJiao",
+    "label": "油辣子",
+    "description": "这是收获后的油辣子，可以进行出售也可以进一步加工成老干妈。尽管可以在必要条件下生吃，但味道很差，相信我。",
+    "texPath": "Plants/ShuLaJiao",
+    "stats": {
+      "Nutrition": "0.05",
+      "MarketValue": "1.4",
+      "FoodPoisonChanceFixedHuman": "0.005"
+    },
+    "parentName": "ChiRawPlantBase"
+  },
+  {
+    "defName": "GuoFu",
+    "label": "果脯",
+    "description": "\r\n      以各种莓果或其他水果为原材料制作出的果脯，它和干肉饼一样，保质期很长。不同的是，它是通常是作为一种零食或者旅行中的干粮使用。\\n\\n果脯在被推广到边缘世界后很快就收到了上至达官贵族下至平民百姓的喜爱，成为各个阶层都追捧的饭后零食。一般享用一个果脯就能够稍微在开饭之前稍微垫一下肚子。\\n\\n全国各地都有果脯特产，其中比较出名的有老北京果脯和新疆葡萄干等。它是用新鲜水果经过去皮、取核、糖水煮制、浸泡、烘干和整理包装等主要工序制成的食品，鲜亮透明，表面干燥，稍有粘性，含水量在20%以下。果脯种类繁多，著名传统产品有苹果脯、酸角脯、杏脯、梨脯、桃脯、太平果脯、青梅、山楂片、果丹皮等。",
+    "texPath": "Meals/GuoFu",
+    "stats": {
+      "MarketValue": "6",
+      "Mass": "0.013",
+      "Flammability": "0.6",
+      "WorkToMake": "700",
+      "DeteriorationRate": "2",
+      "Nutrition": "0.3"
+    },
+    "parentName": "OrganicProductBase"
+  },
+  {
+    "defName": "SZ_GaoTang",
+    "label": "高汤",
+    "description": "\r\n      将少量肉类进行加工后制得的辅助原料，加工过程中不会产生营养损失。\\n\\n高汤是神州烹饪中常用的一种辅助原料，用于烹制其他菜肴，能够提鲜，使味道更浓郁，冬季，神州地区的殖民者通常会制作各种汤锅，而高汤就是必不可少的原料。\\n\\n殖民者如果直接食用的话会有心情惩罚，但将高汤作为食材使用会获得不错的心情加成。",
+    "texPath": "Seasoning/GaoTang",
+    "stats": {
+      "MarketValue": "13",
+      "Nutrition": "0.5",
+      "Flammability": "1",
+      "MaxHitPoints": "8",
+      "Beauty": "1",
+      "Mass": "0",
+      "DeteriorationRate": "1"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_KaiShuiBaiCai",
+    "label": "开水白菜",
+    "description": "\r\n      最为出名的中式名菜之一，需要用高汤和神州白菜制作，这是神州的星际外交招待盛宴上的“常客”，汤味浓厚，清香爽口，不油不腻。\\n\\n相传在一次神州殖民地的招待会上，一位堕落帝国的名流因为是第一次见到这道菜，便觉得神州殖民者是在侮辱他，因为这道菜看上去非常简单，就像是给乞丐准备的施舍一般，但他面对神州殖民者的盛情，不得不品尝了一口，谁知这一尝之下，这位贵族一下子就被这道菜的美味所折服，转嗔为喜，将大量黄金赠与神州殖民者。而开水白菜也因此成为边缘世界最受欢迎的名菜之一。",
+    "texPath": "Meals/New/KaiShuiBaiCai",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "50",
+      "WorkToMake": "400",
+      "Nutrition": "1.2",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_YiGuoChu",
+    "label": "一锅出",
+    "description": "\r\n      朴实，简单的乡土菜。制作简单，但却非常丰盛，荤素搭配，口感极佳，是神州东北地区的农民的主食之一。这道菜经常出现在家庭聚餐的饭桌上，锅边围着一圈的窝窝头是阖家团圆，美好幸福的象征。\\n这道丰盛的佳肴即可让殖民者在接下来的一天都充满干劲，并更难感觉到饥饿感。\\n\\n揭开锅盖的那一刻，一定会给你带来最为单纯的满足!",
+    "texPath": "Meals/New/YiGuoChu",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "69",
+      "WorkToMake": "200",
+      "Nutrition": "1.2",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "WorkedFenTiao",
+    "label": "粉条",
+    "description": "\r\n      神州特色的粉制品，直接食用口感很差，需要用到含有淀粉的食材进行制作，加工工序在舂米杵上进行。\\n\\n粉条营养价值丰富，可以制作成各种美味的食物，是神州殖民地最常见的食材之一。另外，粉条还是神州饮食文化中不可或缺的一部分，它已经融入到了神州生活中的方方面面——特别是在神州的小麦和土豆产区。\\n\\n以下食材可以被加工成粉条：\\n绿豆\\n稻米\\n杂交水稻\\n青稞\\n土豆\\n玉米\\n精米面\\n糯米粉\\n面粉（原版扩展）\\n小麦（原版扩展）",
+    "texPath": "WorkedRaw/FenTiao",
+    "stats": {
+      "Nutrition": "0",
+      "MarketValue": "2",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawProductBase"
+  },
+  {
+    "defName": "Chi_MaYiShangShu",
+    "label": "传统名菜-蚂蚁上树",
+    "description": "\r\n      神州殖民地的传统名菜之一，因肉末贴在粉丝上，形似蚂蚁爬在树枝上而得名。本菜具体的历史已不可考，但在旧神州大陆的西南地区很常见。\\n\\n蚂蚁上树需要用到粉条和肉类进行制作，由于其是神州的传统名菜之一，因此本菜对制作者的技能要求较高，价值较高，对食材的选用也更为严格。\\n\\n蚂蚁上树是部分神州殖民地招待外宾的桌上菜之一。相传，一个中寰世界的富豪旅行者梁拜访神州殖民地时被这道菜所吸引，可听到神州殖民者介绍其名字后以为是这道菜是由蚂蚁做成，被吓得不敢动筷子。而热情的神州厨师为他介绍了这道菜为何得名，消除心中顾虑的他试着尝了一口，而这一口便足以让他为这道菜的味道所折服并开始大快朵颐起来。\\n心情大好的他回到中寰世界后便创办了“梁氏食品公司”，为这道菜进行宣传，在他的宣传下，这道菜便成为一些中寰世界星球上最受欢迎的食物。",
+    "texPath": "Meals/New/MaYiShangShu",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "55",
+      "WorkToMake": "400",
+      "Nutrition": "1.05",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_LiangPi",
+    "label": "凉皮",
+    "description": "\r\n      由粉条和部分素食（除绿豆等可以加工成粉条的材料）制作而成，是一道美味且具有消暑、保暖功效的美餐。\\n\\n\\n<color=#33ff00>【内容补充】</color>\\n凉皮是起源于神州原关中平原的美食，“筋”、“薄”、“细”、“穰”是凉皮的四大特色，也正是这四大特色使凉皮得到了神州殖民者的喜爱。\\n\\n尽管凉皮在不同地区有不同的制作方法，口味也不尽相同，但不管是哪种样式的凉皮，都是公认天然绿色无公害食品，冬天吃了能保暖，夏天吃了能消暑，可谓是独一无二的神州美食。",
+    "texPath": "Meals/LiangPi",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "23",
+      "WorkToMake": "50",
+      "Nutrition": "1",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "BaiMiFan",
+    "label": "白米饭",
+    "description": "\r\n      用精米或稻米（杂交水稻米）烹饪出的白米饭，在原版或者中华炉灶上制作，它没有其他的配菜，但一份就能够填饱肚子，可以作为商品出售给路过的商人。另外，它和大多数菜肴相同，容易腐烂，因此需要注意保鲜。\\n\\n白米饭是中华传统主菜之一，对于边缘世界大多数阶层的人来说，这种食物很易于接受，但对于最顶层的王宫贵族来说，这种没有任何配菜的食物是难以下咽的。享用该白米饭后还会获得一个极小的心情加成，适合作为殖民地过渡时期的食物。",
+    "texPath": "Meals/BaiMiFan",
+    "stats": { "MarketValue": "17", "WorkToMake": "300", "Nutrition": "0.9" },
+    "parentName": "MealBase"
+  },
+  {
+    "defName": "WoWoTou",
+    "label": "窝窝头",
+    "description": "\r\n      用粗加工的任意素食干制作出的窝窝头，虽然它吃起来没有什么味道，并且不能够作为商品交易，但是经过处理后的窝窝头保质期相对比较长，并且通常一个饥肠辘辘的殖民者在享用两个窝窝头后就能恢复精力，适合作为简单干粮食用。\\n\\n窝窝头的价值相对较低，因此适合大量保存储藏，虽然贵族们可能看不上这样简单而又干巴巴的食物，但将它提供给给囚犯或苦行者们是一个很不错的选择。",
+    "texPath": "Meals/WoWoTou",
+    "stats": { "MarketValue": "2.5", "WorkToMake": "300", "Nutrition": "0.5" },
+    "parentName": "MealBase"
+  },
+  {
+    "defName": "SZ_RouJiaMo",
+    "label": "肉夹馍",
+    "description": "\r\n      对于神州西北地区的居民来说，肉夹馍就像是一个当地特色版的精致食物，这种食物从出炉起就冒着香气，它的观感和口感都非常不错。殖民者在享用完肉夹馍之后会获得一个饱腹感加成。\\n\\n肉夹馍制作简单，就像精致食物一样，只需要少量肉食和一些素食就能在蒸笼里制作而成，而且它更能节省食材，因此肉夹馍也是一种性价比很高的食物。",
+    "texPath": "Meals/RouJiaMo",
+    "stats": { "MarketValue": "11", "WorkToMake": "550", "Nutrition": "0.9" },
+    "parentName": "MealBase"
+  },
+  {
+    "defName": "Chi_HuoGuo",
+    "label": "火锅",
+    "description": "\r\n      一份经过处理后能够保持内部温度冷藏然后即食的美味的火锅，需要在传统炉灶制作。\\n\\n小人在享用火锅后有一个很不错的心情和健康加成。\\n\\n火锅古称\"古董羹\"，因食物投入沸水时发出的\"咕咚\"声而得名，它是中国独创的美食，历史悠久，是一种老少皆宜的食物。据考证，战国时期即有火锅，时人以陶罐为锅，到宋代，火锅的吃法在民间已十分常见，南宋林洪的《山家清供》食谱中，便有同友人吃火锅的介绍。元代，火锅流传到蒙古一带，用来煮牛羊肉。到清代，火锅不仅在民间流行，而且成了一道著名的\"宫廷菜\"，用料是山鸡等野味。",
+    "texPath": "Meals/HotPot",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "60",
+      "WorkToMake": "400",
+      "Nutrition": "1.2",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "SZ_ZongZi",
+    "label": "粽子",
+    "description": "\r\n      由粽叶和糯米粉外加少部分其他材料制作而成的粽子，在享用后会提供部分心情加成和健康加成，需要在特定灶台或者蒸笼上进行制作。\\n\\n粽子作为神州文明母国最具传统特色的食品，已经传播到了边缘世界的各个角落，在端午节到来的时候，神州殖民者们会聚在一起享用粽子，象征团圆之意。",
+    "texPath": "Meals/ZongZi",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "40",
+      "WorkToMake": "400",
+      "Nutrition": "1.1",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_BaoBing",
+    "label": "薄饼",
+    "description": "一份夹着肉或菜的薄饼。看上去量少，但是绝对管饱。享用后有着不错的心情和少量血液循环加成。能够满足除了伯爵以外任何阶层的需求\\n\\n薄饼是广东潮州、海陆丰、福建福州、闽南地区传统的特色名点，薄饼在过去是清明节的节日食品，每逢清明节的早上上山祭祖，祭完祖回家之后，\r\n      人们都会用薄饼作为午餐，物质生活多样化，人们受香港祭祖风俗影响，备有\"烧金猪\"、\"烧鸭\"、\"烧鹅\"、\"蛋糕\"之类的祭品。",
+    "texPath": "Meals/BaoBing",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "15",
+      "WorkToMake": "50",
+      "Nutrition": "0.85",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_ChaoFan",
+    "label": "蛋炒饭",
+    "description": "\r\n      一份蛋炒饭，配方据说是由一个叫做星魂白的美食家创造。尽管叫“蛋”炒饭，但是你也可以做成肉炒饭，菜炒饭，都可以，组合简单，搭配丰富，和薄饼一样，享用之后有不错的心情和少量血液循环加成，能够满足除了伯爵以外任何阶层的需求。\\n\\n边缘艺术家大蹇在日记中这样写道：“蛋炒饭是我的挚爱！”尽管我们不知道“挚爱”是什么意思，但从字里行间中我们能够感受到这名艺术家对于“蛋炒饭”的狂热崇拜。\\n\\n蛋炒饭，是一种常见菜肴。最早的记载见于1972年湖南长沙马王堆汉墓出土的竹简上有关\"卵熇\"的资料。经专家考证，\"卵熇\"是一种用黏米饭加鸡蛋制成的食品。有人推断，这可能就是蛋炒饭的前身。鸡蛋富含蛋白质，不仅如此，它还富含维生素A、B。",
+    "texPath": "Meals/ChaoFan",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "15",
+      "WorkToMake": "50",
+      "Nutrition": "0.95",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_DengYingNiuRou",
+    "label": "传统名菜-灯影牛肉",
+    "description": "\r\n      灯影牛肉原本是以牛肉为原材料，但在传播到边缘世界后，灯影牛肉已经有了更多的做法，鸡肉，猪肉或者其他肉种也可以通过厨师巧妙的加工达到最佳的口感。灯影牛肉属于传统名菜，需要油辣子和肉类作为原材料，其口感极佳，作为牛肉干能够保存很久。同样也是极佳的交易品。",
+    "texPath": "Meals/DengYingNiuRou",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "35",
+      "WorkToMake": "400",
+      "Nutrition": "1.0",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_MeiCaiKouRou",
+    "label": "传统名菜-梅菜扣肉",
+    "description": "\r\n      这道传统客家菜自从被推广到边缘世界后便大受各个殖民地的好评，尽管这道菜在边缘世界的做法各不相同，但梅菜肯定是必不可少的组成部分，制作这道菜需要耗费不少材料，但它的味道和提供的加成也是十分可观的。梅菜扣肉容易变质，一定要注意保鲜哦！\\n\\n梅菜扣肉，食为先梅菜扣肉造型别致、大方得体，颜色酱红油亮，汤汁黏稠鲜美，扣肉肥而不腻，食之软烂醇香。梅菜色泽金黄，香气扑鼻，清甜爽口，不寒不燥不湿不热，它吸收了五花肉的油和汤汁，味道立即丰富起来，五花肉又带着梅菜的清香，彼此互相配合。",
+    "texPath": "Meals/MeiCaiKouRou",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "50",
+      "WorkToMake": "400",
+      "Nutrition": "1.0",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_BeiJingKaoYa",
+    "label": "传统名菜-北京烤鸭",
+    "description": "\r\n      北京烤鸭作为中华传统名菜中最出名的菜品之一，自推广到边缘世界后便成为了边缘世界最受人瞩目的美食。\\n\\n北京烤鸭的做法在被传播到边缘世界之后得到了扩展，现在制作烤鸭不一定需要用鸭肉，因为厨师们能够将各种肉类加工成原汁原味的烤鸭味，并且这并不会被人看出来。\\n\\n制作一份烤鸭需要用到大量肉食和少量素食，享用烤鸭后有独特的健康和心情收益。",
+    "texPath": "Meals/BeiJingKaoYa",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "45",
+      "WorkToMake": "400",
+      "Nutrition": "1.0",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "SZ_YueBing",
+    "label": "月饼",
+    "description": "\r\n      这种团状食物来自古老的神州文明，在经过推广后已风靡整个边缘世界。神州殖民者们通常会在中秋节举行团圆聚会，而月饼则是团圆赏月聚会中必不可少的食物，据说这种月饼寄托了他们“团团圆圆”的美好寓意。\\n\\n制作月饼需要用到淀粉材料，同样还需要任意食物作为月饼的馅料，制作过程比较简单。和其他烹饪食物相比，月饼的保质期相对更长。\\n\\n殖民者在享用月饼后能够获得不错的心情和健康加成。同样，享用月饼后还可以获得少量娱乐满足。",
+    "texPath": "Meals/YueBing",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "13",
+      "WorkToMake": "40",
+      "Nutrition": "0.8",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_SuanCaiRouGuo",
+    "label": "酸菜白肉锅",
+    "description": "\r\n      丰盛程度不逊色于火锅的传统美食，殖民者食用后不但能获得很很高的心情加成，持续两天，同时还可以获得一个不错的健康收益。\\n\\n酸菜白肉锅的制作需要用到酸菜和大量肉类，因此，在物资相对匮乏的边缘世界，神州殖民者往往只会在大型节假日制作这道美食。\\n\\n酸菜白肉锅是神州冬至盛宴的必备佳肴之一，一道酸菜白肉锅，就可以给予殖民者撑过寒冬的希望。为了制作这道美食，殖民者往往会花一个月的时间准备研制酸菜。",
+    "texPath": "Meals/New/SuanCaiGuo",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "58",
+      "WorkToMake": "400",
+      "Nutrition": "1.1",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_GuoBaiRou",
+    "label": "锅包肉",
+    "description": "\r\n      神州东北地区的名菜，外焦里嫩，色泽金黄，口味酸甜。\\n\\n神州厨师在制作锅包肉的时候会用到糯米粉，这样才能保证这道菜外焦里嫩的口感，既不让水分因为烹饪流失，又可以留住肉质最好的口感。\\n\\n锅包肉，原名“锅爆肉”，出自哈尔滨道台府府尹杜学赢专用厨师，“滨江膳祖”———郑兴文之手。",
+    "texPath": "Meals/New/GuoBaoRou",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "42",
+      "WorkToMake": "350",
+      "Nutrition": "0.95",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_Huntun",
+    "label": "馄饨",
+    "description": "\r\n      一碗经过精心烹调的馄饨，在寒风刺骨的冬日里温暖你的心灵，需要在传统炉灶上制作。它的营养值和奢侈食物相当，小人在吃了它之后会有特殊的心情和健康收益。就算是最顶层的王公贵族也不会拒绝这种食物的诱惑。\\n\\n馄饨是中国汉族传统面食之一，用薄面皮包馅儿，通常为煮熟后带汤食用。源于中国北方。馄饨营养丰富，香里有甜，风味独特，诱人食欲。古传能镇压鬼邪，其实混沌皮与馅荤素搭配合理，有安神定惊的作用，更营养均衡，老少皆宜。因此在食用馄饨后会有小幅的意识加成。\\n\\n饺子馄饨，每逢佳节，团团圆圆。希望你不要忘了它们最初的寓意了啊！",
+    "texPath": "Meals/Huntun",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "25",
+      "WorkToMake": "270",
+      "Nutrition": "1.0",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_JiaoZi",
+    "label": "饺子",
+    "description": "\r\n      一碗经过精心烹调的饺子，在寒风刺骨的冬日里温暖你的心灵，需要在传统炉灶上制作。它的营养值和奢侈食物相当，小人在吃了它之后会有特殊的心情和健康收益。就算是最顶层的王公贵族也不会拒绝这种食物的诱惑。\\n\\n饺子源于古代的角子。原名\"娇耳\"，是古老的汉族传统面食，距今已有一千八百多年的历史了。是我国东汉时期南阳邓州人医圣张仲景首先发明作为药用。是深受中国人民喜爱的传统特色食品，又称水饺，是中国北方民间的主食和地方小吃，也是年节食品。有一句民谣叫\"大寒小寒，吃饺子过年。\"饺子多用面皮包馅水煮而成。\\n\\n饺子馄饨，每逢佳节，团团圆圆。希望你不要忘了它们最初的寓意了啊！",
+    "texPath": "Meals/Huntun",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "25",
+      "WorkToMake": "270",
+      "Nutrition": "1.0",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_RouBaoZi",
+    "label": "肉包子",
+    "description": "\r\n      一个超大号的肉包子，小人在享用包子之后会有一个饱腹感加成\\n\\n包子是一种饱腹感很强的主食，并且还是人们生活中不可或缺的食物，它是由面和馅包起来的，或者是由素馅做成的，做好的包子皮薄馅多，松软好吃。还可以做各种花样。憨态可掬的，动物的，植物的，花朵的，各种各样的花样，供人们品尝。",
+    "texPath": "Meals/RouBaoZi",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "20",
+      "WorkToMake": "150",
+      "Nutrition": "0.90",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Chi_ManTou",
+    "label": "馒头",
+    "description": "\r\n      一个超大号馒头，小人在享用馒头之后会有一个饱腹感加成\\n\\n馒头，别称\"馍\"\"馍馍\"\"蒸馍\"，中国传统面食之一，传说是三国蜀汉丞相诸葛亮所发明，是一种用发酵的面蒸成的食品。馒头以小麦面粉为主要原料，是中国人日常主食之一。",
+    "texPath": "Meals/ManTou",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "10",
+      "WorkToMake": "120",
+      "Nutrition": "0.90",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "SZ_MenMian",
+    "label": "焖面",
+    "description": "\r\n      一种起源于神州文明母国的面食，起源于距今几千年前的宋朝，和传统的面食不同，焖面是汤面的革新创造，神州文明将焖面传播到边缘世界后，对其的所需的原料进行了改进，现在殖民者们只需要加入精米面和任意生食就能够制作出美味的焖面。\\n\\n焖面有着滋养脾胃的功效，殖民者们在获得由面粉带来的饱腹感的同时也能够获得小额的代谢加成。",
+    "texPath": "Meals/MenMian",
+    "stats": {
+      "DeteriorationRate": "1",
+      "MarketValue": "20",
+      "WorkToMake": "150",
+      "Nutrition": "0.90",
+      "MaxHitPoints": "8",
+      "Flammability": "1",
+      "Beauty": "1",
+      "Mass": "0"
+    },
+    "parentName": "Chi_FoodBase"
+  }
+]
