@@ -1,3 +1,0 @@
-# Chinese Ideology Expanded
-
-Building upon the foundation of maintaining the balance of the original version, this mod enriches the game with a multitude of Chinese-style items, animals, plants, and associated technologies. Additionally, it introduces unique culinary delights and exquisite furniture. Whether you prefer a medieval playthrough or are delving into the depths of advanced Colony Management, this mod seamlessly integrates with your gameplay, providing an immersive and captivating experience.

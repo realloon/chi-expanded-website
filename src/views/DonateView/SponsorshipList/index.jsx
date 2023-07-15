@@ -9,7 +9,7 @@ export default function SponsorshipList({ list }) {
       {sort(list).map(item => (
         <span
           key={Math.random()}
-          title={`${item.name} donated ${item.amount} yuan.`}
+          title={`thank "${item.name}" donated ${item.amount} yuan.`}
         >
           {item.name}
         </span>

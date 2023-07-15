@@ -1,26 +1,21 @@
 //
 import pageConfig from 'configs/pageConfig.json'
+import documents from 'assets/documents.json'
 //
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
-import { useEffect, useState } from 'react'
 // style
 import './index.css'
 
 const getFileNameFromPath = path => path.split('/').pop().split('.')[0]
 
-export default function Summary({ covers, filePath }) {
-  const [content, setContent] = useState(null)
+const { summary } = documents
 
-  useEffect(() => {
-    fetch(filePath)
-      .then(res => res.text())
-      .then(markdown => setContent(markdown))
-  }, [filePath])
-
+export default function Summary({ covers }) {
   return (
     <article className="summary">
       <section className="paragraph-wrapper">
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <h1>{summary.title}</h1>
+        <ReactMarkdown>{summary.content}</ReactMarkdown>
 
         <a className="button" href={pageConfig.modHomepageURL}>
           Try it!

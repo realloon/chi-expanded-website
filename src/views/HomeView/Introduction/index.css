@@ -21,7 +21,7 @@
       user-select: none;
     }
 
-    & a {
+    & > a {
       color: inherit;
       text-decoration: unset;
     }
@@ -29,6 +29,7 @@
 
   & .content-wrapper {
     display: flex;
+    align-items: flex-start;
     gap: 32px;
 
     @media (max-width: 425px) {
@@ -59,7 +60,7 @@
       }
     }
 
-    & figure {
+    & .cover-wrapper {
       margin: 0;
       flex: 1;
 
@@ -70,13 +71,3 @@
     }
   }
 }
-
-/* @media (max-width: 425px) {
-  .detail .content-wrapper {
-    flex-direction: column;
-
-    & .paragraph-wrapper {
-      max-width: 100%;
-    }
-  }
-} */

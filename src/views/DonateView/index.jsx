@@ -1,26 +1,17 @@
 import QR from 'assets/QR-demo.png'
 import heart from 'assets/heart-fill.svg'
 // text
-import contentPath from 'assets/documents/donate.md'
+import documents from 'assets/documents.json'
 import sponsorshipList from 'configs/sponsorshipList.json'
-// methods
-import { marked } from 'marked'
-import { useEffect, useState } from 'react'
 // components
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import SponsorshipList from './SponsorshipList'
 // style
 import './index.css'
 
+const { donate } = documents
+
 export default function DonateView() {
-  const [content, setContent] = useState(null)
-
-  useEffect(() => {
-    fetch(contentPath)
-      .then(res => res.text())
-      .then(markdown => marked(markdown, { mangle: false, headerIds: false }))
-      .then(html => setContent(html))
-  }, [])
-
   return (
     <main>
       <div className="sponsorship-list-wrapper">
@@ -30,15 +21,14 @@ export default function DonateView() {
       </div>
 
       <div className="heart-warpper">
-        <img src={heart} alt="heart" />
+        <img src={heart} alt="Thank you." />
       </div>
 
       <div className="donate">
         <div className="wrapper">
-          <article
-            className="paragraph-wrapper"
-            dangerouslySetInnerHTML={{ __html: content }}
-          ></article>
+          <article className="paragraph-wrapper">
+            <ReactMarkdown>{donate}</ReactMarkdown>
+          </article>
 
           <figure>
             <img src={QR} alt="" />

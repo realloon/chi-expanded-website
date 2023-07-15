@@ -9,7 +9,7 @@ import narrator from 'assets/images/covers/narrator.jpg'
 import storytellers from 'assets/images/covers/storytellers.jpg'
 import ideology from 'assets/images/covers/ideology.jpg'
 // articles
-import summaryPath from 'assets/documents/summary.md'
+// import summaryPath from 'assets/documents/summary.md'
 // components
 import { Banner } from 'components'
 import Introduction from './Introduction'
@@ -29,39 +29,15 @@ const summaryCovers = [
   ideology,
 ] // The order here determines the order of display.
 
-const Introductions = [
-  {
-    title: 'Core',
-    affiliation: 'core',
-  },
-  {
-    title: 'Animal',
-    affiliation: 'animal',
-  },
-  {
-    title: 'Music',
-    affiliation: 'music',
-  },
-  {
-    title: 'Faction',
-    affiliation: 'faction',
-  },
-  {
-    title: 'Equipment',
-    affiliation: 'equipment',
-  },
-  {
-    title: 'Narrator',
-    affiliation: 'narrator',
-  },
-  {
-    title: 'Storytellers',
-    affiliation: 'storytellers',
-  },
-  {
-    title: 'Ideology',
-    affiliation: 'ideology',
-  },
+const affiliations = [
+  'core',
+  'animal',
+  'music',
+  'faction',
+  'equipment',
+  'narrator',
+  'storytellers',
+  'ideology',
 ]
 
 export default function HomeView() {
@@ -70,14 +46,10 @@ export default function HomeView() {
       <Banner img={banner} />
 
       <main>
-        <Summary covers={summaryCovers} filePath={summaryPath} />
+        <Summary covers={summaryCovers} />
 
-        {Introductions.map(item => (
-          <Introduction
-            key={crypto.randomUUID()}
-            title={item.title}
-            affiliation={item.affiliation}
-          />
+        {affiliations.map(affiliation => (
+          <Introduction key={crypto.randomUUID()} affiliation={affiliation} />
         ))}
       </main>
     </div>

@@ -1,3 +1,0 @@
-# TianBing Storyteller Expanded
-
-Introducing a new narrator: Yingquan. Yingquan is a storyteller from the ancient Tianbing series and one of the core controllers of the Tianbing Mechanized Clan. As the central intelligence core created by the Pioneers civilization, Yingquan has had one goal since its inception - to destroy the advanced and prosperous Shenzhou civilization. Therefore, in the stories it simulates, endless aggression is always the main theme. From glorious prosperity to shattered ruins, everything can be reduced to mere moments at Yingquan's command. Diseases and troublesome events also occur continuously.

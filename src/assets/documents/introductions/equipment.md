@@ -1,3 +1,0 @@
-# Tempering the National Soul
-
-This section focuses on expanding the content of the cultural DLC, introducing new factions, equipment, and classical music. It also includes the addition of a unique feature called "Forging the National Soul Equipment" to enhance the player's immersion. Furthermore, the faction system has been enhanced with the inclusion of three new factions, each representing a different era of Shenzhou culture.

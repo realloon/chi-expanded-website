@@ -1,16 +1,16 @@
 .banner {
   user-select: none;
   margin-bottom: -56px;
+}
 
-  @media (max-width: 425px) {
-    & {
-      display: none;
-    }
-  }
+.banner img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 49 / 20;
+}
 
-  & img {
-    display: block;
-    width: 100vw;
-    aspect-ratio: 49 / 20;
+@media (max-width: 425px) {
+  .banner {
+    display: none;
   }
 }

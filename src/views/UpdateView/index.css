@@ -1,50 +1,107 @@
-.updates {
-  margin: 56px 0;
-  line-height: 1.5;
+.updates-wrapper {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 24px;
+  /*  */
+  position: relative;
+  margin-left: 16px;
+  border-left: 2px solid hsl(217, 32%, 16%);
+}
 
-  & section {
-    margin-bottom: 56px;
+.timeline-wrapper {
+  font-size: 0;
+  position: absolute;
+  left: -15px;
+  background-color: var(--page-background-color);
+  padding-top: 2px; /* fill the gaps. */
 
-    & h1 {
-      font-size: 1.25rem;
-      margin: 1rem 0;
-      position: relative;
+  & svg {
+    width: 28px;
+  }
+}
+
+.info-wrapper {
+  width: 20em;
+  /* ⬆️ ensure sufficient width to display "yyyy-mm-dd / author". */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 48px;
+
+  & h1 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: '#';
+      position: absolute;
+      left: -0.75em;
+      opacity: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
 
       &::before {
-        content: '#';
-        position: absolute;
-        left: -0.75em;
-        opacity: 0;
-      }
-
-      &:hover {
-        text-decoration: underline;
-
-        &::before {
-          opacity: 1;
-        }
+        opacity: 1;
       }
     }
+  }
 
-    & h2 {
-      font-size: 1rem;
-      margin: 1rem 0;
-    }
+  & .version {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.875rem;
+    font-weight: bold;
 
-    & ul,
-    ol {
-      padding-left: 2em;
+    & svg {
+      fill: var(--page-font-color);
     }
+  }
 
-    /* date of update */
-    & p > em {
-      font-weight: bold;
-      opacity: 0.7;
-      font-style: normal;
-    }
+  & .date {
+    font-size: 0.875rem;
+    opacity: 0.7;
+  }
 
-    & img {
-      max-width: 100%;
-    }
+  & .typeof {
+    color: inherit;
+    text-decoration: unset;
+    font-size: 0.875rem;
+    line-height: 1;
+    font-weight: bold;
+    width: fit-content;
+    border: 2px solid var(--page-font-color);
+    padding: 0.3em 0.8em 0.4em;
+    border-radius: 1rem;
+  }
+}
+
+.detaile-wrapper {
+  flex-grow: 1;
+  /*  */
+  line-height: 1.5;
+  padding-bottom: 12px;
+  border-bottom: 1px solid hsl(217, 32%, 12%);
+
+  & p {
+    margin: 0 0 1rem 0;
+  }
+
+  & h2 {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+  }
+
+  & ul,
+  ol {
+    padding-left: 2em;
+  }
+
+  & img {
+    max-width: 100%;
   }
 }

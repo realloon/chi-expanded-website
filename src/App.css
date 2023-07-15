@@ -16,19 +16,12 @@
 
 html {
   scroll-behavior: smooth;
-  /* scrollbar-color: #888 #f1f1f1; */
-  /* scrollbar-width: 200px; */
 }
-
-/* ::-webkit-scrollbar {
-  background-color: red;
-} */
 
 body {
   /* unnormal */
   margin: 0;
   background-color: var(--page-background-color);
-  overflow-x: hidden;
   /* font */
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
@@ -38,7 +31,7 @@ body {
 }
 
 main {
-  box-sizing: content-box;
+  /* box-sizing: border-box; */
   max-width: 1080px;
   min-height: calc(100vh - var(--header-height) - var(--main-wrapper-gap) * 2);
   padding: 0 16px;
