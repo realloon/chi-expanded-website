@@ -20,13 +20,16 @@ export default function Preview({ affiliation }) {
   }, [affiliation])
 
   return (
-    <article id={introduction[affiliation].title.toLowerCase()} className="preview">
+    <article
+      id={introduction[affiliation].title.toLowerCase()}
+      className="introduction"
+    >
       <h1>
         <a href={`#${affiliation}`}>{introduction[affiliation].title}</a>
       </h1>
 
       <div className="content-wrapper">
-        <section className='cover-wrapper'>
+        <section className="cover-wrapper">
           <Link to={`/detail/${affiliation}`}>
             <img src={coverPath} alt={`${affiliation} mod cover`} />
           </Link>

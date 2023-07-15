@@ -1,4 +1,4 @@
-.preview {
+.introduction {
   padding-top: var(--detail-wrapper-gap);
 
   & > h1 {
@@ -67,6 +67,7 @@
       & img {
         width: 100%;
         aspect-ratio: 16 / 9;
+        vertical-align: top;
       }
     }
   }

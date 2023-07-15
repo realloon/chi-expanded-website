@@ -1,6 +1,6 @@
 .banner {
   user-select: none;
-  margin-bottom: -56px;
+  margin-top: calc(0 - var(--header-height));
 }
 
 .banner img {
