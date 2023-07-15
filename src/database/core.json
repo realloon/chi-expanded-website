@@ -1,5 +1,467 @@
 [
   {
+    "defName": "SZ_Chan",
+    "label": "柞蚕",
+    "description": "\r\n      仅从外观上来看，这很显然不是柞蚕的原始品种，这种柞蚕也被称为“仲恺柞蚕”，它是经过仲恺农业科技公司改造后的最新蚕种，经过实验证明，仲恺柞蚕能够完全适应边缘世界的环境，同样，它对毒物的敏感度几乎为零。凭借这样的优势，蚕也成了边缘神州殖民地的特产之一。\\n\\n仲恺柞蚕一般出现在温带，在很多商队或者飞船里也有出售，它的智商比较低，寿命也很短，但在经过改造后已经发展成为了畜群动物，殖民者可以像养牛羊一样养它，它也会像动物产毛一样每隔8天定期产出珍贵的蚕茧。\\n\\n<color=#33d733>Tips：</color>边缘世界的柞蚕似乎失去了完全飞行的功能，这可能是因为它在某些方面发生了退化——毕竟边缘世界很少有能够飞行的动物，对于现在的柞蚕来说，它的翅膀更像是辅助它“走路”的工具。",
+    "stats": {
+      "MoveSpeed": "2.58",
+      "ComfyTemperatureMin": "-35",
+      "MarketValue": "100",
+      "LeatherAmount": "0"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "SZ_ChanEgg",
+    "label": "柞蚕卵 (已受精）",
+    "description": "柞蚕的受精卵，如果一切顺利的话能过孵化出幼蚕——尽管它孵化所需的时间较长。幼蚕在成年后可以吐出蚕茧制作成丝绸，殖民者只需要精心照料好这个卵就好。",
+    "texPath": "Animals/Can/CanLuan",
+    "stats": { "MarketValue": "30" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "CanJian",
+    "label": "柞蚕茧",
+    "description": "\r\n      和普通的蚕茧不一样，神州柞蚕茧就像羊毛一样，可以由蚕定期产出，对于神州殖民者来说，柞蚕茧就像黄金白银一样珍贵，因为它能够在纺织台上被进一步加工成珍贵而又美观的丝绸。\\n\\n当然，将蚕茧直接出售给商人也是一种不错的选择。",
+    "texPath": "CaiLiao/CanJian",
+    "stats": {
+      "MaxHitPoints": "50",
+      "MarketValue": "1",
+      "Mass": "0.1",
+      "Flammability": "0",
+      "DeteriorationRate": "0.5"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "AEXP_Panda",
+    "label": "温带大熊猫",
+    "description": "\r\n      这种奇特高智商的生物在公元2100年被一批名叫：“中国外来客”的飞船带到边缘世界，并在边缘世界繁衍生息。\\n\\n大熊猫的适宜温度在20度左右，并且对温度的要求很高，属于食肉目、熊科、大熊猫亚科和大熊猫属唯一的哺乳动物，体色为黑白两色，它有着圆圆的脸颊，大大的黑眼圈，胖嘟嘟的身体，标志性的内八字的行走方式，也有解剖刀般锋利的爪子。是世界上最可爱的动物之一。\\n\\n大熊猫智商高且训练后的技能遗忘速度较慢，但由于它的肉和皮革异常珍贵，因此大熊猫在边缘世界经常被人类捕杀，现在它们已经濒临灭绝。没有买卖就没有杀害，请善待大熊猫！",
+    "stats": {
+      "ComfyTemperatureMin": "0",
+      "ComfyTemperatureMax": "35",
+      "MoveSpeed": "4.6",
+      "MarketValue": "3000",
+      "ArmorRating_Blunt": "0.18",
+      "ArmorRating_Sharp": "0.2"
+    },
+    "parentName": "BasePanDa"
+  },
+  {
+    "defName": "PanDa_JiDi",
+    "label": "极地大熊猫",
+    "description": "\r\n      这是一种大熊猫的极地变种，我们不知道它们是怎么进化到一种能够适应极地的状态，但不可否认的是，它们几乎不需要进食并且耐寒能力极强。另外，它的战斗能力强于普通熊猫。嘿，别惹它！",
+    "stats": {
+      "ComfyTemperatureMin": "-60",
+      "ComfyTemperatureMax": "20",
+      "MoveSpeed": "4.8",
+      "MarketValue": "3000"
+    },
+    "parentName": "BaseBianZhongPanDa"
+  },
+  {
+    "defName": "PanDa_ReDai",
+    "label": "热带大熊猫",
+    "description": "\r\n      这是一种大熊猫的热带变种，事实证明，大熊猫的进化能力很强，边缘生物学家Frolg于公元2341年在一片名叫“笨龙狐狸雨林”的地方首次发现这种毛发较少，但外形和习性和大熊猫相似但又有差异的生物。\\n\\n这种生物通过某种变异，食量变得较大并且能够消化各类食物，另外，它的战斗能力也不容小视，并且有人认为它是熊猫家族中战斗力最强的品种。\\n\\n由于它的毛发较少，因此将它养在冰原之类的地方可不是一个明智的选择。\\n\\n你肯定会问为什么这种生物会长出一种角，这确实很奇怪，据一名叫做“乌冬”的记者透露，这可能是Frolg对这种物种进行了变异和改造，不过谁知道呢。",
+    "stats": {
+      "ComfyTemperatureMin": "0",
+      "ComfyTemperatureMax": "60",
+      "MoveSpeed": "4",
+      "MarketValue": "3"
+    },
+    "parentName": "BaseBianZhongPanDa"
+  },
+  {
+    "defName": "RongYuan",
+    "label": "蝾螈",
+    "description": "\r\n      蝾螈又称火蜥蜴，全世界大约有400多种，分属有尾目下的10个科。蝾螈是有尾两栖动物，体形和蜥蜴相似，但体表没有鳞，也是良好的观赏动物，包括北螈、蝾螈、大隐鳃鲵(一种大型的水栖蝾螈)。它们大部分栖息在淡水和沼泽地区，主要是北半球的温带区域。他们靠皮肤来吸收水分，因此需要潮湿的生活环境。环境到摄氏零下以后，他们会进入冬眠状态。\\n\\n能够忍受较冷的气候，体型比娃娃鱼稍大，可能是受边缘世界的特殊影响，它们战斗能力和大蜥蜴一样强，需要吃的食物差不多，常见于气候湿润的沼泽地区，在森林地区也会少量分布。\\n\\n（后面会更新一个“冬眠”的健康状态），蝾螈在2278年被带到边缘世界后，已经繁衍了数个年头。另外，它们的寿命最高能长达百岁。",
+    "stats": {
+      "MoveSpeed": "2.7",
+      "MarketValue": "250",
+      "ComfyTemperatureMin": "-30",
+      "ComfyTemperatureMax": "40"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "WaWaYu",
+    "label": "大鲵",
+    "description": "\r\n      大鲵（俗称娃娃鱼）是隐腮鲵科、大鲵属有尾两栖动物。体大而扁平，一般全长582~834毫米，头体长310~585毫米，最大个体全长可达200厘米以上。头大扁平而宽阔，头长略大于头宽。成鲵一般常栖息在海拔1000米以下的溪河深潭内的岩洞、石穴之中，以滩口上下的洞穴内较为常见，食性很广，主要以蟹、蛙、鱼、虾以及水生昆虫，及其幼虫等为食。\\n\\n主要分布在潮湿的沼泽地带，但为了适应不同条件下的气候，这个动物似乎在边缘世界已经产生了耐热性并可能出现在沙漠中。",
+    "stats": {
+      "MoveSpeed": "2.5",
+      "MarketValue": "200",
+      "ComfyTemperatureMin": "-15",
+      "ComfyTemperatureMax": "60"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "JinSiMonkey",
+    "label": "金丝猴",
+    "description": "\r\n      金丝猴，毛质柔软，鼻子上翘，有缅甸金丝猴、怒江金丝猴、川金丝猴、滇金丝猴、黔金丝猴、越南金丝猴6种，其中除缅甸金丝猴和越南金丝猴外，均为中国特有的珍贵动物。\\n\\n金丝猴群栖高山密林中，以野果、竹笋、苔藓为食，亦喜食鸟蛋等肉类，栖息地海拔很高，身上的长毛可耐寒。6个品种均为珍稀品种，均列为红色物种名录濒危品种。\\n\\n在游戏里面，金丝猴也是高智商，杂食并且珍贵的动物。于公元2357年由“地球金丝猴保护号”飞船带到边缘世界，金丝猴从此获得了更广阔的栖息地，也因此焕发新生。它很容易驯服，不怎么吃东西，但比普通猴子还要弱小，请注意保护好它！\\n\\n金丝猴的舒适温度在0~35度，请注意让它别热着或者冷着了\\n\\n市场价值同时也是个内涵，懂的都懂。",
+    "stats": {
+      "MoveSpeed": "6.0",
+      "MarketValue": "680",
+      "ComfyTemperatureMin": "0",
+      "ComfyTemperatureMax": "35"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "EggWaWaYu",
+    "label": "大鲵卵（未受精）",
+    "description": "大鲵的卵，未受精，比较珍贵，可以生吃，但味道很差。",
+    "stats": { "MarketValue": "25.0" },
+    "parentName": "EggUnfertBase"
+  },
+  {
+    "defName": "EggShouJingWaWaYu",
+    "label": "大鲵（已受精）",
+    "description": "大鲵的卵，已受精，比较珍贵，如果一切顺利的话它应该能够孵化出一只大鲵幼体。可以生吃，但味道很差。",
+    "stats": { "MarketValue": "75.0" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "EggRongYuan",
+    "label": "蝾螈卵（未受精）",
+    "description": "蝾螈的卵，未受精，比较珍贵，可以生吃，但味道很差。",
+    "stats": { "MarketValue": "20.0" },
+    "parentName": "EggUnfertBase"
+  },
+  {
+    "defName": "EggShouJingRongYuan",
+    "label": "蝾螈卵（已受精）",
+    "description": "蝾螈的卵，已受精，比较珍贵，如果一切顺利的话它应该能够孵化出一只蝾螈幼体。可以生吃，但味道很差。",
+    "stats": { "MarketValue": "45.0" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "EggShouJingHongJinJi",
+    "label": "红腹锦鸡蛋（已受精）",
+    "description": "这是已受精的红腹锦鸡的蛋，它的市场价值高于普通鸡蛋。如果一切顺利的话它应该能够孵化出一只红腹锦鸡幼体。可以生吃，但味道很差。",
+    "stats": { "MarketValue": "17.0" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "HongJinJi",
+    "label": "红腹锦鸡（野生）",
+    "description": "\r\n      红腹锦鸡又名金鸡，中型鸡类，体长59-110cm。尾特长，约38-42cm。雄鸟羽色华丽，头具金黄色丝状羽冠，上体除上背浓绿色外，其余为金黄色，后颈被有橙棕色而缀有黑边的扇状羽，形成披肩状。下体深红色，尾羽黑褐色，满缀以桂黄色斑点。雌鸟头顶和后颈黑褐色，其余体羽棕黄色，满缀以黑褐色虫蠢状斑和横斑。脚黄色。野外特征极明显，全身羽毛颜色互相衬托，赤橙黄绿青蓝紫具全，光彩夺目，是驰名中外的观赏鸟类。为中国特有鸟种，该物种分布的核心区域在中国甘肃和陕西南部的秦岭地区。\\n\\n公元2340年由“家畜号”飞船带到边缘世界，成为了一种本地物种，并且它的性价比高于其他家畜动物。\\n\\n这种鸡在野外也会出现，一般多出现在气候温和的地区，也可以当做家畜饲养，食量略大于家养鸡，但产蛋量和屠宰肉量要高得多。另外，别小看了它们群体的战斗力！\\n\\n野生的红腹锦鸡需要通过受精才能产卵，你很难将其驯化为不产卵的家养鸡。",
+    "stats": {
+      "MoveSpeed": "2.5",
+      "MarketValue": "230",
+      "LeatherAmount": "45",
+      "ComfyTemperatureMin": "-5"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "EggTuJi",
+    "label": "土鸡蛋（未受精）",
+    "description": "这是未受精的土鸡蛋，市场价格和普通鸡蛋差不多，可以生吃，但味道很差。",
+    "stats": { "MarketValue": "9.0" },
+    "parentName": "EggUnfertBase"
+  },
+  {
+    "defName": "EggShouJingTuJi",
+    "label": "土鸡蛋（已受精）",
+    "description": "这是已受精的土鸡蛋，市场价格和普通鸡蛋差不多。如果一切顺利的话它应该能够孵化出一只土鸡幼体。",
+    "stats": { "MarketValue": "14.0" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "TuJi",
+    "label": "土鸡",
+    "description": "\r\n      土鸡，家禽的一种。有别于笼养的肉鸡。其中以\"山坡散养土鸡\"为最好，公鸡冠大而红，性烈好斗，母鸡鸡冠极小。土鸡也叫草鸡、笨鸡，是指从古代家养驯化而成，从未经过任何杂交和优化配种，长期以自然觅食或结合粗饲喂养而成，具有较强的野外觅食和生存能力。具有耐粗饲、就巢性强和抗病力强等特性，肉质鲜美。鸡蛋在城乡市场上非常畅销，且蛋价也高于普通鸡蛋，营养价值高。鸡肉口味鲜美、蛋品质优良、营养丰富，市场需求前景广阔。且由於大多数是在林间或果园内放养，更贴近绿色环保的要求，故而更受消费者的青睐·对于具备一定条件的农户来说，饲养柴鸡的成本又比较低，适合家庭养殖，饲养周期较长，一般长为成年约6个月左右。\\n\\n中国是世界上最早养鸡的国家，远在新石器时代，考古学家就发现原鸡的骸骨，至今已有七千年历史。在殷墟出土的甲骨文中也有“鸡”和“鸡”字，为“鸟”旁加“奚”的形声字，意为牵着绳子的鸟。\\n\\n这种生物不会在野外出现，经过长期的培养，这种土鸡要比普通鸡的肉质更足，下蛋收益更高。但这种鸡在市场上可是抢手货，因此它们的价格可不低。",
+    "stats": {
+      "MoveSpeed": "3",
+      "MarketValue": "120",
+      "LeatherAmount": "45",
+      "ComfyTemperatureMin": "-10"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "Egg_UnFert_ShiTouE",
+    "label": "狮头鹅蛋（未受精）",
+    "description": "这是未受精的狮头鹅蛋，它的市场价值略高于普通鹅蛋。可以生吃，但味道很差。",
+    "stats": { "MarketValue": "11.0" },
+    "parentName": "EggUnfertBase"
+  },
+  {
+    "defName": "Egg_Fert_ShiTouE",
+    "label": "狮头鹅蛋（已受精）",
+    "description": "这是已受精的土鸡蛋，市场价格和普通鸡蛋差不多。如果一切顺利的话它应该能够孵化出一只土鸡幼体。",
+    "stats": { "MarketValue": "14.0" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "SZ_ShiTouE",
+    "label": "狮头鹅",
+    "description": "\r\n      由神州文明培育出来的狮头鹅品种，这种狮头鹅是全世界最大的鹅之一，具有较多的肉量，适合培养在农场里，尽管它的体型较大，但食量并没有增加很多，喜欢食用粗饲料，同时，它的下蛋频率较高，这种动物的市场价值也很不错，是性价比很高的一种家禽。\\n\\n狮头鹅的特点是体形大、头大、眼绿蹼阔、肉质鲜嫩等，于公元4396年被神州动物飞船引进到边缘世界。",
+    "stats": {
+      "MoveSpeed": "2.3",
+      "MarketValue": "200",
+      "LeatherAmount": "50",
+      "ComfyTemperatureMin": "-25",
+      "FilthRate": "4"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "SZ_ZhuHuan",
+    "label": "朱鹮",
+    "description": "\r\n      原本是神州极危物种，在神州鸟类保护协会的引导下被引进到边缘世界，虽然朱鹮在边缘世界的种群有所扩大，但仍是较为稀有的物种，它的价格也远高于普通鸟类。\\n\\n朱鹮在边缘世界也发生了一些进化，一方面，它的体型更大，生存能力更强，对食物的要求也不高，另一方面，它似乎具备了一定智力，有观察者指出它会有亲昵主人的举动。当它被激怒时也具有一定的攻击性。\\n\\n朱鹮一般出现在温带地区，在寒带和热带也会有少量分布。",
+    "stats": {
+      "MoveSpeed": "2.6",
+      "MarketValue": "500",
+      "LeatherAmount": "80",
+      "FilthRate": "0.15",
+      "ComfyTemperatureMin": "-25"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "EggZhuHuanFertilized",
+    "label": "朱鹮（已受精）",
+    "description": "比较珍贵的朱鹮乱，如果精心照顾的话能够孵化出朱鹮幼体——将这样昂贵的受精卵用于烹饪并不是一个很好的选择。",
+    "texPath": "Things/Item/Resource/AnimalProductRaw/EggOval",
+    "stats": { "MarketValue": "45.5" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "LaoHu_HuaNan",
+    "label": "华南虎",
+    "description": "\r\n      一种被引进到边缘世界的外来濒危物种，由于边缘世界的生态环境并没有遭到大规模的破坏并且存在丰富的动物群落，这种在地球上几乎绝迹的动物在这里焕发了新生。\\n\\n华南虎头圆，耳短，四肢粗大有力，尾较长，胸腹部杂有较多的乳白色，全身橙黄色并布满黑色横纹。毛皮上有既短又窄的条纹，条纹的间距较孟加拉虎、西伯利亚虎的大，体侧还常出现菱形纹。\\n\\n和它的近亲东北虎不同，它的体型更小，能够忍受更热的环境，但是它的耐寒性没有东北虎那么强。\\n\\n在野外，它是稀有但又危险的捕食者，它的战斗能力不容小觑。",
+    "stats": {
+      "MarketValue": "700",
+      "ComfyTemperatureMin": "-15",
+      "ComfyTemperatureMax": "35",
+      "MoveSpeed": "5.0",
+      "ArmorRating_Blunt": "0.18",
+      "ArmorRating_Sharp": "0.2"
+    },
+    "parentName": "LaoHuBase"
+  },
+  {
+    "defName": "LaoHu_Bai",
+    "label": "白虎",
+    "description": "\r\n      白虎在地球上近乎绝迹，但得益于野生动物保护组织的帮助，最后的几只白虎被送往了边缘世界并且在长期的保护下已然焕发新生，即便现在在边缘世界繁衍生息的野生白虎仍然很少。\\n\\n白虎的基因也收到边缘世界环境的影响发生了一些改变，它现在比普通的老虎身材更大，也能抗住更多伤害。同样，由于其特殊的外貌，这种动物的价格也非常可观。\\n\\n这种动物现在在边缘世界里主要生活在寒带森林或者寒带沼泽地区，在温带和冻土苔原也有少数分布。\\n\\n白虎还是中国传统文化中的四大神兽之一，如晋《中兴征祥》曰：白虎者，仁兽也。虎而白色，缟身如雪，无杂毛，怒目短耳、四脚五爪，长尾，可腾云，啸则风兴。",
+    "stats": {
+      "MarketValue": "1500",
+      "ComfyTemperatureMin": "-70",
+      "ComfyTemperatureMax": "45",
+      "MoveSpeed": "5",
+      "ArmorRating_Blunt": "0",
+      "ArmorRating_Sharp": "0"
+    },
+    "parentName": "LaoHuBase"
+  },
+  {
+    "defName": "PanDa_Leather",
+    "label": "熊猫皮",
+    "description": "\r\n      这是熊猫的皮，隔热性能尚可，美观度和市场价值极高，几乎和敲击兽皮相当，但是这种熊猫皮的稀有度也极高并且防护性能很差，不建议作为装甲使用。\\n\\n由于熊猫是保护动物，一种特殊的力量为了保护这种动物为此施加了一种神秘的力量，这使得它的皮革作为衣服材料时，你的小人会感觉非常不舒服。（当然，喋血除外）",
+    "stats": {
+      "MarketValue": "15",
+      "StuffPower_Armor_Sharp": "0.1",
+      "StuffPower_Insulation_Cold": "10"
+    },
+    "parentName": "LeatherBase"
+  },
+  {
+    "defName": "Leather_DongBeiHu",
+    "label": "虎皮",
+    "description": "虎类的皮，尽管扒皮的方式非常残忍，但不可否认的是，它的皮非常珍贵并且能够提供一定的耐寒性，就是它的透气性不是很好，因此耐热性能较差。",
+    "texPath": "Things/Item/Resource/Leather",
+    "stats": {
+      "MarketValue": "6.0",
+      "StuffPower_Armor_Sharp": "0.93",
+      "StuffPower_Armor_Blunt": "0.21",
+      "StuffPower_Insulation_Heat": "-10",
+      "StuffPower_Insulation_Cold": "15"
+    },
+    "parentName": "LeatherBase"
+  },
+  {
+    "defName": "SZ_SandWolf",
+    "label": "沙狐",
+    "description": "\r\n      原产于神州的狐种，后被引进到边缘世界，由于沙狐体型较小，为了生存的需要，它在边缘世界进化出了更高的智商，同样，它的爪子也更加锋利。\\n\\n沙狐通常分布在温带、寒带地区，在热带、半干旱地区和苔原也会少量分布。",
+    "stats": {
+      "ComfyTemperatureMin": "-35",
+      "MoveSpeed": "4.6",
+      "MarketValue": "200"
+    },
+    "parentName": "SZThingBaseFox"
+  },
+  {
+    "defName": "SZ_MeiGuoCha",
+    "label": "莓果茶",
+    "description": "\r\n      以莓果为材料酿造而成的莓果茶，需要在酿造台上制作，莓果茶是一种制作简单的娱乐饮品，同时具提神抗疲劳的功能。\\n\\n神州殖民地的人们喜欢在烈日炎炎的夏天或者劳累之际来上一杯这样的莓果茶，而莓果茶作为商品出售也能获得不错的利润，是很不错的一种娱乐用饮品。",
+    "texPath": "YongPin/MeiGuoCha",
+    "stats": {
+      "WorkToMake": "700",
+      "MarketValue": "24",
+      "Mass": "0.01",
+      "Nutrition": "0.4",
+      "Flammability": "0.2"
+    },
+    "parentName": "DrugPillBase"
+  },
+  {
+    "defName": "SZ_PiShuang",
+    "label": "砒霜药物",
+    "description": "\r\n      由雄黄粉提炼，经过处理后的砒霜药物，尽管砒霜具有剧毒，但将砒霜经过提取处理后依然可以少量药用。\\n\\n这种经过药用处理的砒霜能够作为药物服用，因为砒霜的药效很强，因此砒霜药物提供的作用时间同样也比较长，通常在20天左右，制作砒霜药物需要大量的雄黄粉作为原材料。\\n\\n因为砒霜药物在边缘世界十分罕见，因此一包砒霜药物往往能卖到很高的价钱。",
+    "texPath": "YongPin/PiShuangYao",
+    "stats": {
+      "WorkToMake": "700",
+      "MarketValue": "65",
+      "Mass": "0.01",
+      "Flammability": "0.5"
+    },
+    "parentName": "DrugPillBase"
+  },
+  {
+    "defName": "SZ_WuYiTea",
+    "label": "武夷岩茶",
+    "description": "\r\n      武夷岩茶具有绿茶之清香，红茶之甘醇，是神州乌龙茶中之极品。武夷岩因其有明显的岩骨花香，因此在被传播到边缘世界之后受到了广大殖民者们的喜爱。\\n\\n和其他茶类一样，殖民者在饮用武夷岩茶之后能够获得独特的心情和健康加成，武夷岩茶的制作也比较简单，只需要将茶叶在酿造台或中式炉灶上酿造即可。",
+    "texPath": "YongPin/WuYiYanCha",
+    "stats": {
+      "DeteriorationRate": "0.25",
+      "MarketValue": "25",
+      "Mass": "0.4",
+      "Flammability": "0.5",
+      "Nutrition": "0.35"
+    },
+    "parentName": "DrugBase"
+  },
+  {
+    "defName": "SZ_MaoShiTea",
+    "label": "鸭屎香",
+    "description": "\r\n      尽管鸭屎香仅从名字听上去就带有一股“异味”，但事实上鸭屎香是一种半发酵的乌龙茶，因其生长在神州的“鸭屎土”上而得名，因其制作相对简单，鸭屎香被传播到边缘世界后收到了平民阶级的喜爱。\\n\\n和其他茶类一样，殖民者在饮用武夷岩茶之后能够获得独特的心情和健康加成，鸭屎茶的制作也比较简单，只需要一些茶叶和一点素食在酿造台或中式炉灶上酿造即可。\\n\\n<color=#33d733>Tips：</color>很多茶商将大乌叶与鸭屎香混为一谈，其实不然，鸭屎香叶片明显比乌叶椭圆，叶底也有不同，主要辨别还是从香气上。鸭屎香香而深沉，大乌叶深而高扬。",
+    "texPath": "YongPin/MaoShiTea",
+    "stats": {
+      "DeteriorationRate": "0.25",
+      "MarketValue": "30",
+      "Mass": "0.4",
+      "Flammability": "0.5",
+      "Nutrition": "0.45"
+    },
+    "parentName": "DrugBase"
+  },
+  {
+    "defName": "SZ_QingGanTea",
+    "label": "青柑茶",
+    "description": "\r\n      由狮头柑和茶叶制作而成的青柑茶，在神州殖民地中，这种茶往往被视为最珍贵的饮用茶之一，殖民者通常会将狮头柑去其果肉和茶叶混合，在没任何添加剂的情况下，经生晒，半生晒制作而成。\\n\\n青柑茶可以提供更高的健康效果增益，同样，由于其需要更复杂的原料和工艺进行制作，它的市场价值也更高，因此青柑茶也成为了神州殖民地最畅销的商品之一。",
+    "texPath": "YongPin/Tea/QingGanTea",
+    "stats": {
+      "DeteriorationRate": "0.15",
+      "MarketValue": "35",
+      "Mass": "0.4",
+      "Flammability": "0.5",
+      "Nutrition": "0.6"
+    },
+    "parentName": "DrugBase"
+  },
+  {
+    "defName": "BaiGuoJiu",
+    "label": "白果酒",
+    "description": "\r\n      白果酒是一种以银杏果和草药为原料混合制得的药类饮品，一般在酿造台上制作，由于其具有轻微毒性和较差的口感，因此只作为预防性药物使用（尤其是肠胃较差的殖民者一定慎用），由于白果酒具有特殊功效，殖民者在享用白果酒后能够在一个月之内预防心脏病，阿尔茨海默病、哮喘、瞌睡病，并且能够获得极微的意识加成。但由于其具有微毒性和较差口感，因此殖民者也会获得小额的心情惩罚。\\n\\n由于其在制作工程中会损耗部分原料，因此不建议作为商品出售。（因为白果酒作为商品出售的利润率很低）\\n\\n白果酒的天然植物成分，完全保留了银杏中有效成分的功效，含丰富氨基酸，调节血脂，提高记忆力，清除体内自由基，改善手脚麻木、腰酸背痛等症状。银杏，被称为“植物活化石”，它含有的主要成分为黄酮苷和二萜内脂类及各种微量元素(如铬、钾)等元素，丰富的氨基酸、维生素等共计160多种有效成分。",
+    "texPath": "YongPin/BaiGuoJiu",
+    "stats": {
+      "WorkToMake": "1100",
+      "MarketValue": "36",
+      "Mass": "0.01",
+      "Flammability": "0.2"
+    },
+    "parentName": "DrugPillBase"
+  },
+  {
+    "defName": "FermentingBarrel_BaiGuoJiu",
+    "label": "白果酒蒸馏器",
+    "description": "用于对白果酒糊进行蒸馏发酵的装置，发酵后能够获得白果酒，（通常发酵时间在三到四天左右）由于这个装置在设计上遵循了一定的美学规则，因此它还能提供少量的美观度。",
+    "texPath": "Buildings/ZhengLiuBaiGuo/ZhengLiuBaiGuo",
+    "stats": {
+      "WorkToBuild": "1500",
+      "Mass": "20",
+      "Beauty": "8",
+      "MaxHitPoints": "200",
+      "Flammability": "0.5"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "BaiGuoJiuHu",
+    "label": "白果酒糊",
+    "description": "尚未发酵的白果酒，可以作为商品出售，由于其需要较多的材料，因此市场价格较高。也可以进一步在白果酒蒸馏器中发酵为白果酒，白果酒是一种能够预防各种疾病的药酒。",
+    "texPath": "CaiLiao/Wort_BaiGuo/WortBaiGuoHu",
+    "stats": {
+      "DeteriorationRate": "1.0",
+      "MarketValue": "25",
+      "WorkToMake": "1100",
+      "Mass": "0.8",
+      "Flammability": "0.2",
+      "MaxHitPoints": "60"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "SZ_ZangMilkCha",
+    "label": "藏式甜茶",
+    "description": "\r\n      对于对于边缘世界的神州居民来说，藏式甜茶是和酥油茶相齐名的饮品，藏式甜茶在藏语中被叫做“恰安莫”，它的制作方法简单，只需要牛奶和茶叶就能制作，对于品茶者来说，藏式甜茶所蕴含的不仅仅其中的独特香味，而更多浓缩在其中的则是一个地区特别的人间烟火。\\n\\n殖民者在享用藏式甜茶后能获得独特的心情和健康状态加成。",
+    "texPath": "YongPin/ZangCha",
+    "stats": {
+      "WorkToMake": "400",
+      "MarketValue": "32",
+      "Mass": "0.01",
+      "Nutrition": "0.5",
+      "Flammability": "0"
+    },
+    "parentName": "DrugPillBase"
+  },
+  {
+    "defName": "AiJiu",
+    "label": "艾灸棒",
+    "description": "\r\n      艾灸，中医针灸疗法中的灸法，点燃用艾叶制成的艾炷、艾条为主，熏烤人体的穴位以达到保健治病的一种自然疗法。艾灸棒可以在手工加工店或者是药物实验台上进行制作。\\n\\n这种艾灸棒可以自己使用，也可以帮助病人使用。在使用后可以缓解疼痛，提高血液循环和呼吸效率。一般持续12小时。同时，它还能够提供一定舒适度满足。\\n\\n另外需要注意的是，这种艾灸棒在边缘世界会受到特殊的影响，因此如果高频率使用会产生一定的副作用，一般建议一天最多使用一次。",
+    "texPath": "YongPin/AiJiuBang",
+    "stats": {
+      "WorkToMake": "350",
+      "MarketValue": "13",
+      "Mass": "0.06",
+      "DeteriorationRate": "3",
+      "Flammability": "1.25"
+    },
+    "parentName": "MakeableDrugBase"
+  },
+  {
+    "defName": "AiYe",
+    "label": "成熟艾叶",
+    "description": "由成熟的艾草收获而成，可以进一步加工成能够舒缓身体，缓解疼痛的艾灸棒，也可以作为原材料进行出售。",
+    "texPath": "Plants/ShuAiYe",
+    "stats": { "MarketValue": "1.8", "Flammability": "1.3" },
+    "parentName": "RoughPlantBase"
+  },
+  {
+    "defName": "Plant_AiYeZuoWu",
+    "label": "优质艾草植株",
+    "description": "\r\n      艾草是多年生草本或略成半灌木状植物，植株有浓烈香气。主根明显，略粗长，直径达1.5厘米，侧根多；常有横卧地下根状茎及营养枝。\\n\\n这种艾草已经被殖民者选择育种了很多个世纪，它的生长速度和收获量都要优于野生的艾草植株。",
+    "stats": { "MaxHitPoints": "75", "Nutrition": "0.1" },
+    "parentName": "AiCaoBase"
+  },
+  {
+    "defName": "Plant_YeShengAiCao",
+    "label": "野生艾草",
+    "description": "\r\n      艾草是多年生草本或略成半灌木状植物，植株有浓烈香气。主根明显，略粗长，直径达1.5厘米，侧根多；常有横卧地下根状茎及营养枝。\\n\\n这是野生的艾草，虽然它在野外生长的比较缓慢，并且对生长环境的要求也比较苛刻，但它仍然是比较珍贵的一种野生资源。",
+    "stats": { "MaxHitPoints": "7", "Nutrition": "0" },
+    "parentName": "AiCaoBase"
+  },
+  {
+    "defName": "YinXingGuo",
+    "label": "银杏果",
+    "description": "由人工栽培或野生的银杏树上获取，可以进一步加工成白果酒，也可以把它放在市场上出售，是很不错的植物类资源。腐烂速度较慢，但不能够作为食物食用。",
+    "texPath": "YinXingGuo/YinXingGuo",
+    "stats": { "MarketValue": "1.4", "Flammability": "1.3" },
+    "parentName": "RoughPlantBase"
+  },
+  {
     "defName": "Chi_Tangyuan",
     "label": "汤圆",
     "description": "\r\n      一碗经过精心烹调的汤圆，需要在传统炉灶上制作。它的营养值略高于原版精致食物，小人在吃了它之后会有特殊的心情收益。值得一提的是，任何阶层的人都不会拒绝这种美味的食物。\\n\\n汤圆，别称\"汤团\"\"浮元子\"，是汉族传统小吃的代表之一\r\n      。汤圆的皮就是糯米粉制成，糯米粉白色，可养肺，适合“白色养肺”的五色进补主题。因此在享用汤圆后，你可以获得一个小幅度的呼吸和移动加成。同时，汤圆也是中国的传统节日元宵节所最具有特色的食物，表达了古代人民对于幸福生活的一种向往和期盼。\\n\\n嘿，别只顾着享受汤圆的美味了，要记得常回家看看啊！",
@@ -505,5 +967,1873 @@
       "Mass": "0"
     },
     "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "Plant_LvDou",
+    "label": "绿豆作物",
+    "description": "\r\n      由神州农作物学家Jaron培育出的能够适应边缘世界气候的绿豆品种，在比较贫瘠的土壤也能缓慢生长。\\n\\n绿豆作物的生长周期较长，需要大半个季节，但收货量大，是神州地区的主要作物之一。\\n\\n最初，由于神州殖民地的居民不能适应边缘世界热带地区的气候，因此神州在热带地区建立的殖民地数量较少。但后来，随着绿豆作物和绿豆汤的引入，神州殖民者也有了抵抗酷暑的武器，对于一些殖民者来说，没有什么是比看到如绿色海洋般的一片成熟绿豆作物更让人舒心的了。",
+    "texPath": "Plants/LvDou",
+    "stats": { "MaxHitPoints": "80", "Nutrition": "0.3" },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "RawLvDou",
+    "label": "有机绿豆",
+    "description": "\r\n      收获后的有机绿豆，得益于科学家jaron的育种技术，收货后的有机绿豆的售价和营养价值较高，另外它也可以作为食材使用，也可以加工成粉条。\\n\\n神州殖民者通常会将收获后的绿豆制作成绿豆汤，以抵御暑气。",
+    "texPath": "PlantFood_Raw/LvDou",
+    "stats": {
+      "Nutrition": "0",
+      "MarketValue": "2",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawPlantBase"
+  },
+  {
+    "defName": "SZ_LvDouTang",
+    "label": "绿豆汤",
+    "description": "\r\n      一种不会成瘾的饭后茶点，可以满足殖民者的娱乐需求并提供一个防暑的健康增益。\\n\\n\\n<color=#33ff00>【内容补充】</color>\\n在旧神州星球上，由于各个地区的水质存在差异，因此殖民者煮出来的绿豆汤也是颜色各异。甚至有美食专家专门就绿豆汤是红色还是绿色展开了专项研究，但始终无法对其下一个准确的定论。\\n\\n而随着新的绿豆品种被农学家Jaron在5102年带到边缘世界，绿豆汤的颜色也不再会因为水质原因呈现出不同的颜色，因此，关于绿豆汤到底是什么颜色的争论便渐渐停息了下来。",
+    "texPath": "YongPin/LvDouTang",
+    "stats": {
+      "WorkToMake": "700",
+      "MarketValue": "16",
+      "Mass": "0.01",
+      "Nutrition": "0.45",
+      "Flammability": "0.3"
+    },
+    "parentName": "DrugPillBase"
+  },
+  {
+    "defName": "MeiCai",
+    "label": "优质梅菜",
+    "description": "\r\n      这是收获后的梅菜，经过晾晒、飘盐后能够保存很长的时间，它的营养值要比普通农作物要高得多，适合用于制作传统名菜或者作为其他佳肴的原料。\\n\\n梅菜是客家地区传统特产，色泽金黄，香气扑鼻，清甜爽口，不寒不燥不湿不热，被传为\"正气\"菜而久负盛名，在传播到边缘世界后很快便获得了大众的青睐。",
+    "texPath": "Plants/ShuMeiCai",
+    "stats": {
+      "Nutrition": "0",
+      "MarketValue": "1.4",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawPlantBase"
+  },
+  {
+    "defName": "Plant_YinXingGuoShu",
+    "label": "人工培育银杏果树",
+    "description": "\r\n      这是银杏树经过人工培育后基因变化后的变种，它几乎不产木料，这种树只能够通过人工种植，而且它的生长速度会更慢。经过人工的培育，它的美观度也很高。\\n\\n但会定期大量产出银杏果，银杏果是一种可以用于出售或加工为白果酒（白果酒在引用后会在一周内有效预防哮喘等疾病）的植物材料。\\n\\n银杏为银杏科、银杏属落叶乔木。银杏出现在几亿年前，是第四纪冰川运动后遗留下来的裸子植物中最古老的孑遗植物，现存活在世的银杏稀少而分散，上百岁的老树已不多见，和它同纲的所有其他植物皆已灭绝，所以银杏又有活化石的美称。变种及品种有:黄叶银杏、塔状银杏、裂银杏、垂枝银杏、斑叶银杏等26种。\\n\\n这种树木在公元2123年被“中国树木研究”号飞船带到边缘世界，美观度较高，生长期短，收获木材尚可，是一种性价比很高的“活化石”树木，在边缘林业中得到了很大的推广。通常生长在温带和寒带森林里。",
+    "texPath": "Plants/YinXingGuoShu/YinXingGuoShu",
+    "stats": {
+      "Beauty": "3",
+      "Nutrition": "1.5",
+      "MaxHitPoints": "200",
+      "Flammability": "0.8"
+    },
+    "parentName": "TreeGuoZi_ShouHuoBase"
+  },
+  {
+    "defName": "Plant_YinXing",
+    "label": "银杏树",
+    "description": "\r\n      这种银杏树在被传播到边缘世界后在常年的自然条件的影响下基因已经发生了变化，这种树生长在野外，不会产出银杏果，但会产出大量木料。一种银杏为银杏科、银杏属落叶乔木。银杏出现在几亿年前，是第四纪冰川运动后遗留下来的裸子植物中最古老的孑遗植物，现存活在世的银杏稀少而分散，上百岁的老树已不多见，和它同纲的所有其他植物皆已灭绝，所以银杏又有活化石的美称。变种及品种有:黄叶银杏、塔状银杏、裂银杏、垂枝银杏、斑叶银杏等26种。\\n\\n这种树木在公元2123年被“中国树木研究”号飞船带到边缘世界，美观度较高，生长期短，收获木材尚可，是一种性价比很高的“活化石”树木，在边缘林业中得到了很大的推广。通常生长在温带和寒带森林里。",
+    "texPath": "Plants/YinXing/YinXing",
+    "stats": { "Beauty": "10", "Nutrition": "1", "BeautyOutdoors": "10" },
+    "parentName": "DeciduousTreeBase"
+  },
+  {
+    "defName": "Plant_WuTong",
+    "label": "梧桐树",
+    "description": "\r\n      梧桐树，\"中国梧桐\"是梧桐科梧桐属的植物、别名青桐、桐麻，也属落叶大乔木，高达15米;树干挺直，树皮绿色，平滑。原产中国，南北各省都有栽培。\\n\\n梧桐生长快，美观度也好木材适合制造乐器，树皮可用于造纸和绳索，种子可食用或榨油（当然在游戏里面不行）。由于其树干光滑，叶大优美，是一种著名的观赏树种。中国古代传说凤凰\"非梧桐不栖\"。许多传说中的古琴都是用梧桐木制造的，梧桐对于中国文化有重要的作用。作家丰子恺的同名文章《梧桐树》堪称佳篇。梧桐已经被引种到欧洲、美洲等许多国家作为观赏树种。\\n\\n于公元2135年被“初恋”号科考船传播到边缘世界，（至于为什么叫“初恋”号，据说是和一名叫大蹇的人有关）现在分布于温带和寒带的森林。",
+    "texPath": "Plants/WuTong",
+    "stats": { "Beauty": "8", "Nutrition": "1", "BeautyOutdoors": "8" },
+    "parentName": "DeciduousTreeBase"
+  },
+  {
+    "defName": "Plant_HybridRice",
+    "label": "杂交水稻",
+    "description": "\r\n      杂交水稻指选用两个在遗传上有一定差异，同时它们的优良性状又能互补的水稻品种，进行杂交，生产具有杂种优势的第一代杂交种，用于生产，这就是杂交水稻。杂交水稻在传播到边缘世界之后也经常被人们称作“隆平水稻”，据说这是为了纪念一名对农业做出巨大贡献的科学家。\\n\\n在边缘世界里，尽管杂交水稻的生长周期更长，但它的产量更多，品种也更优。\\n\\n需要在传统水培箱种植，在陆地上也可以种植，但生长速度不高。",
+    "texPath": "Plants/ZaJiaoShuiDao",
+    "stats": { "MaxHitPoints": "85", "Nutrition": "0.18" },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "RawZongYe",
+    "label": "粽叶",
+    "description": "\r\n      粽叶，由芦苇草收获而得，一般作为粽子的制作原料，在必要的时候可以生吃，但味道很差。\\n\\n虽然其名为粽叶，但经过神州美食家们的不断改进，现在它也能作为其他菜肴的原料，由于粽叶在边缘世界并不常见，因此其市场价格也相对较高。",
+    "texPath": "PlantFood_Raw/LuWeiYe",
+    "stats": {
+      "MarketValue": "1.9",
+      "Nutrition": "0",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawPlantBase"
+  },
+  {
+    "defName": "RawZaJiaoShuiDao",
+    "label": "杂交水稻米",
+    "description": "\r\n      杂交水稻米，得益于农学家们的不懈努力，这种稻米的市场价值略高于普通稻米，而且更不容易腐烂，它的营养价值和稻米相当，可以作为诸多菜肴的原料。“稻花香里说丰年，听取蛙声一片。”",
+    "texPath": "PlantFood_Raw/ZaJiaoShuiDao",
+    "stats": {
+      "MarketValue": "1.7",
+      "Nutrition": "0",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawPlantBase"
+  },
+  {
+    "defName": "SZ_Plant_ChangShouHua",
+    "label": "野生长寿花",
+    "description": "\r\n      生长在野外的长寿花，这种花朵由神州殖民者引进到边缘世界，由于相较于同类花朵，这种野花的寿命较长，因此它在神州文化里也常常被赋予长寿的寓意。\\n\\n这种野花生长迅速，一般大量分布于野外，为周围的环境提供不错的美观度加成。",
+    "texPath": "Plants/Flowers/ChangShouHua",
+    "stats": {
+      "MaxHitPoints": "100",
+      "Beauty": "12",
+      "Nutrition": "0.4",
+      "BeautyOutdoors": "12"
+    },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "SZ_Plant_ShiTouGan",
+    "label": "狮头柑树",
+    "description": "\r\n      这种狮头柑树在神州世界有着和可可树一样的地位，它外观独特，可以反复收获，结出的果实能够像巧克力一样直接吃，还能够进一步制作成更有用的青柑茶。狮头柑树是神州地区非常重要的经济作物之一。\\n\\n经过神州殖民者的不断培育，边缘世界的狮头柑品种的生长周期更短，价值也更高。\\n\\n<color=#33d733>发展历史：</color>狮头柑树的种植技术在5225年被仲恺农业科技公司引进到边缘世界，它的推广过程在一开始显得并不怎么顺利，但经过多次选种改造后，仲恺农业科技公司培育出了适合边缘世界环境的狮头柑树，新培育出的狮头柑树生长更快，结出的果实也更香甜，很快，狮头柑便受到了边缘神州世界的一致好评，而仲恺农业科技公司也凭借狮头柑的成功一跃从一个默默无闻的小工作室成为了边缘世界最成功的农业发展公司之一。",
+    "texPath": "Plants/ShiTouGan",
+    "stats": { "Beauty": "10", "BeautyOutdoors": "10", "Nutrition": "1.9" },
+    "parentName": "TreeBase"
+  },
+  {
+    "defName": "SZ_ShiTouGan",
+    "label": "狮头柑",
+    "description": "\r\n      由狮头柑树收获而得，狮头柑耐储藏，酸甜适度，口感颇佳，品尝起来就像是加工的零食一样，因此受到了边缘世界人民的一致喜爱，它可以直接作为食物食用，也可以作为菜肴材料，不过人们一般都喜欢在放松的时候享用几个狮头柑作为零食享用。\\n\\n狮头柑还可以进一步加工成果脯或者青柑茶，是非常不错的植物产物。",
+    "texPath": "PlantFood_Raw/ShiTouGan/ShiTouGan",
+    "stats": {
+      "MaxHitPoints": "75",
+      "MarketValue": "2.5",
+      "Mass": "0.07",
+      "Flammability": "1.0",
+      "DeteriorationRate": "8",
+      "Nutrition": "0.15"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "SZ_Plant_Tea",
+    "label": "神州茶树",
+    "description": "\r\n      虽然被叫做“茶树”，但神州茶树其实是一种改良灌木，边缘世界的神州茶树最初由旧神州地区的茶树引进，经过改良后成为了一种完全适应边缘世界环境的经济作物。\\n\\n和传统的茶叶灌木相比，这种茶树生长周期更长，但可以反复收获，同样，它产出的茶叶量也更高。但是这种茶树对土壤的肥沃度要求也较高。",
+    "texPath": "Plants/ChaShu",
+    "stats": {
+      "MaxHitPoints": "85",
+      "Nutrition": "0.75",
+      "BeautyOutdoors": "2"
+    },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "VBE_RawTea",
+    "label": "茶叶",
+    "description": "由茶树收获的茶叶，可以用来酿茶，但是不能作为食物原料，由于茶叶的种植技术只由神州地区掌握，因此茶叶的价格比较高，因此将茶叶直接出售也是一个不错的选择。\\n\\n<color=#33d733>兼容说明：</color>为避免同类型物品重复，因此如果你使用了Vanilla\r\n      Brewing Expanded，里面的茶叶的相关数据已被本mod继承，因此此茶叶也可以制作Vanilla Expanded的相关物品。",
+    "texPath": "PlantFood_Raw/RawTea/RawTea",
+    "stats": { "MarketValue": "2.1", "Flammability": "1" },
+    "parentName": "RoughPlantBase"
+  },
+  {
+    "defName": "SZ_Building_PlantShuiPei",
+    "label": "传统水培箱",
+    "description": "\r\n      神州殖民者们研发出来的传统水培箱，在不需要电力的情况下就能够培育来自神州的特色植物，如芦苇，杂交水稻等，能够提供较高的土壤肥力。但由于该培育皿只含有水，因此陆生植物无法在其中生长。\\n\\n这种培育皿在设计时兼顾实用性和美观性，防火性也相对较好。",
+    "texPath": "Buildings/SZ_PlantShuiPei/ShuiPei",
+    "stats": {
+      "WorkToBuild": "800",
+      "Beauty": "4",
+      "MaxHitPoints": "60",
+      "Flammability": "0.3"
+    },
+    "parentName": "SZ_ShuiPeiBase"
+  },
+  {
+    "defName": "SZ_Building_ShuiTian",
+    "label": "水域种植网",
+    "description": "\r\n      神州殖民者们因地制宜设计出的水域种植网，通常铺设在河流或者泥地里，这种种植网铺设非常方便，不会着火。同样方便种植需要依靠水存活的植物如芦苇，杂交水稻等。\\n\\n其他的陆生植物无法在其中种植。",
+    "texPath": "Buildings/SZ_PlantShuiPei/ShuiTian",
+    "stats": {
+      "WorkToBuild": "400",
+      "Beauty": "3",
+      "MaxHitPoints": "30",
+      "Flammability": "0"
+    },
+    "parentName": "SZ_ShuiPeiBase"
+  },
+  {
+    "defName": "SZ_Plant_Ambrosia",
+    "label": "人工培育仙馐果树",
+    "description": "\r\n      期初，仙馐果树并不能进行人工培育，但经过神州农学家们的不懈努力后，仙馐果树已经被培育出可进行人工种植的品种。\\n\\n而这种仙馐果树就是可以进行人工种植的品种，但它需要在水培箱或原版水培系统中种植，需要精心照料，它的生长周期和野生仙馐树相比较长，但能收获更多的仙馐果。",
+    "texPath": "Things/Plant/Ambrosia",
+    "stats": { "MaxHitPoints": "120", "Nutrition": "0.4" },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "Plant_DaBaiCai",
+    "label": "神州有机白菜",
+    "description": "\r\n      由神州农作物学家Jaron培育出的新型有机白菜品种，和普通的农作物相比，它的营养值和作物价值更高，但是生长时间稍长，成熟后的有机白菜可以作为食材，也可以被放在酸菜缸中进一步发酵制作成酸菜。\\n\\n在神州殖民者到达边缘世界之前，由于边缘世界和神州星球的大气差异，当时还没有适合生长在边缘世界的白菜物种，因此本地的大厨也很难做出美味的酸菜美食来。而科学家Jaron经过实地考察采样，对种植环境进行了仔细的分析，终于培育出了适应边缘世界品种的有机白菜，在它的推广下，有机白菜已经成为了一些神州部落的主要作物之一。",
+    "texPath": "Plants/BaiCaiPlant",
+    "stats": { "MaxHitPoints": "70", "Nutrition": "0.2" },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "RawDaBaiCai",
+    "label": "优质有机白菜",
+    "description": "\r\n      收获后的优质有机白菜，得益于科学家的育种技术，收货后的有机白菜售价和营养价值较高，另外它也可以作为食材使用。\\n\\n神州殖民者通常会将收获后的白菜放入酸菜缸中，制得价值高，美味无比的酸菜。",
+    "texPath": "PlantFood_Raw/DaBaiCai",
+    "stats": {
+      "Nutrition": "0",
+      "MarketValue": "1.85",
+      "FoodPoisonChanceFixedHuman": "0"
+    },
+    "parentName": "ChiRawPlantBase"
+  },
+  {
+    "defName": "SZ_SuanCai",
+    "label": "酸菜",
+    "description": "\r\n      有机白菜在酸菜缸中经过腌制制得的酸菜，可以作为简易食物食用，也可以作为配料（素食）加入到美食的制作中，不管是直接食用还是作为食材添加到美食中，食用者都可以获得一定的心情加成。\\n\\n酸菜的保质期很长，一般可以储存上一年之久。\\n\\n在神州殖民地中，如果一个大厨没有几道拿手的酸菜美食，就得不到所有神州美食家的认可。",
+    "texPath": "Seasoning/SuanCai",
+    "stats": {
+      "MarketValue": "7.5",
+      "Nutrition": "0.35",
+      "Flammability": "1",
+      "MaxHitPoints": "8",
+      "Beauty": "1",
+      "Mass": "0",
+      "DeteriorationRate": "1"
+    },
+    "parentName": "Chi_FoodBase"
+  },
+  {
+    "defName": "FermentingBarrel_SuanCai",
+    "label": "酸菜腌制桶",
+    "description": "\r\n      用于腌制酸菜的桶，虽然腌制后的酸菜比较值钱，但殖民者需要保证腌制桶处于一个适宜的温度范围内，这样才能保证酸菜的酿造质量和速度。\\n\\n一般来说，一个规模较为庞大的神州殖民地都有一个专门的酸菜酿造室。",
+    "texPath": "Buildings_New/SZ_Work/SZ_SuanCaiTong/SZ_SuanCaiTong",
+    "stats": {
+      "WorkToBuild": "200",
+      "Mass": "30",
+      "Beauty": "5",
+      "MaxHitPoints": "300",
+      "Flammability": "0"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_JingJuZhanTai",
+    "label": "京剧放映机",
+    "description": "\r\n      一台京剧放映机，需要花费大量的材料建造，并且建造难度较高，它有着独特的放映功能和影响功能，美观度较高。\\n\\n它的功能分为外圈和内圈两种，当你在外圈这个大圆内的时候，你能够听到京剧绝美的戏腔并获得一个不错的心情收益。（至于音效部分我还在想怎么弄）而内圈则是一个电视机一样的观看范围，“在这里摆上一个椅子然后坐在上面欣赏我们的国粹京剧吧。”艺术家大蹇这样写到。在内圈你可以进行一项“看京剧”的娱乐活动，这是一种效力高，乐趣足的新娱乐类型。\\n\\n京剧流播全国，影响甚广，有\"国剧\"之称。以梅兰芳命名的京剧表演体系被视为东方戏剧表演体系的代表，为世界三大表演体系之一。京剧是中华民族传统文化的重要表现形式，其中的多种艺术元素被用作中国传统文化的象征符号。\\n\\n由一名叫做“大蹇”的艺术家将其内容编成录像带并做成放映机传播到边缘世界。由于京剧十分精彩，因此你只需要坐下来看一会就能够满足你的娱乐需求，尽情欣赏它吧！另外，在病房里放一个这样的机器也是一个不错的选择！",
+    "texPath": "Buildings/JingJuTai/JingJuTai",
+    "stats": {
+      "MarketValue": "700",
+      "MaxHitPoints": "300",
+      "Flammability": "0",
+      "Beauty": "200",
+      "Mass": "10",
+      "WorkToBuild": "5000",
+      "JoyGainFactor": "1.25"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "ZhuanZhuo",
+    "label": "中式旋转餐桌（3x3）",
+    "description": "\r\n      这种旋转餐桌被神州文明研发并推广至边缘世界，它采用了现代旋转式设计，同时又将神州特有文化渲染了出来。每当逢年过节时，这种桌子总是市场里最抢手的家具之一。\\n\\n殖民者在转桌附近会提高供餐速度。",
+    "texPath": "JiaJu/ZhuoZiXuanZhuan/ZhuoZiXuanZhuan",
+    "stats": {
+      "MaxHitPoints": "150",
+      "WorkToBuild": "18000",
+      "Mass": "20",
+      "Flammability": "0.5",
+      "Beauty": "37"
+    },
+    "parentName": "TableGatherSpotBase"
+  },
+  {
+    "defName": "ZhongHuaJiaJu_Chuang",
+    "label": "明式架子床",
+    "description": "\r\n      一种极具中华特色的床，因为其装饰风格独具特色，另外来自神州的设计者在兼顾其美观的同时又采用了一些工学设计，使得这种架子床成为备受殖民者青睐的室内家具。\\n\\n床的前后印有神州特色的花纹，这是神州艺术的象征，同时这个床休息效率高，并且能够满足各种头衔房间的需求。",
+    "texPath": "XFXF/JiaZiChuang",
+    "stats": {
+      "MaxHitPoints": "350",
+      "Flammability": "0.3",
+      "WorkToBuild": "20000",
+      "Mass": "75",
+      "Beauty": "45",
+      "BedRestEffectiveness": "1.35",
+      "Comfort": "1.2",
+      "ImmunityGainSpeedFactor": "1.1",
+      "SurgerySuccessChanceFactor": "1"
+    },
+    "parentName": "ArtableBedBase"
+  },
+  {
+    "defName": "SZ_LuoHanChuangYi",
+    "label": "罗汉床椅",
+    "description": "\r\n      一种简易但古老的床椅，通常作为椅子使用，它来自于神州母国，这种床体型较大，又中间肚皮形似罗汉皮，虽然从外观上看，它的设计和建造十分简单，但其巧妙的设计仍然为这个家具提供了不错的美观度。\\n\\n虽然罗汉床形似凳子，但它仍然属于卧具的一种，因此这种简单的家具仍然适合放在工作间或条件简陋的房间仍然可以作为床使用，只是休息效率稍微低了一些。\\n\\n尽管罗汉床椅能够提供不错的舒适度和美观度加成，但贵族们还是喜欢将更精贵一些的家具当做他们的床。",
+    "texPath": "Buildings_New/SZ_XuanRan/LuoHanChuang/LuoHanDi",
+    "stats": {
+      "MaxHitPoints": "120",
+      "Flammability": "0.7",
+      "WorkToBuild": "3000",
+      "Mass": "40",
+      "Beauty": "14",
+      "BedRestEffectiveness": "0.95",
+      "Comfort": "0.8",
+      "ImmunityGainSpeedFactor": "0.9",
+      "SurgerySuccessChanceFactor": "0.9"
+    },
+    "parentName": "ArtableBedBase"
+  },
+  {
+    "defName": "SZ_DianLiKangA",
+    "label": "电力智能炕（3x2)",
+    "description": "\r\n      （和篝火一样，炕的温度不可调节，但具有加热功能）\\n\\n由神州传统炕发展而来，它不仅可以作为多人床铺，（同样还具有椅子的功能）还可以作为一个大号且省电的加热器使用，尽管它看上去不是非常美观，而且贵族们也看不上这种建筑，同样，这种床完全不能作为医疗床使用，但这种炕是普通神州家庭中最常见的家具之一，尤其是在冬天的时候，舒适且暖和的炕可比一个加热器要有用得多。（而且这种智能炕不会像加热器一样故障）\\n\\n<color=#33d733>Tips：</color>殖民者在炕上的休息效率要比普通床高一点，电力智能炕可以像篝火一样加热房间，炕越大，加热效率就越高，但能耗会略微提高。",
+    "texPath": "JiaJu/Kang/DianLiKangDuan",
+    "stats": {
+      "MaxHitPoints": "200",
+      "Flammability": "0",
+      "WorkToBuild": "7000",
+      "Mass": "80",
+      "Beauty": "4",
+      "BedRestEffectiveness": "1.1",
+      "Comfort": "0.85",
+      "ImmunityGainSpeedFactor": "0.8",
+      "SurgerySuccessChanceFactor": "0.8"
+    },
+    "parentName": "ArtableBedBase"
+  },
+  {
+    "defName": "SZ_RanLiaoKangA",
+    "label": "传统炕（3x2)",
+    "description": "\r\n      （和篝火一样，炕的温度不可调节，但具有加热功能）\\n\\n神州地区最古老的炕，它完全由石砖建造而成，（具有椅子的功能）它和古神州的炕相比起来没有什么差异，但是它的燃料效率更好，同样，干草和化学燃料也可以作为这种炕的燃料，尽管它看上去不是非常美观，而且贵族们也不喜欢这种单调的砖头家具，但它是神州北方最常见的家具之一，对于神州居民而言，在寒冷的冬天里躺在一个温暖的炕上是一件无比幸福的事情。\\n\\n<color=#33d733>Tips：</color>殖民者在炕上的休息效率要比普通床高一点，只要燃料充足，传统炕就可以像篝火一样加热房间，炕越大，加热效率就越高，但能耗会略微提高。",
+    "texPath": "JiaJu/Kang/RanLiaoKangDuan",
+    "stats": {
+      "MaxHitPoints": "300",
+      "Flammability": "0",
+      "WorkToBuild": "4000",
+      "Mass": "90",
+      "Beauty": "3",
+      "BedRestEffectiveness": "1.1",
+      "Comfort": "0.8",
+      "ImmunityGainSpeedFactor": "0.8",
+      "SurgerySuccessChanceFactor": "0.8"
+    },
+    "parentName": "ArtableBedBase"
+  },
+  {
+    "defName": "SZ_RanLiaoKangB",
+    "label": "传统炕（5x2)",
+    "description": "\r\n      （和篝火一样，炕的温度不可调节，但具有加热功能）\\n\\n神州地区最古老的炕，它完全由石砖建造而成，（具有椅子的功能）它和古神州的炕相比起来没有什么差异，但是它的燃料效率更好，同样，干草和化学燃料也可以作为这种炕的燃料，尽管它看上去不是非常美观，而且贵族们也不喜欢这种单调的砖头家具，但它是神州北方最常见的家具之一，对于神州居民而言，在寒冷的冬天里躺在一个温暖的炕上是一件无比幸福的事情。\\n\\n<color=#33d733>Tips：</color>殖民者在炕上的休息效率要比普通床高一点，只要燃料充足，传统炕就可以像篝火一样加热房间，炕越大，加热效率就越高，但能耗会略微提高。",
+    "texPath": "JiaJu/Kang/RanLiaoKangChang",
+    "stats": {
+      "MaxHitPoints": "400",
+      "Flammability": "0",
+      "WorkToBuild": "6000",
+      "Mass": "200",
+      "Beauty": "5",
+      "BedRestEffectiveness": "1.1",
+      "Comfort": "0.8",
+      "ImmunityGainSpeedFactor": "0.8",
+      "SurgerySuccessChanceFactor": "0.8"
+    },
+    "parentName": "ArtableBedBase"
+  },
+  {
+    "defName": "SZ_DianLiKangB",
+    "label": "电力智能炕（5x2)",
+    "description": "\r\n      （和篝火一样，炕的温度不可调节，但具有加热功能）\\n\\n由神州传统炕发展而来，它不仅可以作为多人床铺，还可以作为一个大号且省电的加热器使用，（同样还具有椅子的功能）尽管它看上去不是非常美观，而且贵族们也看不上这种建筑，同样，这种床完全不能作为医疗床使用，但这种炕是普通神州家庭中最常见的家具之一，尤其是在冬天的时候，舒适且暖和的炕可比一个加热器要有用得多。（而且这种智能炕不会像加热器一样故障）\\n\\n<color=#33d733>Tips：</color>殖民者在炕上的休息效率要比普通床高一点，电力智能炕可以像篝火一样加热房间，炕越大，加热效率就越高，但能耗会略微提高。",
+    "texPath": "JiaJu/Kang/DianLiKangChang",
+    "stats": {
+      "MaxHitPoints": "350",
+      "Flammability": "0",
+      "WorkToBuild": "15000",
+      "Mass": "130",
+      "Beauty": "6",
+      "BedRestEffectiveness": "1.12",
+      "Comfort": "0.9",
+      "ImmunityGainSpeedFactor": "0.83",
+      "SurgerySuccessChanceFactor": "0.83"
+    },
+    "parentName": "ArtableBedBase"
+  },
+  {
+    "defName": "SZ_MiGang",
+    "label": "米缸",
+    "description": "\r\n      用于储存精米面或者糯米粉（稻米和杂交水稻米）的米缸。美观度加成高，储存的物品不会老化和腐烂。\\n储存量：750\\n\\n\\n\\n\\n\\n\\n<color=#33ff00>【内容补充】</color>\\n米缸采用了传统的蒸发保鲜的方法，只需要放入少量木材或者干草就能够保持米缸的保鲜功能，通常这些材料能够维持米缸的保鲜功能很长一段时间。",
+    "texPath": "Buildings_New/SZ_Misc/MiGang/MiGang",
+    "stats": {
+      "MaxHitPoints": "70",
+      "Mass": "10",
+      "WorkToBuild": "1200",
+      "Flammability": "0",
+      "Beauty": "10"
+    },
+    "parentName": "ArtableFurnitureBase"
+  },
+  {
+    "defName": "SZ_YiGui",
+    "label": "中式衣柜",
+    "description": "\r\n      储存衣物的衣柜，一次可以储存多件衣服。\\n\\n\\n\\n\\n<color=#33ff00>【内容补充】</color>\\n一个衣柜由神州殖民者设计出的中式衣柜，上面雕刻着各种精美的花纹，能够为房间提供不错的美观度加成，链接在床边时还能提高对应床的休息效率，放在任何房间都非常合适。\\n\\n经过神州殖民者的设计，这个衣柜还能够装少量衣物，非常实用。",
+    "texPath": "JiaJu/YiGui/YiGui",
+    "stats": {
+      "MaxHitPoints": "150",
+      "Mass": "30",
+      "WorkToBuild": "5000",
+      "Flammability": "1.0",
+      "Beauty": "12"
+    },
+    "parentName": "ArtableFurnitureBase"
+  },
+  {
+    "defName": "SZ_CaiJiao",
+    "label": "白菜窖",
+    "description": "\r\n      储存酸菜和白菜的地窖。里面储存的食物不会老化和腐烂。\\n储存量：5700\\n\\n\\n\\n<color=#33ff00>【内容补充】</color>\\n神州菜窖是大部分神州温带的地区的常见建筑，冬季，为了防止白菜或酸菜受冻，神州殖民者通常会造几个地窖用于储存它们。\\n\\n菜窖是神州居民的独特发明，它不用供暖，只需要在菜窖中放置几缸水便可以让菜窖处于一个合适的温度当中，尽管冷库已经在神州殖民地得到普及，但菜窖仍然在神州居民的生活中扮演着重要的角色。",
+    "texPath": "Buildings_New/SZ_CaiJiao/SZ_CaiJiao",
+    "stats": {
+      "MaxHitPoints": "250",
+      "WorkToBuild": "20000",
+      "Mass": "15",
+      "Flammability": "0",
+      "Beauty": "50"
+    },
+    "parentName": "FurnitureWithQualityBase"
+  },
+  {
+    "defName": "Chi_Cooker",
+    "label": "高效传统燃料炉灶",
+    "description": "\r\n      通过先进仿制技术制成的高效木柴炉灶这种炉灶非常节约燃料，并且可以略微提高工作速度。另外，干草，化合燃料也可以作为燃料。这个炉灶最初被“神州”文明所研发并被推广到了边缘世界。",
+    "texPath": "Buildings/DA1_Cook/DA1_Cook",
+    "stats": {
+      "WorkToBuild": "2500",
+      "MaxHitPoints": "180",
+      "Flammability": "0",
+      "WorkTableWorkSpeedFactor": "1.25",
+      "Mass": "20"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "Chi_Cooker_New",
+    "label": "中式电力炉灶",
+    "description": "\r\n      通过先进仿制技术制成的现代中华炉灶，最初由“神州”设计出来，这样具有内部发电装置，在缺乏电力的情况下也能低效率工作，这样的炉灶即便放在闪耀世界也是一件令人惊艳的创造。\\n\\n这个炉灶在以传统炉灶为原型的情况下，改善了炉灶的内部结构并提高了提工作效率。",
+    "texPath": "Buildings/DA1_CookNew/DA1_CookNew",
+    "stats": {
+      "WorkToBuild": "2500",
+      "MaxHitPoints": "180",
+      "Flammability": "1.0",
+      "WorkTableWorkSpeedFactor": "1.75",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "HuangJiu",
+    "label": "黄酒",
+    "description": "\r\n      一种来自神州文明母国的美酒，拥有十分悠长的历史。在神州殖民地是非常常见的娱乐品，也被称为“液体蛋糕”。\\n\\n和所有神州酒类一样，由于神州殖民者在酿造过程中加入了特殊的草本原料，黄酒不容易使人上瘾，并且对人体健康系统的危害也相对较小，但一旦成瘾就更难戒除。\\n\\n黄酒的酿造采用神州文明母国的传统酿造办法，殖民者需要将糯米先发酵后得到黄酒酒糊再放进专门的酿造桶进行酿造，黄酒的酿造时间和啤酒相似，属于低度酿造酒，市场价值比较可观。",
+    "texPath": "YongPin/HuangJiu",
+    "stats": {
+      "DeteriorationRate": "0.5",
+      "MarketValue": "28",
+      "Mass": "0.35",
+      "Flammability": "0.3",
+      "Nutrition": "0.15"
+    },
+    "parentName": "SZDrugsBase"
+  },
+  {
+    "defName": "BaiJiu",
+    "label": "白酒",
+    "description": "\r\n      一种来自神州文明母国的美酒，拥有十分悠长的历史。在神州殖民地是非常常见的娱乐品，也是最著名的蒸馏酒类之一。\\n\\n尽管采用了神州传统的酿造方法，但白酒和黄酒这些低度酿造酒相比，更容易使人上瘾，但一瓶白酒所提供的兴奋度要远高于黄酒等低度酿造酒，娱乐效果也更强。\\n\\n白酒的酿造采用神州文明母国的传统酿造办法，殖民者需要将玉米或者混合苏实干先发酵后得到白酒酒糊再放进专门的酿造桶进行酿造。\\n\\n由于酿造时间较长，同样要消耗不少材料，因此白酒的市场价值较高。",
+    "texPath": "YongPin/BaiJiu",
+    "stats": {
+      "DeteriorationRate": "0.5",
+      "MarketValue": "41",
+      "Mass": "0.35",
+      "Flammability": "0.4",
+      "Nutrition": "0.2"
+    },
+    "parentName": "SZDrugsBase"
+  },
+  {
+    "defName": "BaiJiuWort",
+    "label": "白酒发酵物",
+    "description": "\r\n      将玉米干或素食淀粉干混合后的初步产物，需要进一步放在发酵桶内发酵，当然也可以将它作为初步产品出售，虽然利润非常低。\\n\\n得益于神州殖民者们的改进，白酒发酵物已经做了初步的处理，因此它能够保存较长的时间。",
+    "texPath": "PlantFood_Raw/BaiJiuFaJiaoWu",
+    "stats": {
+      "DeteriorationRate": "0.7",
+      "MarketValue": "30",
+      "Mass": "0.8",
+      "Flammability": "0.2",
+      "MaxHitPoints": "70"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "HuangJiuWort",
+    "label": "黄酒发酵物",
+    "description": "\r\n      将糯米或淀粉质混合后的初步产物，需要进一步放在发酵桶内发酵，当然也可以将它作为初步产品出售，虽然利润非常低。\\n\\n得益于神州殖民者们的改进，黄酒发酵物已经做了初步的处理，因此它能够保存较长的时间。",
+    "texPath": "PlantFood_Raw/HuangJiuFaJiaoWu",
+    "stats": {
+      "DeteriorationRate": "0.65",
+      "MarketValue": "18.5",
+      "Mass": "0.8",
+      "Flammability": "0.2",
+      "MaxHitPoints": "70"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "SZ_XiangQiA",
+    "label": "象棋板凳雕塑-红",
+    "texPath": "Buildings_New/SZ_Artable/XiangQiLei/XiangQiHong",
+    "stats": {
+      "MaxHitPoints": "70",
+      "Mass": "2",
+      "SellPriceFactor": "1.25",
+      "Beauty": "30",
+      "Comfort": "0.75",
+      "WorkToMake": "5000",
+      "StyleDominance": {
+        "_": "10",
+        "$": { "MayRequire": "Ludeon.RimWorld.Ideology" }
+      }
+    },
+    "parentName": "SZXiangQiBase"
+  },
+  {
+    "defName": "SZ_XiangQiB",
+    "label": "象棋板凳雕塑-黑",
+    "texPath": "Buildings_New/SZ_Artable/XiangQiLei/XiangQiHei",
+    "stats": {
+      "MaxHitPoints": "7",
+      "Mass": "2",
+      "SellPriceFactor": "1",
+      "Beauty": "3",
+      "Comfort": "0",
+      "WorkToMake": "5"
+    },
+    "parentName": "SZXiangQiBase"
+  },
+  {
+    "defName": "SZ_HuoPen",
+    "label": "中式照明雕笼",
+    "description": "\r\n      照明用的雕笼，通常放在室外作为照明用的装饰灯具使用，放在室内也具有照明和装饰的效果，是神州文明常见的装饰性灯具。\\n\\n由于照明雕笼采用神州了节能式燃料设置，因此为其更换材料的频率较长，维护较为方便，同样雕笼还能提供不错的美观度加成，是很实用的装饰性家具。\\n\\n雕笼的燃料和照明不会受雨天影响，同样，干草和汽油也能作为燃料使用。\\n\\n目前这个雕笼由于其设计风格上与星际皇族不符合，因此不能满足皇权对于火盆的需求。",
+    "texPath": "Buildings_New/SZ_JiaJu/HuoPen/HuoPen",
+    "stats": {
+      "MaxHitPoints": "150",
+      "WorkToBuild": "2500",
+      "Flammability": "0",
+      "Mass": "15",
+      "Beauty": "12",
+      "MeditationFocusStrength": "0.0"
+    },
+    "parentName": "FurnitureBase"
+  },
+  {
+    "defName": "SZ_YuanBaoChair",
+    "label": "元宝凳",
+    "description": "\r\n      从外观来看，这种板凳就像元宝一样，给人一种独特的新鲜感，实际上，这种元宝板凳不仅能作为舒适的座椅使用，还是很好的装饰品，它能够提供不错的美观加成，对于商人而言，一个拥有不错品质的板凳能卖到一个很好的价钱。\\n\\n神州殖民地的居民喜欢在春节时往家里摆上一两个这样的凳子，以祈愿在新的一年里财源广进，步步高升。",
+    "texPath": "Buildings_New/SZ_JiaJu/YuanBao/YuanBao",
+    "stats": {
+      "MaxHitPoints": "150",
+      "WorkToBuild": "15000",
+      "Mass": "6",
+      "Flammability": "0",
+      "Beauty": "16",
+      "SellPriceFactor": "1.1",
+      "Comfort": "0.8"
+    },
+    "parentName": "ArtableFurnitureBase"
+  },
+  {
+    "defName": "MaJiangYi",
+    "label": "宋代藤椅（长）",
+    "description": "\r\n      一种可以提供高舒适度和一定美观度的中华传统藤椅。一般和麻将桌、京剧放映机或者另外一些娱乐设施搭配使用并可以提高这些娱乐设施的娱乐效力。当然把它放在其他地方（如餐桌旁）也是一个很不错的选择。\\n\\n和藤椅搭配使用的特定娱乐设施最多能够使范围内的四把藤椅为其提供娱乐效力加成。",
+    "texPath": "Buildings/TengYi/TengYi",
+    "stats": {
+      "MaxHitPoints": "250",
+      "WorkToBuild": "14000",
+      "Mass": "12",
+      "Flammability": "1.0",
+      "Beauty": "18",
+      "Comfort": "0.9"
+    },
+    "parentName": "SZJiaJuBase"
+  },
+  {
+    "defName": "MaJiangYi_Short",
+    "label": "宋代藤椅（短）",
+    "description": "\r\n      一种可以提供高舒适度和一定美观度的中华传统藤椅。短藤椅和长藤椅不同，它不能为特定娱乐提供娱乐效力，但是把它放在餐厅或者其他缺乏美观度的工作室是一个很不错且省空间的选择。",
+    "texPath": "Buildings/TengYi/TengYiShort",
+    "stats": {
+      "MaxHitPoints": "100",
+      "WorkToBuild": "7000",
+      "Mass": "6",
+      "Flammability": "1.0",
+      "Beauty": "11",
+      "Comfort": "0.85"
+    },
+    "parentName": "SZJiaJuBase"
+  },
+  {
+    "defName": "XiangQiTable",
+    "label": "中国象棋桌",
+    "description": "\r\n      一个精美的象棋桌，就像西方扑克或者国际象棋桌一样，象棋也是中国传统的益智游戏之一，小人在使用象棋时能够获得不错且更高效的娱乐和智识收益，同样，象棋桌采用美观大方的设计，它也能作为一个很不错的艺术品。\\n\\n中国象棋起源于中国，国际象棋也和中国离不开关系，是非常有意思的娱乐工具。",
+    "texPath": "Buildings/Joy_XiangQi/XiangQi",
+    "stats": {
+      "MaxHitPoints": "120",
+      "WorkToBuild": "14000",
+      "Mass": "8",
+      "Flammability": "0.8",
+      "Beauty": "20",
+      "JoyGainFactor": "1.25"
+    },
+    "parentName": "FurnitureWithQualityBase"
+  },
+  {
+    "defName": "DengLong_Red",
+    "label": "灯笼（红）",
+    "description": "\r\n      灯笼通常需要木材和布片以及少量钢铁进行制作，它能够提供不错的美观度并为床或者其他家具提供舒适度和美观加成，一般一个房间可以连接两盏同颜色的灯笼。并且由于其采用类似长明灯的设计，因此它不需要电或者燃料就可以提供照明，灯笼有几种照明的颜色，不管哪种颜色的灯笼放在室内都会显得美观大方。\\n\\n中国灯笼又统称为灯彩，是一种古老的汉族传统工艺品。起源于西汉时期，每年的农历正月十五元宵节前后，人们都挂起象征团圆意义的红灯笼，来营造一种喜庆的氛围。",
+    "texPath": "JiaJu/DengLong/DengLong_Red",
+    "stats": { "Mass": "5" },
+    "parentName": "CaiDengLongBase"
+  },
+  {
+    "defName": "DengLong_Blue",
+    "label": "微光灯笼",
+    "description": "\r\n      和其他的灯笼不一样，这种灯笼散发出的是鬼火般的幽光，它的照明范围远不如普通的灯笼，与其叫它灯笼，不如把它称作“长明灯”更为贴切，它适合那些喜欢在微光下工作的殖民者使用——当然，也适合放在幽暗的地宫内。",
+    "texPath": "JiaJu/DengLong/DengLong_Blue",
+    "stats": { "Mass": "5" },
+    "parentName": "CaiDengLongBase"
+  },
+  {
+    "defName": "DengLong_Yellow",
+    "label": "灯笼（黄）",
+    "description": "\r\n      灯笼通常需要木材和布片以及少量钢铁进行制作，它能够提供不错的美观度并为床或者其他家具提供舒适度加成，一般一个房间可以连接两盏同颜色的灯笼。并且由于其采用类似长明灯的设计，因此它不需要电或者燃料就可以提供照明，灯笼有几种照明的颜色，不管哪种颜色的灯笼放在室内都会显得美观大方。\\n\\n中国灯笼又统称为灯彩，是一种古老的汉族传统工艺品。起源于西汉时期，每年的农历正月十五元宵节前后，人们都挂起象征团圆意义的红灯笼，来营造一种喜庆的氛围。",
+    "texPath": "JiaJu/DengLong/DengLong_Yellow",
+    "stats": { "Mass": "5" },
+    "parentName": "CaiDengLongBase"
+  },
+  {
+    "defName": "DengLong_White",
+    "label": "灯笼（白）",
+    "description": "\r\n      灯笼通常需要木材和布片以及少量钢铁进行制作，它能够提供不错的美观度并为床或者其他家具提供舒适度加成，一般一个房间可以连接两盏同颜色的灯笼。并且由于其采用类似长明灯的设计，因此它不需要电或者燃料就可以提供照明，灯笼有几种照明的颜色，不管哪种颜色的灯笼放在室内都会显得美观大方。\\n\\n中国灯笼又统称为灯彩，是一种古老的汉族传统工艺品。起源于西汉时期，每年的农历正月十五元宵节前后，人们都挂起象征团圆意义的红灯笼，来营造一种喜庆的氛围。",
+    "texPath": "JiaJu/DengLong/DengLong_White",
+    "stats": { "Mass": "5" },
+    "parentName": "CaiDengLongBase"
+  },
+  {
+    "defName": "ChiTableB",
+    "label": "中式桌子（1x2）",
+    "description": "\r\n      由中式设计理念制作出的桌子，设计独特，小巧精致。在椅子的正中央和两侧均印有中式传统图案。适合放置于任何场合。\\n\\n虽然它和同等大小的普通桌子相比需要消耗更多材料，但它提供的美观度却十分可观。另外，由于其结构较为复杂，因此建造时需要耗费较多精力。",
+    "texPath": "JiaJu/ZhuoZiA/ZhuoZiA",
+    "stats": {
+      "MaxHitPoints": "75",
+      "WorkToBuild": "4000",
+      "Mass": "7",
+      "Flammability": "1.0",
+      "Beauty": "9"
+    },
+    "parentName": "TableGatherSpotBase"
+  },
+  {
+    "defName": "ChiTableC",
+    "label": "中式桌子（2x2）",
+    "description": "\r\n      由中式设计理念制作出的桌子，设计独特，小巧精致。在椅子的正中央和两侧均印有中式传统图案。适合放置于任何场合。\\n\\n虽然它和同等大小的普通桌子相比需要消耗更多材料，但它提供的美观度却十分可观。另外，由于其结构较为复杂，因此建造时需要耗费较多精力。",
+    "texPath": "JiaJu/ZhuoZiB/ZhuoZiB",
+    "stats": {
+      "MaxHitPoints": "110",
+      "WorkToBuild": "6000",
+      "Mass": "12",
+      "Flammability": "1.0",
+      "Beauty": "17"
+    },
+    "parentName": "TableGatherSpotBase"
+  },
+  {
+    "defName": "ChiTableSA",
+    "label": "中式桌子（1x1）",
+    "description": "\r\n      由中式设计理念制作出的桌子，设计独特，小巧精致。在椅子的正中央和两侧均印有中式传统图案。适合放置于任何场合。\\n\\n虽然它和同等大小的普通桌子相比需要消耗更多材料，但它提供的美观度却十分可观。另外，由于其结构较为复杂，因此建造时需要耗费较多精力。",
+    "texPath": "JiaJu/ZhuoZiB/ZhuoZiSmall",
+    "stats": {
+      "MaxHitPoints": "70",
+      "WorkToBuild": "3000",
+      "Mass": "7",
+      "Flammability": "1.0",
+      "Beauty": "8"
+    },
+    "parentName": "TableGatherSpotBase"
+  },
+  {
+    "defName": "ChiTableD",
+    "label": "中式桌子（3x3）",
+    "description": "\r\n      由中式设计理念制作出的桌子，设计独特，小巧精致。在椅子的正中央和两侧均印有中式传统图案。适合放置于任何场合。\\n\\n虽然它和同等大小的普通桌子相比需要消耗更多材料，但它提供的美观度却十分可观。另外，由于其结构较为复杂，因此建造时需要耗费较多精力。",
+    "texPath": "JiaJu/ZhuoZiC/ZhuoZiC",
+    "stats": {
+      "MaxHitPoints": "180",
+      "WorkToBuild": "12000",
+      "Mass": "15",
+      "Flammability": "1.0",
+      "Beauty": "40"
+    },
+    "parentName": "TableGatherSpotBase"
+  },
+  {
+    "defName": "ChiTableE",
+    "label": "中式供桌（1x3）",
+    "description": "\r\n      神州文明一般用于祭祀的桌子，经过设计和改进后也能作为餐桌使用，在神州殖民者喜欢在这种桌子上摆放一些香案和贡品来纪念自己的先祖或是一些神明，对于他们来说，这种祭祀工作也是十分重要的。\\n\\n供桌既是不错的装饰品，也是很实用的一种餐桌，由于其仍具有一定的祭祀功能，因此殖民者可以在供桌前进行冥想。\\n\\n供桌还可以提高神州建筑冥想效率，例如佛像、神州雕塑等。",
+    "texPath": "Buildings_New/SZ_JiaJu/GongZhuo/GongZhuo",
+    "stats": {
+      "MaxHitPoints": "180",
+      "WorkToBuild": "7500",
+      "Mass": "10",
+      "Flammability": "1.0",
+      "Beauty": "25"
+    },
+    "parentName": "TableGatherSpotBase"
+  },
+  {
+    "defName": "SZ_FoXiang",
+    "label": "庄严佛像",
+    "description": "\r\n      神州风格的佛像，这种佛像一般出现在神州殖民者的祭祀场所，在一些神州大户宅院里也有出现，神州殖民者将这种佛像当做自然的象征，并且每月都会对这个佛像进行祭拜，以求大自然保佑他们的庄稼长势顺利。\\n\\n由于这个佛像和大自然有着很强的联系，因此就算是敌人也会对建造好的佛像敬而远之，它既是美观的装饰品，又是庄严的自然冥想建筑。\\n\\n神州大雕塑能够提高其冥想效果。",
+    "texPath": "Buildings_New/SZ_Misc/FoXiang/FoXiang",
+    "stats": {
+      "SellPriceFactor": "1.10",
+      "MaxHitPoints": "350",
+      "WorkToBuild": "36000",
+      "Beauty": "100",
+      "Flammability": "1.0",
+      "MeditationFocusStrength": "0.38",
+      "Mass": "50"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_LongSofa",
+    "label": "中式书院沙发",
+    "description": "\r\n      尽管古神州文明没有“沙发”这个概念，但现代的神州殖民者们将这种外来家具经过改进之后发展出了属于自己风格的沙发，他们将这种沙发成为“书院沙发”。\\n\\n这种中式沙发之所以叫做“书院沙发”，是因为这种沙发不仅出现在普通的神州居室，更是他们祭祀仪式中不可缺少的建筑。\\n\\n这种沙发提供的美观度和舒适度都很不错，但建造时需要用到的材料也更多。",
+    "texPath": "Buildings_New/SZ_Sofa/SZ_Sofa",
+    "stats": {
+      "MaxHitPoints": "220",
+      "WorkToBuild": "6000",
+      "Beauty": "32",
+      "Flammability": "1.0",
+      "Comfort": "1.1",
+      "Mass": "15"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_PenJing",
+    "label": "装饰盆景",
+    "description": "\r\n      这种装饰盆景通常出现在神州园林，虽然里面的植物是人工雕刻而成，但仍然显得栩栩如生，能够提供不错的美观度加成，同样它还能够作为商品出售，一般能卖个不错的价钱。\\n\\n这种装饰盆景在被引入到边缘世界后也成为了各个殖民地里比较受欢迎的点缀装饰，它往往能够给枯燥的殖民地增添一抹亮色。",
+    "texPath": "Buildings_New/SZ_JiaJu/PenJing/PenJingA",
+    "stats": {
+      "MaxHitPoints": "100",
+      "SellPriceFactor": "1.25",
+      "WorkToBuild": "1500",
+      "Flammability": "0.5",
+      "Mass": "3",
+      "Beauty": "19"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_JiaShan_A",
+    "label": "装饰假山-A",
+    "description": "\r\n      这种装饰假山常见于神州园林，它们建造起来通常需要耗费不少精力，与其说是“假山”，不如说这是一种园林式的石质雕塑，假山能够提供非常不错的美观度加成，同样，它也可以作为艺术品进行出售——尽管这搬运起来非常麻烦。",
+    "texPath": "Buildings_New/SZ_JiaJu/JiaShan/JiaShanA",
+    "stats": {
+      "MaxHitPoints": "220",
+      "SellPriceFactor": "1.15",
+      "WorkToBuild": "7000",
+      "Flammability": "0",
+      "Mass": "250",
+      "Beauty": "75"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_JiaShan_B",
+    "label": "装饰假山-B",
+    "description": "\r\n      这种装饰假山常见于神州园林，它们建造起来通常需要耗费不少精力，与其说是“假山”，不如说这是一种园林式的石质雕塑，假山能够提供非常不错的美观度加成，同样，它也可以作为艺术品进行出售——尽管这搬运起来非常麻烦。",
+    "texPath": "Buildings_New/SZ_JiaJu/JiaShan/JiaShanB",
+    "stats": {
+      "MaxHitPoints": "220",
+      "SellPriceFactor": "1.15",
+      "WorkToBuild": "7000",
+      "Flammability": "0",
+      "Mass": "250",
+      "Beauty": "75"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_DaoCaoRen",
+    "label": "神州稻草人",
+    "description": "\r\n      和其他风格的稻草人不同，神州稻草人穿着国魂里的中式蓑衣，如果远看就像一个在农田里耕种的传统农民，尽管它不能吓走边缘世界里的生物，但能为你的农场增添一抹来自古老东方的亮色。",
+    "texPath": "Buildings_New/SZ_Misc/DaoCaoRen/DaoCaoRen",
+    "stats": {
+      "MaxHitPoints": "70",
+      "WorkToBuild": "3000",
+      "Flammability": "1",
+      "Mass": "3",
+      "Beauty": "14"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_GaoShiPai",
+    "label": "神州装饰告示牌",
+    "description": "\r\n      一个装饰用的告示牌，这种告示牌通常出现在神州的居民区，但一般这上面粘贴的都是些生活琐事，路过的神州殖民者通常会短暂地去瞄一眼，但并不会停下来自信观看，因此它通常只只是这些建筑群的点缀而已。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_GaoShi/SZ_GaoShi",
+    "stats": {
+      "MaxHitPoints": "115",
+      "WorkToBuild": "4000",
+      "Flammability": "0.5",
+      "Mass": "3",
+      "Beauty": "23"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_Gu",
+    "label": "神州皇家鼓",
+    "description": "\r\n      这种鼓一般是神州殖民地的常见装饰物，它用黄金镀边，看上去十分奢华，它常见于神州殖民者的各种仪式场所，另外神州殖民者也会在战场上擂鼓提高士气，但在边缘世界，这种鼓通常只做装饰用途，它能为你的殖民地添上一笔亮色。\\n\\n神州皇家鼓还可以提高附近部分神州建筑的冥想效率。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_Gu/SZ_Gu",
+    "stats": {
+      "MaxHitPoints": "120",
+      "WorkToBuild": "7500",
+      "Flammability": "0.5",
+      "Mass": "10",
+      "Beauty": "80"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_ShuiJing",
+    "label": "神州水井",
+    "description": "\r\n      神州建筑风格的古井，这种古井在古神州的乡下处处可见，它保留了取水的功能，同样由于它在设计上采用了简约大方的设计，虽然它建造起来显得比较费劲，也给人一种不错的观感，是优美乡村图景中不可缺少的装饰物之一。\\n\\n神州殖民者在设计这种水井时还与时俱进地采用了防火设计，即便它需要一些木料作为支架也并不会引发火灾。",
+    "texPath": "Buildings_New/SZ_Misc/ShuiJing/ShuiJing",
+    "stats": {
+      "MaxHitPoints": "180",
+      "WorkToBuild": "5200",
+      "Flammability": "0",
+      "Mass": "30",
+      "Beauty": "55"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "EndTableSZ_ChuangTouGui_New",
+    "label": "中式皇家床头柜",
+    "description": "\r\n      这种带有镀金把手的豪华床头柜由神州文明设计，其花纹的设计样式参考了其母国的装饰艺术，这种床头柜一经推出便受到了边缘世界贵族们的追捧。\\n\\n得益于神州殖民者先进的设计技术，这种床头柜在提供高额美观度的同时还能为附近的床提供小幅度的舒适度和休息效率加成。",
+    "texPath": "JiaJu/ChuangTouGui/ChuangTouGui",
+    "stats": {
+      "MaxHitPoints": "120",
+      "Mass": "15",
+      "WorkToBuild": "9000",
+      "Flammability": "1.0",
+      "Beauty": "25"
+    },
+    "parentName": "SZJiaJuBase"
+  },
+  {
+    "defName": "SZ_ShuZhuangTai",
+    "label": "中式皇家梳妆台",
+    "description": "\r\n      这种极具奢华风格的梳妆台由神州殖民者们设计，他们通过巧妙的细节设计使得这种款式的梳妆台在边缘世界成为贵族房间里不可缺少的装饰品，黄金做的装饰花纹让这件家具更具艺术气息。\\n\\n同样，在放在卧室的时候，这个装饰台能够提供美观度和舒适度加成，建造时需要耗费不少精力和材料。",
+    "texPath": "JiaJu/ShuZhuangTai/ShuZhuangTai",
+    "stats": {
+      "MaxHitPoints": "120",
+      "Mass": "15",
+      "WorkToBuild": "9000",
+      "Flammability": "1.0",
+      "Beauty": "40"
+    },
+    "parentName": "SZJiaJuBase"
+  },
+  {
+    "defName": "SZ_ShuJia",
+    "label": "中式书院书架",
+    "description": "\r\n      这种书架在古神州文明就已经普遍使用了，它通常出现在神州殖民者的书房或者研究场所，它的设计美观且简洁，不仅可以作为室内装饰，同样也是非常不错的链接设施。\\n\\n当书架放在实验设备旁时能够提高对应设施的研究速度，由于其在设计上给人一种简洁、干净的观感，因此它还能提高房间清洁度。",
+    "texPath": "JiaJu/ShuJia/ShuJia",
+    "stats": {
+      "MaxHitPoints": "110",
+      "Mass": "30",
+      "Cleanliness": "8",
+      "WorkToBuild": "5200",
+      "Flammability": "1.0",
+      "Beauty": "9"
+    },
+    "parentName": "ArtableFurnitureBase"
+  },
+  {
+    "defName": "SZ_ShuZhuangJing",
+    "label": "梳妆镜",
+    "description": "\r\n      梳妆镜，由神州殖民者们设计，需要放在梳妆台上面，能够为殖民者们的房间提供更高的美观加成，不管是在贵族房间还是普通殖民者房间都很常见。\\n\\n添加文化dlc之后还能够带有改变外观的功能。",
+    "texPath": "JiaJu/ShuZhuangJing/ShuZhuangJing",
+    "stats": {
+      "JoyGainFactor": "1.1",
+      "MaxHitPoints": "70",
+      "WorkToBuild": "500",
+      "Flammability": "0.5",
+      "Mass": "3",
+      "Beauty": "15"
+    },
+    "parentName": "SZJiaJuBase"
+  },
+  {
+    "defName": "SZ_ZhuangShiShuJia",
+    "label": "中式装饰藏书阁",
+    "description": "\r\n      和经常放在研究室或书院的不同，这种书架上摆满了书，而神州殖民者通常把它称作“藏书阁”，即便它没有什么其他的功能，但它适合作为一个神州式房间的装饰建筑，能提供很不错的美观度加成。一个充满书香的房间永远能给人不错的观感。",
+    "texPath": "JiaJu/ShuJia/ShuJiaZhuangShi/ShuJiaZhuangShi",
+    "stats": {
+      "MaxHitPoints": "110",
+      "Mass": "32",
+      "Cleanliness": "8",
+      "WorkToBuild": "5200",
+      "Flammability": "1.0",
+      "Beauty": "27"
+    },
+    "parentName": "ArtableFurnitureBase"
+  },
+  {
+    "defName": "Chi_XiangLu",
+    "label": "神州装饰香炉",
+    "description": "\r\n      通常放在供桌或神州风格桌子上的装饰香炉，能够提供美观度加成，但直接放在地上不怎么特别好看，这种香炉经常出现在神州文明的祭祀场合，神州殖民者们通常会点上几炷香以祈求生活安康。\\n\\n但在动荡不安的边缘世界，谁又有时间点上几炷香以寻求精神世界的寄托呢？",
+    "texPath": "Buildings_New/SZ_JiaJu/XiangLu/XiangLu",
+    "stats": {
+      "MaxHitPoints": "60",
+      "WorkToBuild": "3000",
+      "Flammability": "1",
+      "Mass": "2",
+      "Beauty": "11"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_QiZhi",
+    "label": "神州多样符号旗帜",
+    "description": "\r\n      这些旗帜通常出现在神州殖民地的城头，它既是代表着各种文化符号的装饰，又是神州殖民地的精神象征——只要这些旗帜不倒，神州延绵不断，博大精深，源远流长的文化就永远不会消亡。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_QiZhi",
+    "stats": {
+      "MaxHitPoints": "75",
+      "WorkToBuild": "1000",
+      "Flammability": "0",
+      "Mass": "2",
+      "Beauty": "19"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZRug_San",
+    "label": "中式花纹地毯（3x3）",
+    "description": "\r\n      印有简洁中式花纹的地毯，它适合铺设在任何房间，在神州世界是室内装饰不可或缺的部分，另外，这种地毯易于清扫，不容易附着污渍，因此还能为房间提供一些清洁度加成。\\n\\n神州的贵族宫殿群也层大量铺设这样的地毯，另外，在神州的一些地区，诸如虎皮等珍惜动物皮革制成的地毯还被认为是尊贵的象征。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_DiTan",
+    "stats": {
+      "MaxHitPoints": "180",
+      "WorkToBuild": "800",
+      "Flammability": "1.0",
+      "Beauty": "35",
+      "Cleanliness": "6",
+      "Mass": "10"
+    },
+    "parentName": "SZRugBase"
+  },
+  {
+    "defName": "SZRug_Er",
+    "label": "中式花纹地毯（2x2）",
+    "description": "\r\n      印有简洁中式花纹的地毯，它适合铺设在任何房间，在神州世界是室内装饰不可或缺的部分，另外，这种地毯易于清扫，不容易附着污渍，因此还能为房间提供一些清洁度加成。\\n\\n神州的贵族宫殿群也层大量铺设这样的地毯，另外，在神州的一些地区，诸如虎皮等珍惜动物皮革制成的地毯还被认为是尊贵的象征。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_DiTan",
+    "stats": {
+      "MaxHitPoints": "100",
+      "WorkToBuild": "550",
+      "Flammability": "1.0",
+      "Beauty": "21",
+      "Cleanliness": "4",
+      "Mass": "7.5"
+    },
+    "parentName": "SZRugBase"
+  },
+  {
+    "defName": "SZ_Ding",
+    "label": "装饰鼎",
+    "description": "\r\n      在古神州有句古语叫做：“一言九鼎”，而这种装饰鼎就是根据古神州的鼎仿制而成，一方面，它的价值性在独特的设计下凸显了出来，另一方面，它的外观和蕴含的历史特色相融，给人一种古色古香的美感。\\n\\n虽然这种鼎不能再用于烹煮食物，但仍然是不错的装饰品。它唯一的缺点就是非常重，不方便搬运。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_Ding/SZ_Ding",
+    "stats": {
+      "MaxHitPoints": "100",
+      "SellPriceFactor": "1.25",
+      "WorkToBuild": "5000",
+      "Flammability": "0",
+      "Mass": "75",
+      "Beauty": "50"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_ShuiChi",
+    "label": "中式水池-A",
+    "description": "\r\n      常出现在传统神州园林的一种水池装饰，它同样也是可以和宏伟雕塑比肩的艺术品。虽然不能搬运和出售，它是神州装饰中最受欢迎的一种建筑，建造者往往需要有和雕塑家媲美的建造技能才能打造出一个不错的园林水池。\\n水池的假山上通常会刻有记录殖民地一些琐事的文字。\\n\\n跻身于纷乱的边缘世界，不如在闲暇之余在水池旁休息片刻，收获一份宁静与美好。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_ShuiChi/ShuiChi",
+    "stats": {
+      "MaxHitPoints": "500",
+      "WorkToBuild": "50000",
+      "Flammability": "0",
+      "Cleanliness": "10",
+      "Mass": "500",
+      "Beauty": "450"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_ShuiChi_B",
+    "label": "中式水池-B",
+    "description": "\r\n      常出现在传统神州园林的一种水池装饰，它同样也是可以和宏伟雕塑比肩的艺术品。虽然不能搬运和出售，它是神州装饰中最受欢迎的一种建筑，建造者往往需要有和雕塑家媲美的建造技能才能打造出一个不错的园林水池。\\n水池的假山上通常会刻有记录殖民地一些琐事的文字。\\n\\n跻身于纷乱的边缘世界，不如在闲暇之余在水池旁休息片刻，收获一份宁静与美好。\\n\\n<color=#33d733>备注：</color>该款式由仲恺农业科技公司友情赞助设计，该水池周围的鹅暖石上刻有其公司销售最好的产品——狮头柑。",
+    "texPath": "Buildings_New/SZ_JiaJu/SZ_ShuiChi/ShuiChiB",
+    "stats": {
+      "MaxHitPoints": "500",
+      "WorkToBuild": "50000",
+      "Flammability": "0",
+      "Cleanliness": "10",
+      "Mass": "500",
+      "Beauty": "450"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_Mote_MaJiang",
+    "texPath": "Symbols/MaJiangA/MaJiangA",
+    "stats": {},
+    "parentName": "MoteBase"
+  },
+  {
+    "defName": "SZ_MaJiangZhuo",
+    "label": "麻将桌",
+    "description": "\r\n      一种由神州文明设计的特有娱乐设施，麻将是神州文明特有的娱乐方式。麻性能受品质影响，美观度较好，提供一种新的娱乐类型：打麻将，同时它提供的娱乐效力也较高。\\n\\n麻将机一经问世便得到了边缘世界各大殖民地的喜爱。",
+    "texPath": "Buildings/MaJiangZhuo/MaJiangZhuo",
+    "stats": {
+      "MaxHitPoints": "500",
+      "WorkToBuild": "15000",
+      "Mass": "30",
+      "Flammability": "1.0",
+      "Beauty": "50",
+      "JoyGainFactor": "1.4"
+    },
+    "parentName": "FurnitureWithQualityBase"
+  },
+  {
+    "defName": "Out_DengLong_Yellow",
+    "label": "神州户外电灯笼（黄）",
+    "texPath": "JiaJu/OutDengLong/OutDengLong_Yellow",
+    "stats": {
+      "Beauty": "16",
+      "MaxHitPoints": "75",
+      "WorkToBuild": "750",
+      "Flammability": "0",
+      "Mass": "15"
+    },
+    "parentName": "SZHuWaiDengLongBase"
+  },
+  {
+    "defName": "Out_DengLong_Red",
+    "label": "神州户外电灯笼（红）",
+    "texPath": "JiaJu/OutDengLong/OutDengLong_Red",
+    "stats": {
+      "Beauty": "1",
+      "MaxHitPoints": "7",
+      "WorkToBuild": "7",
+      "Flammability": "0",
+      "Mass": "1"
+    },
+    "parentName": "SZHuWaiDengLongBase"
+  },
+  {
+    "defName": "Out_DengLong_White",
+    "label": "神州户外电灯笼（白）",
+    "texPath": "JiaJu/OutDengLong/OutDengLong_White",
+    "stats": {
+      "Beauty": "1",
+      "MaxHitPoints": "7",
+      "WorkToBuild": "7",
+      "Flammability": "0",
+      "Mass": "1"
+    },
+    "parentName": "SZHuWaiDengLongBase"
+  },
+  {
+    "defName": "SZ_LinkableToolBox",
+    "label": "神州工具柜",
+    "description": "\r\n      神州文明使用的工具柜，和其他工具柜不同，它不仅是个工具柜，更是个艺术品，尽管建造它需要消耗更多的材料，还需要极少量的陶瓷进行装饰，但能给工作间提供不错的美观度和清洁度加成，这样的工具柜几乎成为了边缘世界生产工作间的标配物件。\\n\\n一个生产设施最多链接一个神州工具柜，神州工具柜能提供更多的生产效率加成，同样它的生效范围也更大。",
+    "texPath": "Buildings_New/SZ_Misc/ToolBox/ToolBox",
+    "stats": {
+      "MaxHitPoints": "170",
+      "WorkToBuild": "2600",
+      "Mass": "25",
+      "Beauty": "35",
+      "Cleanliness": "5",
+      "Flammability": "0.5"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_LinkChuJu",
+    "label": "神州传统炉具",
+    "description": "\r\n      这种附属炉具通常放在炉灶或者屠宰台旁边，一般用于提高这些生产设施的清洁度和工作效率，这些炉具在设计时还考虑了美观度，是神州厨房必备的设施之一。\\n\\n一个设施最多可以链接两个炉具。",
+    "texPath": "Buildings_New/SZ_Misc/LinkChuJu/LinkChuJu",
+    "stats": {
+      "MaxHitPoints": "80",
+      "WorkToBuild": "2000",
+      "Mass": "40",
+      "Flammability": "0.25",
+      "Cleanliness": "9"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_ZhiChengZhuA",
+    "label": "中式支撑柱",
+    "description": "\r\n      一种类似中式斗拱结构的支撑柱，其建造资料最早被发现于坠毁的“神州”飞船内，由于这种斗拱式支撑柱具有良好的稳定性和美观度，因此很快就被传播到了边缘世界各地，不管是在贵族的谒见厅还是在平民老百姓的门前都有这种支撑柱的身影。",
+    "texPath": "Buildings/ZhiChengZhu/ZhiChengZhuA",
+    "stats": {
+      "MaxHitPoints": "250",
+      "WorkToBuild": "2000",
+      "Mass": "12",
+      "Flammability": "1.0",
+      "Beauty": "12"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_ZhiChengZhuB",
+    "label": "中式皇家支撑柱",
+    "description": "\r\n      一个极具奢华气息的支撑柱，其外围有一圈金色装饰，这个支撑柱是仿造斗拱式支撑柱而造，最初的一批皇家支撑柱设计图来源于坠毁的“神州”飞船内。\\n\\n建造这个支撑柱需要耗费大量精力和材料。",
+    "texPath": "Buildings/ZhiChengZhu/ZhiChengZhuB",
+    "stats": {
+      "MaxHitPoints": "300",
+      "WorkToBuild": "10000",
+      "Mass": "15",
+      "Flammability": "1.0",
+      "Beauty": "40"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_ZhiChengZhuC",
+    "label": "中式带灯支撑柱",
+    "description": "\r\n      类似斗拱结构的带灯支撑柱，来自神州的设计者们巧妙地将长明灯式的照明系统和支撑柱相结合，建造出了这种中式带灯支撑柱，这种支撑柱兼顾美观的同时又将“神州文化”的氛围渲染得淋漓尽致，同时又确保了稳定性和实用性，不管是放在室内或室外都能够很好地发挥它的作用。",
+    "texPath": "Buildings/ZhiChengZhu/ZhiChengZhuC",
+    "stats": {
+      "MaxHitPoints": "300",
+      "WorkToBuild": "10000",
+      "Mass": "15",
+      "Flammability": "1.0",
+      "Beauty": "15"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_PingMen",
+    "label": "屏门",
+    "description": "\r\n      屏门是神州传统建筑中用于分隔内院和外院的门类，通常建造在室内用于分隔房间，由于其设计原因，它的耐久度略低于原版门种，因此屏门很少作为建筑外部大门使用。\\n\\n屏门上通常刻有美丽的花纹，因此它能提供不错的美观度加成，和所有神州门类一样，它的设计结构巧妙，因此它的开门速度较快，并且其开门速度受材质的影响较小。",
+    "texPath": "Buildings_New/SZ_Structure/PingMen/PingMen_Mover",
+    "stats": {
+      "DoorOpenSpeed": "2",
+      "Beauty": "8",
+      "MaxHitPoints": "100",
+      "WorkToBuild": "700"
+    },
+    "parentName": "DoorBase"
+  },
+  {
+    "defName": "SZ_BanMen",
+    "label": "坚固板门",
+    "description": "\r\n      密不通透的板门，能够提供很好的防护性能，在神州世界通常作为建筑的大门使用，它就像一块坚固的铁板一样，耐久度较高，给人一种较强的安全感。\\n\\n屏门上刻有一些小印记，能够提供一点美观度，同时，尽管板门需要石质或金属材料建造，但因其采用神州独特的门类构造，因此它的开门速度仍然较快。",
+    "texPath": "Buildings_New/SZ_Structure/BanMen/BanMen_Mover",
+    "stats": {
+      "DoorOpenSpeed": "1.75",
+      "Beauty": "3",
+      "MaxHitPoints": "250",
+      "WorkToBuild": "1400"
+    },
+    "parentName": "DoorBase"
+  },
+  {
+    "defName": "SZ_ZhuangShiWall",
+    "label": "神州复古墙",
+    "description": "\r\n      采取神州传统建造技术砌成的复古墙体，需要花费更多材料和时间建造。由于它继承了神州传统的加固技术，因此它的能够减少一半爆炸伤害，但它防御近战武器打击的能力仍然较弱。\\n\\n这种墙体还刻有传统的中式花纹，给人不错的观感。",
+    "texPath": "Buildings_New/SZ_Structure/ZhuangShiWall",
+    "stats": {
+      "MaxHitPoints": "450",
+      "WorkToBuild": "500",
+      "Beauty": "4",
+      "Flammability": "1.0",
+      "MeditationFocusStrength": "0.22"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_SanHeTuWall",
+    "label": "三合土墙",
+    "description": "\r\n      由糯米粉和石英混合砌成的三合土墙，三合土墙本是神州地区一种古老的建筑墙体，虽然看上去简陋且显得极不美观，但当它被神州仲恺农业科技公司的技术人员推广到边缘世界之后，三合土墙的功能性得到了大大提升，首先它只需要石英和糯米粉混合建造，而不需要消耗其他材料，建造起来更方便，另外，经过神州建筑家们的改进，三合土墙的防护也能也得到了大大提升。\\n\\n三合土墙具有自我修复的功能，且修复速度较快，同样，它的耐久度较高，能够抵消百分之七十的爆炸伤害和百分之五十的其他来源伤害（如子弹或近战武器）。",
+    "texPath": "Buildings_New/SZ_Structure/SanHeTuWall",
+    "stats": {
+      "MaxHitPoints": "800 ",
+      "WorkToBuild": "1500",
+      "Beauty": "-5",
+      "Flammability": "0",
+      "MeditationFocusStrength": "0.22"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "Chi_RiceMaker_Old",
+    "label": "人力传统杵",
+    "description": "\r\n      这是一种用于将稻米制作成糯米的传统生产工具。由人力驱动，在工作时可以磨练格斗技巧，另外，值得一提的是，你还可以将其他生食捣碎成营养值略高，保存期更长，中毒率、易燃性和心情惩罚更低的初步处理生食。",
+    "texPath": "Buildings/DA1_RiceMaker/DA1_RiceMaker",
+    "stats": {
+      "WorkToBuild": "2000",
+      "MaxHitPoints": "90",
+      "Flammability": "0.1",
+      "WorkTableWorkSpeedFactor": "1",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "Chi_RiceMaker",
+    "label": "电动传统杵",
+    "description": "\r\n      这是一种用于将稻米制作成糯米的传统生产工具。由电力驱动，在工作时可以磨练格斗技巧，另外，值得一提的是，你还可以将其他生食捣碎成营养值略高，保存期更长，中毒率、易燃性和心情惩罚更低的初步处理生食。\\n\\n在不通电的情况下也可工作，但效率很低。",
+    "texPath": "Buildings/DA1_RiceMaker_New/RiceMakerNew",
+    "stats": {
+      "WorkToBuild": "3500",
+      "MaxHitPoints": "500",
+      "Flammability": "0",
+      "WorkTableWorkSpeedFactor": "2",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "Chi_BaoZiMaker",
+    "label": "蒸笼（电动）",
+    "description": "\r\n      殖民者们可以从这个蒸笼中制得包子和馒头，两种可以提高饱腹感的食品。\\n\\n来自神州的创造者们巧妙地改造了蒸笼的结构，现在蒸笼由电力驱动供热生产，即便在缺乏电力的情况也能通过内部发电装置生产，但效率很低。",
+    "texPath": "Buildings/DA1_BaoZiMaker/DA1_BaoZiMaker",
+    "stats": {
+      "WorkToBuild": "1500",
+      "MaxHitPoints": "90",
+      "Flammability": "0",
+      "WorkTableWorkSpeedFactor": "1.7",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "Chi_BaoZiMaker_Old",
+    "label": "蒸笼（燃料）",
+    "description": "\r\n      殖民者们可以从这个蒸笼中制得包子和馒头，两种可以提高饱腹感的食品。\\n\\n经过神州殖民者的改造，燃料类的蒸笼能够将更多材料作为燃料，如化合燃料，干草等，同样，这种蒸笼的燃料效率也很不错。",
+    "texPath": "Buildings/DA1_BaoZiMaker/DA1_BaoZiMakerOld",
+    "stats": {
+      "WorkToBuild": "1500",
+      "MaxHitPoints": "90",
+      "Flammability": "0",
+      "WorkTableWorkSpeedFactor": "1.15",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "Chi_ChuiGuJi",
+    "label": "脱壳吹谷机",
+    "description": "\r\n      一台吹谷机，这种机器通常被用于给稻米或杂交水稻米进行脱壳，使其成为精米。\\n\\n虽然在其他的地方，这个机器已经很少见了。幸运的是，在边缘世界神州殖民者的帮助下，这种机器得到了不错的保存和运用。和舂米杵放在一起的时候能够提高其工作效率",
+    "texPath": "Buildings/Winnow/Winnow",
+    "stats": {
+      "WorkToBuild": "2100",
+      "MaxHitPoints": "150",
+      "Beauty": "10",
+      "WorkTableWorkSpeedFactor": "1.1",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "Chi_CiYao",
+    "label": "陶瓷窑（电动）",
+    "description": "\r\n      陶瓷烧制技术一直都是神州殖民者们最引以为傲的发明，而这个陶瓷窑继承了传统的烧制技术，殖民者们可以将石英砖烧制为美观的陶瓷材料。\\n\\n在研究完石砖转化后，殖民者们还可以将其他石砖转化为性能优越的石英砖。在未通电时可以工作，但效率很低。\\n\\n电动陶瓷窑能够进行更高效，产量更多的加工，并且在研究完对应科技后能够批量锻造石砖。",
+    "texPath": "Buildings/DA1_CiYao/TaoCiYao",
+    "stats": {
+      "WorkToBuild": "2000",
+      "MaxHitPoints": "450",
+      "Flammability": "0",
+      "WorkTableWorkSpeedFactor": "1.6",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "SZ_CiYao_Fire",
+    "label": "陶瓷窑（燃料）",
+    "description": "\r\n      陶瓷烧制技术一直都是神州殖民者们最引以为傲的发明，而这个陶瓷窑继承了传统的烧制技术，能够完成石砖转化，但效率不如电动类型。另外，殖民者们可以将石英砖烧制为美观的陶瓷材料。\\n\\n这个陶瓷窑经过神州殖民者的改造后，燃料效率很高，并且可以使用木材，干草，化合燃料作为其燃料。",
+    "texPath": "Buildings/DA1_CiYao/TaoCiYao_Fire",
+    "stats": {
+      "WorkToBuild": "1000",
+      "MaxHitPoints": "400",
+      "Flammability": "0",
+      "WorkTableWorkSpeedFactor": "1.05",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "FermentingBarrel_BaiJiu",
+    "label": "白酒窑泥",
+    "description": "\r\n      一种传统的发酵装置，由神州文明的母国发明，虽然外观看上去简陋，但得益于其巧妙的结构设计，白酒发酵品能够在这种窑泥内进行发酵处理并最后酿造出可口的白酒。同样，这个窑泥能够一次容纳大量白酒发酵品。白酒发酵速率要比啤酒略慢，但发酵出的白酒价值更高。\\n\\n尽管在其他星球上，窑泥并没有得到很好的推广，但神州酒类的发酵由于边缘世界特殊的环境限制，因此窑泥成为了发酵酒类的不二之选。",
+    "texPath": "Buildings/Chi_JiuLei/BaiJiuTong",
+    "stats": {
+      "WorkToBuild": "1500",
+      "Mass": "30",
+      "Beauty": "3",
+      "MaxHitPoints": "300",
+      "Flammability": "0"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "FermentingBarrel_HuangJiu",
+    "label": "黄酒窑泥",
+    "description": "\r\n      一种传统的发酵装置，由神州文明的母国发明，虽然外观看上去简陋，但得益于其巧妙的结构设计，黄酒发酵品能够在这种窑泥内进行发酵处理并最后酿造出可口的黄酒。同样，这个窑泥能够一次容纳大量黄酒发酵品。黄酒窑泥的发酵速率较快，酿造出的酒类品质也非常不错。\\n\\n尽管在其他星球上，窑泥并没有得到很好的推广，但神州酒类的发酵由于边缘世界特殊的环境限制，因此窑泥成为了发酵酒类的不二之选。",
+    "texPath": "Buildings/Chi_JiuLei/HuangJiuTong",
+    "stats": {
+      "WorkToBuild": "1500",
+      "Mass": "30",
+      "Beauty": "3",
+      "MaxHitPoints": "300",
+      "Flammability": "0"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_NianYaoLu",
+    "label": "炼药炉",
+    "description": "\r\n      用来冶炼神州医药的炉子，尽管它的外观和炼丹炉无异，但它能够完成更多的工作，来自神州的一些成瘾品和药品（包括一些药粉）都能够在这里制造，同样它还能制作一些其他的药物，经过巧妙的设计建造后，这个建筑能够兼具美观和工作效率，而它的燃料效率在经过改造后也变得十分高效。\\n\\n关于这个炉子的工作机制至今仍是个迷，而这最先设计它的神州殖民者知道，但可以肯定的是，它确实能够制作出一些复杂的工业药品并且完成一些进阶工序。\\n\\n和药物实验台放在一起的时候能够加快药物实验台的工作速度。",
+    "texPath": "Buildings_New/SZ_Work/SZ_NianYaoLu/SZ_NianYaoLu",
+    "stats": {
+      "WorkToBuild": "8200",
+      "MaxHitPoints": "200",
+      "Beauty": "15",
+      "WorkTableWorkSpeedFactor": "1.75",
+      "Mass": "2"
+    },
+    "parentName": "DaJianWorkBase"
+  },
+  {
+    "defName": "SZ_DaDiaoSu",
+    "label": "神州-膺箓受图系列雕塑",
+    "description": "\r\n      较大的雕塑，由神州文明设计，这一系列的雕塑刻画了神州文明的各种图景，其雕刻格外精致，各种不同形状的雕塑有着隐喻殖民地一步步走向繁荣之意，这样精美绝伦的艺术品在边缘世界成为了受人追捧的抢手货。\\n\\n这些雕塑没有任何具象化的造型，而都是以各种象征着神州文化的各种物品为主题，给人留下无限的联想空间。",
+    "texPath": "Buildings_New/SZ_Artable/ZhongDiaoSu",
+    "stats": {
+      "MaxHitPoints": "220",
+      "Mass": "8",
+      "SellPriceFactor": "1.3",
+      "Beauty": "300",
+      "WorkToMake": "40000",
+      "StyleDominance": {
+        "_": "30",
+        "$": { "MayRequire": "Ludeon.RimWorld.Ideology" }
+      }
+    },
+    "parentName": "SculptureBase"
+  },
+  {
+    "defName": "SZ_XiaoDiaoSu",
+    "label": "神州-文化符号雕塑",
+    "description": "\r\n      这些雕塑通常刻画了一些来自神州母国的一些文化符号，如三星堆符号等，雕刻起来相对简单，也能提供相当不错的美观度。\\n\\n殖民者们能够从这些刻有神州文化符号的雕塑中了解到来自神州母国悠远的文化。雕塑仿佛有了历史的温度，轻轻抚摸它的外表，神州古文化的余韵仿佛已经从它们的外壳传递到了欣赏者的心中。",
+    "texPath": "Buildings_New/SZ_Artable/XiaoDiaoSu",
+    "stats": {
+      "MaxHitPoints": "110",
+      "Mass": "3.5",
+      "Beauty": "65",
+      "SellPriceFactor": "1.15",
+      "WorkToMake": "13000",
+      "StyleDominance": {
+        "_": "10",
+        "$": { "MayRequire": "Ludeon.RimWorld.Ideology" }
+      }
+    },
+    "parentName": "SculptureBase"
+  },
+  {
+    "defName": "SZ_XiongMaoDiaoSu",
+    "label": "神州-熊猫人雕塑",
+    "description": "\r\n      没有人知道这个雕塑是由谁雕刻而出，也没有人掌握这种雕塑的雕刻方法，它被雕刻成一个熊猫人的形象，而边缘世界似乎并没有“熊猫人”这样的种族，另外，只有一些特殊任务请求或者极少数神州飞船还会交易这种雕像，而交易者也似乎不愿意透露这种雕像的来历，它身上刻有模糊的“透明”两字，似乎在诉说着它遥远而不凡的过往......\\n\\n这种雕像能够提供大量的美观度加成——尽管它的售价非常高。",
+    "texPath": "Buildings_New/SZ_Artable/XiongMaoRen/XiongMaoRen",
+    "stats": {
+      "MaxHitPoints": "350",
+      "Mass": "100",
+      "MarketValue": "2200",
+      "Beauty": "400",
+      "SellPriceFactor": "1.10",
+      "Flammability": "1.0",
+      "MeditationFocusStrength": "0.0"
+    },
+    "parentName": "SZNoMakeSculptureBase"
+  },
+  {
+    "defName": "SZ_DaoShiDiaoXiang",
+    "label": "道士雕像",
+    "description": "\r\n      <color=#33d733>tips：</color>在没有使用神州文化dlc扩展之前，道士雕像的属性比较普通，但加入dlc扩展之后，道士雕像属性会得到很大提升，但会成为模因专属建造物。\\n\\n道士雕像给人的第一感觉是“道法自然”，设计者在设计这个雕像的时候将神州的人文元素和自然元素都融合了进去，它不仅是一件艺术装饰品，也是一件可用作自然类型冥想的造物。\\n\\n对于沉迷修仙炼丹文化的殖民地来说，道士雕像是一件无价之宝，他们将这种雕像奉为圣物，同样，也有很多上流社会的买家愿意将道士雕像摆放在自己的家中以彰显其高雅气质。",
+    "texPath": "Buildings_New/SZ_Misc/DaoShiXiang/DaoShiXiang",
+    "stats": {
+      "SellPriceFactor": "1.25",
+      "MaxHitPoints": "350",
+      "WorkToBuild": "40000",
+      "Beauty": "180",
+      "Flammability": "1.0",
+      "MeditationFocusStrength": "0.32",
+      "Mass": "60"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "SZ_EYu",
+    "label": "扬子鳄",
+    "description": "\r\n      曾广泛分布于神州温带地区的动物，在寒带和热带也会少量分布，由于其生存环境的恶化而被神州动物学家转移到自然条件相对更好的边缘世界繁衍，但它的数量还是很少，因此其价格仍然较为昂贵。\\n\\n扬子鳄的皮革在神州社会往往被认为是尊贵的象征，因此它的皮革也能卖到很高的价钱。\\n扬子鳄在边缘世界进化出了更强的生存技能，它们的进食需求更少，智力更高，在面对危险和进行捕食的时候攻击性也更强。但受到边缘世界环境的限制，扬子鳄的产卵和孵化时间和普通鳄鱼相比更长。",
+    "stats": {
+      "MoveSpeed": "2.9",
+      "MarketValue": "1100",
+      "ComfyTemperatureMin": "-20",
+      "ComfyTemperatureMax": "55",
+      "FilthRate": "3.2"
+    },
+    "parentName": "AnimalThingBase"
+  },
+  {
+    "defName": "Leather_EYu",
+    "label": "扬子鳄皮",
+    "description": "扬子鳄的皮，比较厚重，但隔热功能仍然不错，这种鳄鱼皮价值高，防御性能和耐寒功能也不错，是很不错的皮革材料。",
+    "stats": {
+      "MarketValue": "5.5",
+      "StuffPower_Armor_Sharp": "1.2",
+      "StuffPower_Armor_Blunt": "0.3",
+      "StuffPower_Insulation_Cold": "25",
+      "StuffPower_Insulation_Heat": "15"
+    },
+    "parentName": "LeatherBase"
+  },
+  {
+    "defName": "EggYangZiFertilized",
+    "label": "扬子鳄卵（已受精）",
+    "description": "十分珍贵的扬子鳄卵，如果精心照顾的话能够孵化出扬子鳄幼体——将这样昂贵的受精卵用于烹饪并不是一个很好的选择。",
+    "texPath": "Things/Item/Resource/AnimalProductRaw/EggOval",
+    "stats": { "MarketValue": "80.5" },
+    "parentName": "EggFertBase"
+  },
+  {
+    "defName": "SZSiChouCloth",
+    "label": "仲恺丝绸",
+    "description": "\r\n      边缘世界发展产出的特殊丝绸，这种丝绸在继承了古神州丝绸轻薄，美观优势的同时还发展出了新的防火性能，丝绸一直被人们认为是高贵的象征之一，同样，它也是用于制作神州贵族衣物的主要材料。\\n\\n仲恺丝绸能够提供高额的美观度加成，由于其材质轻薄，透风性好，还可以耐高温和防火，但和传统丝绸一样，它对于伤害的抵抗性很弱。\\n\\n<color=#33d733>发展历史：</color>最初，传统丝绸在边缘世界一带一路的推广得并不顺利，而负责方仲恺农业科技公司通过大量的实地考察之后发现了其中的问题：传统丝绸的属性并不适合边缘世界的气候环境，同样和边缘世界特有的蘑菇布相比，其性能欠佳，于是经过大量的研究改造后，“仲恺丝绸”被研究出来，取代了传统丝绸，成为契合边缘世界特殊环境的完美产物，这种材料一经推广便受到了边缘贵族们的追捧，也成为了神州殖民地最畅销的特产之一。",
+    "texPath": "CaiLiao/SiChou",
+    "stats": {
+      "MaxHitPoints": "75",
+      "MarketValue": "6",
+      "Mass": "0.02",
+      "Flammability": "0",
+      "DeteriorationRate": "1",
+      "StuffPower_Armor_Sharp": "0.3",
+      "StuffPower_Armor_Blunt": "0.1",
+      "StuffPower_Armor_Heat": "5.00",
+      "StuffPower_Insulation_Cold": "26",
+      "StuffPower_Insulation_Heat": "27"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "Chi_QingHuaCiA",
+    "label": "青花瓷",
+    "description": "\r\n      一个经过精心设计雕刻的青花瓷,这样精美的图案体现出了神州文明对于艺术极高的造诣。这种物品脆弱而又贵重，能够大幅提升房间的美观度，可以放在桌子上。\\n\\n锻造青花瓷是一项手艺活，殖民者的手工技巧越高，锻造出的青花瓷质量就更好。",
+    "texPath": "JiaJu/QingHuaCi",
+    "stats": {
+      "StyleDominance": {
+        "_": "10",
+        "$": { "MayRequire": "Ludeon.RimWorld.Ideology" }
+      },
+      "WorkToMake": "20000",
+      "MaxHitPoints": "60",
+      "Flammability": "1.0",
+      "Mass": "2",
+      "Beauty": "80",
+      "SellPriceFactor": "1.10",
+      "MeditationFocusStrength": "0.0"
+    },
+    "parentName": "QingHuaCiBase"
+  },
+  {
+    "defName": "SZ_Un_QingCi",
+    "label": "青花瓷（锻造中）",
+    "description": "正在锻造中的青花瓷",
+    "texPath": "CaiLiao/UnFinished/QingHuaCi",
+    "stats": {},
+    "parentName": "UnfinishedBase"
+  },
+  {
+    "defName": "Chi_Pingfeng",
+    "label": "中式古典屏风",
+    "description": "一扇装饰用的古典屏风，可以连接在一起，很漂亮，能够阻挡视线，但是不能够当做商品出售。\\n\\n和普通屏风一样，能够满足贵族房间的需求。",
+    "texPath": "JiaJu/PingFeng/PingFeng",
+    "stats": {
+      "MaxHitPoints": "150",
+      "WorkToBuild": "1200",
+      "Flammability": "0.5",
+      "Mass": "5",
+      "Beauty": "25"
+    },
+    "parentName": "BuildingBase"
+  },
+  {
+    "defName": "CiPian",
+    "label": "民用陶瓷",
+    "description": "\r\n      这是通过石砖烧制而成的陶瓷，作为民用，一般作为家具材料，放在室内储存不会影响美观度，同样由于其轻盈的材质，它的堆叠上限很高。另外，边缘世界的人们通常喜欢把它当做一种可使用的贵金属材料，即便这种“金属”十分易碎。这种材料轻盈美观并且能够防火，它的透气性较强。由于其给人一种洁净的观感，因此以它为原材料的建筑还能获得小幅度的清洁度加成。\\n\\n但是民用陶瓷在面对外力冲击的情况下会显得极其脆弱，并且以它为材料的物品和墙体耐久度较低，但另一方面，它适合作为室内建筑的材料，因为以它为材料的建筑容易建造并且美观度较高，陶瓷提供的美观度介于白银和翡翠之间，同时，这也是青花瓷瓶装饰的原材料。\\n\\n以下摘自大蹇日记：“这群边缘世界的怪人对这种材料看来很感兴趣，我也许可以通过向他们出售这种材料来维持我的生计，毕竟他们没人懂得如何制造这种材料。”\\n\\n尽管以它为原材料的盔甲不能为殖民者们提供什么防护，但在必要的情况下，它也可以被加工成锋利易碎的近战武器。作为匕首时，它的出击速度甚至比玻璃钢还要快，即便它伤害远远不如其他材料。",
+    "texPath": "CaiLiao/CiPian",
+    "stats": {
+      "MarketValue": "6",
+      "Mass": "0.05",
+      "StuffPower_Armor_Sharp": "0.4",
+      "StuffPower_Armor_Blunt": "0.2",
+      "StuffPower_Armor_Heat": "0.45",
+      "StuffPower_Insulation_Cold": "3",
+      "StuffPower_Insulation_Heat": "20",
+      "SharpDamageMultiplier": "0.75",
+      "BluntDamageMultiplier": "0.3",
+      "Beauty": "1.5"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "JunYongTaoCi",
+    "label": "军工陶瓷",
+    "description": "\r\n      将民用陶瓷和玻璃钢以4:5比例混合加工制得的军工陶瓷，需要在精密装配台制作。\\n\\n它不仅能为装备、建筑提供优秀的防护和耐久度加成，同样还能提供不错的美观度，是最先进的材料之一，你可以把它当做家具材料，也可以让它作为防护设施的材料。另外，经过测试，这种材料制得的锐器在使用起来也特别称手。\\n\\n由于陶瓷的性能也极佳，因此这种材料也能抵御住高温。另外，它还继承了陶瓷的特性，以它为原材料的家具能够提供一些清洁度。但由于其复杂的结构，以它为材料的建筑在建造时也会花费更多的精力。\\n\\n这种材料也会大量富集于地底，因此你可以用钻井挖掘它。",
+    "texPath": "CaiLiao/Militaryceramics",
+    "stats": {
+      "MarketValue": "18",
+      "Mass": "0.4",
+      "StuffPower_Armor_Sharp": "1.35",
+      "StuffPower_Armor_Blunt": "0.7",
+      "StuffPower_Armor_Heat": "0.65",
+      "StuffPower_Insulation_Cold": "7",
+      "StuffPower_Insulation_Heat": "40",
+      "SharpDamageMultiplier": "1.3",
+      "BluntDamageMultiplier": "0.9"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "SZ_Un_TaoCi",
+    "label": "军工陶瓷（锻造中）",
+    "description": "正在锻造中的军工陶瓷",
+    "texPath": "CaiLiao/UnFinished/JunYongTaoCi",
+    "stats": {},
+    "parentName": "UnfinishedBase"
+  },
+  {
+    "defName": "MineableCiPian",
+    "label": "压埋的军工陶瓷",
+    "description": "这种地方曾经压埋着一个巨大的军用陶瓷堡垒，但是在风沙的腐蚀下已经化为了一堆散落一地的军工陶瓷块，你可以通过开采这类矿物来取得一些有用的军工陶瓷材料。",
+    "texPath": "Things/Building/Linked/RockFlecked_Atlas",
+    "stats": { "MaxHitPoints": "10000" },
+    "parentName": "RockBase"
+  },
+  {
+    "defName": "XiongHuangJiu",
+    "label": "雄黄酒",
+    "description": "\r\n      由雄黄粉和部分可发酵物质制作并晾晒而成的雄黄酒，通常作为一种药酒使用，但也可以作为娱乐品饮用。\\n\\n和所有神州酒类一样，由于神州殖民者在酿造过程中加入了特殊的草本原料，雄黄酒不容易使人上瘾，并且对人体健康系统的危害也相对较小，但一旦成瘾就更难戒除。\\n\\n雄黄酒的酿造相对简单，只需要将提炼好的雄黄粉和可发酵的糯米粉、精米面进行混合再进行一些制作就能够制得。\\n\\n尽管雄黄酒能提供不错的加成，但由于其自身也具有一定的微毒性，因此殖民者在饮用雄黄酒后会在一定时间内会受到雄黄酒特殊状态影响。",
+    "texPath": "YongPin/XiongHuangJiu",
+    "stats": {
+      "DeteriorationRate": "0.5",
+      "MarketValue": "26",
+      "Mass": "0.35",
+      "Flammability": "0.3",
+      "Nutrition": "0.15"
+    },
+    "parentName": "SZDrugsBase"
+  },
+  {
+    "defName": "ShiYing",
+    "label": "石英岩",
+    "description": "\r\n      一种耐久度较低，容易开采的石英岩。不知道是什么原因导致它的岩石形态在边缘世界里的颜色变得这么奇怪。\\n\\n石英是由二氧化硅组成的矿物，化学式SiO2。纯净的石英无色透明，因含微量色素离子或细分散包裹体，或存在色心而呈各种颜色，并使透明度降低。具玻璃光泽，断口呈油脂光泽。硬度7，无解理，贝壳状断口。比重2.65。具压电性。\\n\\n开采后很有可能产出石英块，别忘了高中化学关于硅酸盐那块讲过石英等硅酸矿物的作用哦！",
+    "stats": { "MaxHitPoints": "200" },
+    "parentName": "UglyRockBase"
+  },
+  {
+    "defName": "SmoothedShiYing",
+    "label": "光滑的石英",
+    "description": "经过打磨后的石英岩，美观而又大方。比原版打磨的岩石还要好看。",
+    "texPath": "Things/Building/Linked/RockSmooth_Atlas",
+    "stats": { "Beauty": "5", "MarketValue": "13", "MaxHitPoints": "2" },
+    "parentName": "ShiYingStoneBase"
+  },
+  {
+    "defName": "ChunkShiYing",
+    "label": "石英块",
+    "stats": { "Mass": "15" },
+    "parentName": "ShiYingChunkBase"
+  },
+  {
+    "defName": "BlocksShiYing",
+    "label": "石英砖",
+    "stats": {
+      "Mass": "0.5",
+      "MaxHitPoints": "300",
+      "MarketValue": "0.9",
+      "SharpDamageMultiplier": "0.4",
+      "BluntDamageMultiplier": "1.0",
+      "Beauty": "-2",
+      "ConstructionSpeedFactor": "0.8"
+    },
+    "parentName": "ShiYingBlocksBase"
+  },
+  {
+    "defName": "BlocksXiongHuang",
+    "label": "雄黄石",
+    "description": "\r\n      雄黄石，这种外观漂亮的矿石通常分布在山脉深处里面，属于一种比较稀有的矿物，在地层深处也能会少量分布。\\n\\n这种矿物最初并不存在于边缘世界，大约在4100年前后，最初一批的神州地质学家将雄黄矿物元素实验性地加入到边缘世界的地质层并取得了成功，经过了上千年的地质运动，雄黄矿物已经渐渐出现在了边缘世界的各种山脉里。\\n\\n雄黄矿石能提供不错的美观度加成，同样，以它作为材料的武器能够通过钝击有力地击碎敌人的厚重装甲，但是它所提供的防护性能加成极差。\\n\\n雄黄矿石同样还能在杵中磨制成雄黄粉，作为酿造雄黄酒的必备材料。同样，它经过加热后能够制作成砒霜用于中药制作。",
+    "texPath": "Stones/XiongHuangBlocks",
+    "stats": {
+      "MarketValue": "6.3",
+      "Mass": "0.5",
+      "StuffPower_Armor_Sharp": "0.8",
+      "StuffPower_Armor_Blunt": "1.1",
+      "StuffPower_Armor_Heat": "0.54",
+      "StuffPower_Insulation_Cold": "3",
+      "StuffPower_Insulation_Heat": "0",
+      "BluntDamageMultiplier": "1.75"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "KuangMaiXiongHuang",
+    "label": "雄黄矿脉",
+    "description": "雄黄石矿脉，分布较广，采集后可以获得用途较广的雄黄石。",
+    "texPath": "Things/Building/Linked/RockFlecked_Atlas",
+    "stats": { "MaxHitPoints": "1000" },
+    "parentName": "RockBase"
+  },
+  {
+    "defName": "XiongHuangFen",
+    "label": "雄黄粉",
+    "description": "\r\n      由雄黄矿石碾碎而成的雄黄粉，需要在杵上制备。雄黄粉是雄黄酒制作所必备的原材料，同样，雄黄粉还能够进一步加工成砒霜药物。当然，将它作为材料出售的利润也很不错，但由于其暴露在室外和露天环境中会加速它氧化的速率，因此需要将其放在室内储藏。同样，将它储藏在一个低温环境也是十分有必要的。\\n\\n研究完工业时代的工业化铸造科技后还能够通过特殊手段从任意石块中提取少量雄黄粉。",
+    "texPath": "CaiLiao/XiongHuangFen",
+    "stats": {
+      "DeteriorationRate": "7.5",
+      "MarketValue": "4",
+      "Mass": "0.8",
+      "Flammability": "0.2",
+      "MaxHitPoints": "50"
+    },
+    "parentName": "ResourceBase"
+  },
+  {
+    "defName": "Plant_MeiHua",
+    "label": "梅花",
+    "description": "\r\n      神州文明母国的特色植物，能够忍受住寒冷的气候，通常出现在温带和寒带地区，在冻土地区也会少量存在，它的生命力顽强，即便身处严酷的寒冬中也能绽放出最美丽的花朵。（梅花通常能够忍受零下十几度的低温）\\n\\n梅花可以放在花盆中种植，无论是在野外还是被培养在室内，它都是最靓丽的一道风景。梅花的声明周期较长，放在花盆中培育维护起来比较简单。",
+    "texPath": "Plants/Flowers/MeiHua",
+    "stats": {
+      "MaxHitPoints": "85",
+      "Beauty": "19",
+      "Nutrition": "0.05",
+      "BeautyOutdoors": "15"
+    },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "Plant_GeSangHua",
+    "label": "格桑花",
+    "description": "\r\n      神州文明母国青藏地区的特色植物，在当地藏区中，格桑意为幸福的意思，因此格桑花也被视为是吉祥的花朵，经过仲恺农业科技公司的移植之后，格桑花已经在边缘世界本土化，成为了非常常见的一种花朵。\\n\\n格桑花多长在寒带地区，在寒带边缘的温带森林和冰原也有分布，对于边缘世界的神州人民来说，看见格桑花的影子就意味着看见了生机。",
+    "texPath": "Plants/Flowers/GeSangHua",
+    "stats": {
+      "MaxHitPoints": "60",
+      "Beauty": "27",
+      "BeautyOutdoors": "20",
+      "Nutrition": "0.05"
+    },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "Plant_MuDan",
+    "label": "牡丹",
+    "description": "\r\n      神州文明母国的特色植物，被引入到边缘世界后成为常见的室内装饰花朵之一，同样，牡丹也会分布在温带地区，在寒带也会少量分布，能够忍受较低温度。提供的美观度加成较多。\\n\\n牡丹是一种比较精贵的花朵，生命力虽较为一般，在花盆中需要定期维护，但由于其外表美丽夺目，仍然经常被边缘世界的贵族当成装饰花朵培养，生长在野外的牡丹花簇也同样是一道美丽的风景。",
+    "texPath": "Plants/Flowers/MuDan",
+    "stats": {
+      "MaxHitPoints": "70",
+      "Beauty": "29",
+      "BeautyOutdoors": "20",
+      "Nutrition": "0.05"
+    },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "Plant_MeiCai",
+    "label": "梅菜作物",
+    "description": "\r\n      梅菜作物，在成熟后可以收获梅菜，梅菜是制作梅菜扣肉的必备原料，同样因为其收获物的也被大众所认可，因此其同样也能作为极佳的素食原材料。\\n\\n梅菜作物可以在水培箱中培育，其收获产出高，营养价值也很不错，是极其优秀的一种作物，美中不足的缺点就是其生长周期较长，同样对土地肥沃度的要求高，种植速度较慢，需要细心呵护。",
+    "texPath": "Plants/MeiCai",
+    "stats": { "MaxHitPoints": "120", "Nutrition": "0.35" },
+    "parentName": "ChiPlantBase"
+  },
+  {
+    "defName": "Plant_LuWeiCao",
+    "label": "芦苇草",
+    "description": "\r\n      由神州文明引进到边缘世界的一种作物，生长速度适中，能收获大量粽叶，在古老的旧地球，这样的如海波般美丽的芦苇荡更是随处可见。\\n\\n由于受到边缘世界特殊环境的限制，这种芦苇草在野外基本不能生长，殖民者们需要在水培箱内种植这种植物。",
+    "texPath": "Plants/LuWei",
+    "stats": { "MaxHitPoints": "85", "Nutrition": "0.18" },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "Plant_Qingke",
+    "label": "青稞",
+    "description": "\r\n      这是一种被引入到神州“新青藏”地区种植的耐寒作物，这种植物最高能忍受零下十几度的低温，通常在高原地区种植。它的生长周期较短，能够收获保质期较长的青稞杆，是非常不错的农作物。\\n\\n在神州的“新青藏”地区，这种植物是这篇高原地带最常见的植物，同样，它也已经成为当地农业最重要的作物之一。",
+    "texPath": "Plants/QingKe",
+    "stats": { "MaxHitPoints": "85", "Nutrition": "0.18" },
+    "parentName": "PlantBase"
+  },
+  {
+    "defName": "RawQingKe",
+    "label": "青稞杆",
+    "description": "\r\n      由青稞收获后的青稞杆，可以作为烹饪材料，也可以进一步加工成营养价值更高，属性更好的青稞粉，当然也可以作为农产品出售。\\n\\n只要储存环境合适，青稞杆可以储存很长一段时间。",
+    "texPath": "PlantFood_Raw/QingKeKun",
+    "stats": { "MarketValue": "1.65" },
+    "parentName": "PlantFoodRawBase"
+  },
+  {
+    "defName": "Plant_LaJiao",
+    "label": "花溪辣椒",
+    "description": "这是一种中国特有的辣椒作物，成熟后可以收获油辣子，这是制作老干妈必备的材料。经过特殊的培养后，也可以种植于水培仓。",
+    "texPath": "Plants/LaJiao",
+    "stats": { "MaxHitPoints": "1", "Nutrition": "0" },
+    "parentName": "ChiPlantBase"
+  },
+  {
+    "defName": "SZApparel_WangGuan",
+    "label": "冕旒",
+    "description": "\r\n      冕旒（miǎn，liú），常见于边缘世界的神州殖民地，通常由神州统治阶级穿戴。后随着神州文化的传播，边缘世界一些崇尚集体至上文化的殖民地也开始使用这样的服饰。从服装设计角度来看，冕旒的设计极具奢华，冠冕前的珠宝足以说明穿戴者的地位。\\n\\n冕旒需要用黄金，白银和丝绸制作。穿戴者往往能获得极强的社交魅力；受到古代神州皇帝勤政的感召，穿戴者的工作速度也能得到提升。而远道而来的商人也会被其威势所震慑，往往不敢与其讨价还价。而由于其制作过程繁琐，对手工技能要求高，很多奢侈品商人也会高价收购一顶高品质的冕旒。\\n\\n冕旒，古代中国礼冠之一种。相传，冕制起于黄帝，至周代时始完备。古时帝王、诸侯、卿大夫参加盛大祭祀所服，冕旒为礼冠中最贵重者。",
+    "texPath": "Apparel/HatWangGuan/HatWangGuan",
+    "stats": {
+      "MaxHitPoints": "120",
+      "WorkToMake": "7000",
+      "Mass": "0.3",
+      "EquipDelay": "0.2",
+      "ArmorRating_Sharp": "0.25",
+      "ArmorRating_Blunt": "0.25",
+      "ArmorRating_Heat": "0.6",
+      "Insulation_Cold": "3",
+      "Insulation_Heat": "1.5",
+      "Beauty": "12",
+      "SellPriceFactor": "1.8"
+    },
+    "parentName": "ApparelSZWangGuan"
+  },
+  {
+    "defName": "SZApparel_DaoShiMao",
+    "label": "道士帽（布）",
+    "description": "\r\n      <color=#33ff00>Tips：</color>中式服装通常只能由丝绸、布料两种方式制作而成，布料的耐久、防护性能更好，而丝绸提供的各种加成和售价更高。\\n\\n神州道士平时所穿戴的帽子，殖民者在穿上它之后看上去会有一种虚幻缥缈的感觉。尽管在边缘世界里面，炼制真正的仙丹显得不太现实，但这并不妨碍人们发展相应的修仙文化。当然，殖民者在戴上帽子后会获得相应的工作速度加成，同样，道士帽也是神州炼丹术士职位的常见服装。\\n\\n<color=#33ff00>Tips：</color>如果你有皇权或文化dlc，道士帽还会提供相应的属性加成。",
+    "texPath": "Apparel/HatDaoShi/HatDaoShi_UI",
+    "stats": {
+      "MaxHitPoints": "120",
+      "WorkToMake": "1000",
+      "Mass": "0.25",
+      "EquipDelay": "0.8",
+      "ArmorRating_Sharp": "0.16",
+      "ArmorRating_Blunt": "0.16",
+      "ArmorRating_Heat": "0.4",
+      "Insulation_Cold": "4",
+      "Insulation_Heat": "1.2"
+    },
+    "parentName": "ApparelHatBuSZ"
+  },
+  {
+    "defName": "SZApparel_DaoShiMao_SC",
+    "label": "道士帽（丝绸）",
+    "description": "\r\n      <color=#33ff00>Tips：</color>中式服装通常只能由丝绸、布料两种方式制作而成，布料的耐久、防护性能更好，而丝绸提供的各种加成和售价更高。\\n\\n神州道士平时所穿戴的帽子，殖民者在穿上它之后看上去会有一种虚幻缥缈的感觉。尽管在边缘世界里面，炼制真正的仙丹显得不太现实，但这并不妨碍人们发展相应的修仙文化。当然，殖民者在戴上帽子后会获得相应的工作速度加成，同样，道士帽也是神州炼丹术士职位的常见服装。\\n\\n<color=#33ff00>Tips：</color>如果你有皇权或文化dlc，道士帽还会提供相应的属性加成。",
+    "texPath": "Apparel/HatDaoShi/HatDaoShi_UI",
+    "stats": {
+      "MaxHitPoints": "90",
+      "WorkToMake": "2000",
+      "Mass": "0.2",
+      "EquipDelay": "0.8",
+      "ArmorRating_Sharp": "0.09",
+      "ArmorRating_Blunt": "0.09",
+      "ArmorRating_Heat": "0.4",
+      "Insulation_Cold": "2.5",
+      "Insulation_Heat": "1.3",
+      "SellPriceFactor": "1.3"
+    },
+    "parentName": "ApparelHatSiChouSZ"
+  },
+  {
+    "defName": "SZApparel_FangJin",
+    "label": "明式方巾（布）",
+    "description": "\r\n      <color=#33ff00>Tips：</color>中式服装通常只能由丝绸、布料两种方式制作而成，布料的耐久、防护性能更好，而丝绸提供的各种加成和售价更高。\\n\\n在古神州，这种方巾多由文人穿戴，根据《明史·舆服志》记载：明代生员平时多戴四方平定巾，搭配各色花素的绸、纱、绫、缎道袍。\\n\\n而当方巾被传播到边缘世界之后，它便受到了边缘世界各贵族的欢迎，因为在他们眼里，古神州的士人和他们的地位相似。同样，方巾还是神州职位的必要服饰。\\n\\n由于方巾在设计上比较巧妙，因此它的隔热和防寒性能不错，同样殖民者在戴上它之后会充满一种士人的责任感，学习技能会更快，工作起来也更迅速。\\n\\n<color=#33d733>Tips：</color>在使用国魂mod之后此衣物还可以作为文化服饰和神州特殊职位的服饰。",
+    "texPath": "Apparel/TW_Ming_SquareHood/FangJinUI/FangJinUI",
+    "stats": {
+      "MaxHitPoints": "1",
+      "WorkToMake": "1",
+      "Mass": "0",
+      "EquipDelay": "0",
+      "ArmorRating_Sharp": "0",
+      "ArmorRating_Blunt": "0",
+      "ArmorRating_Heat": "0",
+      "Insulation_Cold": "4",
+      "Insulation_Heat": "1"
+    },
+    "parentName": "ApparelHatBuSZ"
+  },
+  {
+    "defName": "SZApparel_FangJin_SC",
+    "label": "明式方巾（丝绸）",
+    "description": "\r\n      <color=#33ff00>Tips：</color>中式服装通常只能由丝绸、布料两种方式制作而成，布料的耐久、防护性能更好，而丝绸提供的各种加成和售价更高。\\n\\n在古神州，这种方巾多由文人穿戴，根据《明史·舆服志》记载：明代生员平时多戴四方平定巾，搭配各色花素的绸、纱、绫、缎道袍。\\n\\n而当方巾被传播到边缘世界之后，它便受到了边缘世界各贵族的欢迎，因为在他们眼里，古神州的士人和他们的地位相似。同样，方巾还是神州职位的必要服饰。\\n\\n由于方巾在设计上比较巧妙，因此它的隔热和防寒性能不错，同样殖民者在戴上它之后会充满一种士人的责任感，学习技能会更快，工作起来也更迅速。\\n\\n<color=#33d733>Tips：</color>在使用国魂mod之后此衣物还可以作为文化服饰和神州特殊职位的服饰。",
+    "texPath": "Apparel/TW_Ming_SquareHood/FangJinUI/FangJinUI",
+    "stats": {
+      "MaxHitPoints": "9",
+      "WorkToMake": "2",
+      "Mass": "0",
+      "EquipDelay": "0",
+      "ArmorRating_Sharp": "0",
+      "ArmorRating_Blunt": "0",
+      "ArmorRating_Heat": "0",
+      "Insulation_Cold": "2",
+      "Insulation_Heat": "1",
+      "SellPriceFactor": "1"
+    },
+    "parentName": "ApparelHatSiChouSZ"
+  },
+  {
+    "defName": "SZApparel_LanShan",
+    "label": "襕衫（布）",
+    "description": "\r\n      这种衣服在古神州非常常见，通常由神州的士人群体穿戴，根据《明史·舆服志》记载：明代的生员服饰专用襕衫，用玉色布绢制作，宽袖皂缘。\\n\\n由于其象征着特殊的士人群体，襕衫在传播到边缘世界后便成了边缘神州贵族最喜欢的衣服种类之一，同样，神州殖民地的平民们也喜欢穿着这样的衣服以彰显自己的高品味。\\n\\n尽管看上去较沉重，但襕衫的隔热和防寒性能都不错，同样，殖民者在戴上它之后会充满一种士人的责任感，学习技能会更快，工作起来也更迅速。\\n\\n<color=#33d733>Tips：</color>在使用国魂mod之后此衣物还可以作为文化服饰和神州特殊职位的服饰。",
+    "texPath": "Apparel/TW_Ming_LanShan/TW_Ming_LanShan",
+    "stats": {
+      "MaxHitPoints": "100",
+      "WorkToMake": "15000",
+      "Mass": "0.8",
+      "ArmorRating_Sharp": "0.35",
+      "ArmorRating_Blunt": "0.35",
+      "ArmorRating_Heat": "0.4",
+      "Insulation_Cold": "5",
+      "Insulation_Heat": "1",
+      "EquipDelay": "1.8"
+    },
+    "parentName": "ApparelMakeableBase"
+  },
+  {
+    "defName": "SZApparel_LanShan_SC",
+    "label": "襕衫（丝绸）",
+    "description": "\r\n      这种衣服在古神州非常常见，通常由神州的士人群体穿戴，根据《明史·舆服志》记载：明代的生员服饰专用襕衫，用玉色布绢制作，宽袖皂缘。\\n\\n由于其象征着特殊的士人群体，襕衫在传播到边缘世界后便成了边缘神州贵族最喜欢的衣服种类之一，同样，神州殖民地的平民们也喜欢穿着这样的衣服以彰显自己的高品味。\\n\\n尽管看上去较沉重，但襕衫的隔热和防寒性能都不错，同样，殖民者在戴上它之后会充满一种士人的责任感，学习技能会更快，工作起来也更迅速。\\n\\n<color=#33d733>Tips：</color>在使用国魂mod之后此衣物还可以作为文化服饰和神州特殊职位的服饰。",
+    "texPath": "Apparel/TW_Ming_LanShan/TW_Ming_LanShan",
+    "stats": {
+      "MaxHitPoints": "100",
+      "WorkToMake": "20000",
+      "Mass": "0.4",
+      "ArmorRating_Sharp": "0.28",
+      "ArmorRating_Blunt": "0.28",
+      "ArmorRating_Heat": "0.5",
+      "Insulation_Cold": "5",
+      "Insulation_Heat": "2",
+      "EquipDelay": "1.8",
+      "SellPriceFactor": "1.35"
+    },
+    "parentName": "ApparelMakeableBase"
   }
 ]

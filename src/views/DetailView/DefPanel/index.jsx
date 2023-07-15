@@ -38,7 +38,7 @@ export default function DefPanel({ collection }) {
     setFilterCollection(
       collection.filter(
         item =>
-          item.label.includes(keyword) || item.description.includes(keyword)
+          item.label?.includes(keyword) || item.description?.includes(keyword)
       )
     )
   }
@@ -59,10 +59,10 @@ export default function DefPanel({ collection }) {
         <div className="item" key={item.defName}>
           <figure>
             <figcaption>{item.label}</figcaption>
-            <Texture texPath={item.texPath} />
+            {/* <Texture texPath={item.texPath} /> */}
           </figure>
 
-          <p className="description">{item.description.split('\\n\\n')[0]}</p>
+          <p className="description">{item.description?.split('\\n\\n')[0]}</p>
 
           <table>
             <tbody>
@@ -72,7 +72,8 @@ export default function DefPanel({ collection }) {
                 .map(key => (
                   <tr key={key}>
                     <td>{key}</td>
-                    <td>{item.stats[key]}</td>
+                    {/* FIXME: */}
+                    <td>{item.stats[key]._ || item.stats[key]}</td>
                   </tr>
                 ))}
             </tbody>
