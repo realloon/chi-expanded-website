@@ -59,3 +59,10 @@
     }
   }
 }
+
+.info-icon {
+  height: 16px;
+  width: 16px;
+  transform: translate3d(0, 0.1em, 0);
+  cursor: help;
+}

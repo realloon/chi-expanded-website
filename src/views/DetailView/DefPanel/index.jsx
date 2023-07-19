@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 // import { Texture } from 'components'
 import { Search } from 'components'
+import info from 'assets/images/icon/info.svg'
 import './index.css'
 
 export default function DefPanel({ collection }) {
@@ -45,6 +46,18 @@ export default function DefPanel({ collection }) {
 
             <p className="description">
               {item.description?.split('\\n\\n')[0]}
+
+              {item.description?.split('\\n\\n').length > 1 && (
+                <img
+                  className="info-icon"
+                  src={info}
+                  alt="了解更多"
+                  title={item.description
+                    ?.split('\\n\\n')
+                    .filter((_, index) => index > 0)
+                    .join('\n\n')}
+                />
+              )}
             </p>
 
             <table>
