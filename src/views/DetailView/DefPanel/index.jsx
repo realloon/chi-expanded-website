@@ -1,18 +1,29 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 // import { Texture } from 'components'
 import { Search } from 'components'
+import lookup from 'configs/lookup.json'
 import info from 'assets/images/icon/info.svg'
 import './index.css'
+
+function getStatsValue(stats, key) {
+  let r = stats[key]._ || stats[key]
+
+  const ratio = [
+    'FoodPoisonChanceFixedHuman',
+    'JoyGainFactor',
+    'BedRestEffectiveness',
+    'ConstructionSpeedFactor',
+  ]
+
+  r = ratio.includes(key) ? (r * 100).toFixed(0) + '%' : r
+
+  return r
+}
 
 export default function DefPanel({ collection }) {
   const [filterCollection, setFilterCollection] = useState([])
 
-  const loading = useRef()
-
   useEffect(() => {
-    if (collection.length > 0) {
-      // loading.current.style.height = '0px'
-    }
     setFilterCollection(collection)
   }, [collection])
 
@@ -63,13 +74,17 @@ export default function DefPanel({ collection }) {
             <table>
               <tbody>
                 {Object.keys(item.stats)
-                  // .filter(key => key !== 'DeteriorationRate')
+                  // .filter(key => key !== *SOME-FIELD*)
                   .toSorted((a, b) => a.localeCompare(b))
                   .map(key => (
                     <tr key={key}>
-                      <td>{key}</td>
-                      {/* FIXME: */}
-                      <td>{item.stats[key]._ || item.stats[key]}</td>
+                      <td>{lookup[key]}</td>
+                      <td
+                        title={item.stats[key]._ || item.stats[key]} // retrieve the raw value
+                        data-value={getStatsValue(item.stats, key)}
+                      >
+                        {getStatsValue(item.stats, key)}
+                      </td>
                     </tr>
                   ))}
               </tbody>
