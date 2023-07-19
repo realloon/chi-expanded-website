@@ -1,0 +1,11 @@
+.search-input {
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: hsl(217, 32%, 12%);
+  font-size: 0.875rem;
+  font-family: 'LXGW WenKai Screen';
+}
