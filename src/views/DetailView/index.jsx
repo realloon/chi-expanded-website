@@ -6,7 +6,7 @@ import Detail from './Detail'
 import DefPanel from './DefPanel'
 // config
 import pageConfig from 'configs/pageConfig.json'
-//
+// images
 import steam from 'assets/steam-logo.svg'
 import download from 'assets/download.svg'
 // style
