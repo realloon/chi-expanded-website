@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 // import { Texture } from 'components'
 import { Search } from 'components'
 import './index.css'
@@ -6,7 +6,12 @@ import './index.css'
 export default function DefPanel({ collection }) {
   const [filterCollection, setFilterCollection] = useState([])
 
+  const loading = useRef()
+
   useEffect(() => {
+    if (collection.length > 0) {
+      // loading.current.style.height = '0px'
+    }
     setFilterCollection(collection)
   }, [collection])
 
@@ -30,35 +35,39 @@ export default function DefPanel({ collection }) {
         />
       </div>
 
-      {filterCollection.map(item => (
-        <div className="item" key={item.defName}>
-          <figure>
-            <figcaption>{item.label}</figcaption>
-            {/* <Texture texPath={item.texPath} /> */}
-          </figure>
+      <div className="def-list">
+        {filterCollection.map(item => (
+          <div className="item" key={item.defName}>
+            <figure>
+              <figcaption>{item.label}</figcaption>
+              {/* <Texture texPath={item.texPath} /> */}
+            </figure>
 
-          <p className="description">{item.description?.split('\\n\\n')[0]}</p>
+            <p className="description">
+              {item.description?.split('\\n\\n')[0]}
+            </p>
 
-          <table>
-            <tbody>
-              {Object.keys(item.stats)
-                // .filter(key => key !== 'DeteriorationRate')
-                .toSorted((a, b) => a.localeCompare(b))
-                .map(key => (
-                  <tr key={key}>
-                    <td>{key}</td>
-                    {/* FIXME: */}
-                    <td>{item.stats[key]._ || item.stats[key]}</td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
-        </div>
-      ))}
+            <table>
+              <tbody>
+                {Object.keys(item.stats)
+                  // .filter(key => key !== 'DeteriorationRate')
+                  .toSorted((a, b) => a.localeCompare(b))
+                  .map(key => (
+                    <tr key={key}>
+                      <td>{key}</td>
+                      {/* FIXME: */}
+                      <td>{item.stats[key]._ || item.stats[key]}</td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
 
-      <span style={{ textAlign: 'center', opacity: '0.7' }}>
-        {filterCollection.length} results
-      </span>
+        <span style={{ textAlign: 'center', opacity: '0.7' }}>
+          {filterCollection.length} results
+        </span>
+      </div>
     </section>
   )
 }

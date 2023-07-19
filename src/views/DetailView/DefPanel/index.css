@@ -6,6 +6,12 @@
   padding: 16px;
   border-radius: 32px;
 
+  & .def-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
   & .item {
     display: flex;
     align-items: flex-start;
