@@ -4,11 +4,12 @@ import { useParams } from 'react-router-dom'
 // components
 import Detail from './Detail'
 import DefPanel from './DefPanel'
+import Aside from './Aside'
 // config
-import pageConfig from 'configs/pageConfig.json'
+// import pageConfig from 'configs/pageConfig.json'
 // images
-import steam from 'assets/steam-logo.svg'
-import download from 'assets/download.svg'
+// import steam from 'assets/steam-logo.svg'
+// import download from 'assets/download.svg'
 // style
 import './index.css'
 
@@ -45,26 +46,7 @@ export default function DetailView() {
           <DefPanel collection={collection} />
         </article>
 
-        <aside>
-          <figure>
-            <img src={cover} alt={`${affiliation} mod cover`} />
-          </figure>
-
-          <nav>
-            <a
-              href={pageConfig.modURL[affiliation]}
-              title="Subscribe on the Workshop"
-              data-name="subscribe"
-            >
-              <img src={steam} data-name="steam" alt="steam icon" />
-              Subscribe
-            </a>
-            <a href="/download/:affiliation" title="Download to local">
-              <img src={download} alt="cloud download icon" />
-              Download
-            </a>
-          </nav>
-        </aside>
+        <Aside cover={cover} affiliation={affiliation} />
       </div>
     </main>
   )
