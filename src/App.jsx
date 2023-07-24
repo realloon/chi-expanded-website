@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 // components
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Header, Footer } from 'components'
@@ -7,6 +8,14 @@ import { HomeView, DonateView, UpdateView, DetailView } from 'views'
 import './App.css'
 
 export default function App() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (window.screen.width <= 576) {
+      setIsMobile(true)
+    }
+  }, [])
+
   return (
     <div>
       <Header />
@@ -20,6 +29,13 @@ export default function App() {
       </Routes>
 
       <Footer />
+
+      {isMobile && (
+        <article className="err">
+          <h1>请使用桌面设备访问</h1>
+          <p>抱歉，本网站尚未优化移动端的页面展示效果，请使用桌面设备访问。</p>
+        </article>
+      )}
     </div>
   )
 }

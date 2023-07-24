@@ -1,0 +1,50 @@
+{
+  "core": {
+    "name": "含商咀徵",
+    "steamPath": "https://steamcommunity.com/sharedfiles/filedetails/?id=2877536640",
+    "color": "#459cb7",
+    "imageHosting": ""
+  },
+  "animal": {
+    "name": "山海志怪",
+    "steamPath": "https://steamcommunity.com/sharedfiles/filedetails/?id=2942068661",
+    "color": "#c53849",
+    "imageHosting": "https://img1.imgtp.com/2023/07/09/gPkhV5IQ.jpg"
+  },
+  "equipment": {
+    "name": "淬炼国魂",
+    "steamPath": "https://steamcommunity.com/sharedfiles/filedetails/?id=2597175850",
+    "color": "#efdb60",
+    "imageHosting": "https://img1.imgtp.com/2023/07/09/bCJQalSC.jpg"
+  },
+  "faction": {
+    "name": "蒙兀室韦",
+    "steamPath": "https://steamcommunity.com/sharedfiles/filedetails/?id=2894159932",
+    "color": "#ee593a",
+    "imageHosting": "https://img1.imgtp.com/2023/07/09/HceY7hBT.jpg"
+  },
+  "music": {
+    "name": "曲终奏雅",
+    "steamPath": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589811788",
+    "color": "#688d64",
+    "imageHosting": "https://img1.imgtp.com/2023/07/09/groiOYKC.jpg"
+  },
+  "narrator": {
+    "name": "先古天兵",
+    "steamPath": "https://steamcommunity.com/sharedfiles/filedetails/?id=2826251071",
+    "color": "#482945",
+    "imageHosting": "https://img1.imgtp.com/2023/07/09/2Mi5yoaK.jpg"
+  },
+  "storytellers": {
+    "name": "移商换羽",
+    "steamPath": "https://steamcommunity.com/sharedfiles/filedetails/?id=2430092725",
+    "color": "#313c50",
+    "imageHosting": "https://img1.imgtp.com/2023/07/09/IcvVPAaQ.jpg"
+  },
+  "ideology": {
+    "name": "凤引九雏",
+    "steamPath": "",
+    "color": "#757b93",
+    "imageHosting": ""
+  }
+}

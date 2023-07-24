@@ -4,7 +4,7 @@ export default function Texture({ texPath, ...rest }) {
   const [texture, setTexture] = useState(null)
 
   useEffect(() => {
-    import(`./${texPath}.png`)
+    import(`./texture/${texPath}.png`)
       .then(module => module.default)
       .then(data => setTexture(data))
   }, [texPath])

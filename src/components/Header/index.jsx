@@ -33,9 +33,10 @@ export default function Header() {
       </h1>
 
       <nav className="view-nav">
-        <NavLink to={'/'}>Home</NavLink>
-        <NavLink to={'/update'}>Update</NavLink>
-        <NavLink to={'/donate'}>Donate</NavLink>
+        <NavLink to={'/'}>主页</NavLink>
+        <NavLink to={'/'} title='功能开发中'>百科</NavLink>
+        <NavLink to={'/update'}>更新日志</NavLink>
+        <NavLink to={'/donate'}>捐赠</NavLink>
       </nav>
 
       <nav className="link-nav">

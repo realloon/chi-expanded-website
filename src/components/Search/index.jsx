@@ -29,12 +29,18 @@ export default function Search({ ...rest }) {
   }, [])
 
   return (
-    <input
-      className="search-input"
-      type="search"
-      ref={element}
-      onKeyDown={handleBlur}
-      {...rest}
-    />
+    <form className="search-wrapper">
+      <input
+        className="search-input"
+        type="search"
+        ref={element}
+        onKeyDown={handleBlur}
+        {...rest}
+      />
+      <div className='kbd-wrapper'>
+        <kbd>⌘</kbd>
+        <kbd>K</kbd>
+      </div>
+    </form>
   )
 }

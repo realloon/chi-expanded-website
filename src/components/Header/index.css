@@ -10,13 +10,14 @@
   padding: 0 32px;
   color: #eee;
   background-color: #000000cc;
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   z-index: 1;
 
   /* website title */
   & h1 {
     font-size: 1rem;
+    font-weight: bold;
     margin: 0;
 
     & a {

@@ -5,11 +5,6 @@ import { useParams } from 'react-router-dom'
 import Detail from './Detail'
 import DefPanel from './DefPanel'
 import Aside from './Aside'
-// config
-// import pageConfig from 'configs/pageConfig.json'
-// images
-// import steam from 'assets/steam-logo.svg'
-// import download from 'assets/download.svg'
 // style
 import './index.css'
 
@@ -20,13 +15,13 @@ export default function DetailView() {
   const [collection, setCollection] = useState([])
 
   useEffect(() => {
-    window.scrollTo(0, 0, 'instant')
+    window.scrollTo(0, 0, 'instant') // TODO: use Soommm
 
     import(`assets/images/covers/${affiliation}.jpg`)
       .then(module => module.default)
       .then(cover => setCover(cover))
 
-    import(`database/${affiliation}.json`)
+    import(`assets/thingsDef/${affiliation}.json`)
       .then(module => module.default)
       .then(json => {
         setCollection(json)

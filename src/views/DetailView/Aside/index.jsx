@@ -2,7 +2,7 @@
 import steam from 'assets/steam-logo.svg'
 import download from 'assets/download.svg'
 //
-import pageConfig from 'configs/pageConfig.json'
+import mods from 'configs/mods.json'
 //
 import './index.css'
 import { Link } from 'react-router-dom'
@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
  * @param {string} affiliation - the identifier for mod
  */
 export default function Aside({ cover, affiliation }) {
-  const { steamPath } = pageConfig.mods[affiliation]
+  const { steamPath } = mods[affiliation]
 
   return (
     <aside>
@@ -41,15 +41,15 @@ export default function Aside({ cover, affiliation }) {
       <nav>
         <h3>其他模组</h3>
 
-        {Object.keys(pageConfig.mods)
+        {Object.keys(mods)
           .filter(id => id !== affiliation)
           .map(id => (
             <Link key={id} to={`/detail/${id}`}>
               <span
                 className="color"
-                style={{ backgroundColor: pageConfig.mods[id].color }}
+                style={{ backgroundColor: mods[id].color }}
               ></span>
-              {pageConfig.mods[id].name}
+              {mods[id].name}
             </Link>
           ))}
       </nav>

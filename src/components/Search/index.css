@@ -1,11 +1,47 @@
-.search-input {
-  width: 100%;
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: hsl(217, 32%, 12%);
   border-radius: 16px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: hsl(217, 32%, 13%);
+  }
+
+  &:hover .kbd-wrapper,
+  &:has(.search-input:focus) .kbd-wrapper,
+  & .search-input:not(:placeholder-shown) ~ .kbd-wrapper {
+    display: none;
+  }
+}
+
+.search-input {
+  flex-grow: 1;
   padding: 16px;
   border: none;
   outline: none;
   color: white;
-  background-color: hsl(217, 32%, 12%);
+  background-color: transparent;
   font-size: 0.875rem;
   font-family: 'LXGW WenKai Screen';
+}
+
+.kbd-wrapper {
+  position: absolute;
+  right: 16px;
+  display: flex;
+  gap: 4px;
+}
+
+.kbd-wrapper kbd {
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 6px 4.5px;
+  border-radius: 8px;
+  background-color: hsl(217, 32%, 10%);
+  opacity: 0.7;
 }

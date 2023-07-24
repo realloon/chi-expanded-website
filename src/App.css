@@ -33,7 +33,7 @@ body {
 main {
   max-width: 1080px;
   min-height: calc(100vh - var(--header-height) - var(--main-wrapper-gap) * 2);
-  padding: 0 16px;
+  padding: 0 32px;
   margin: var(--main-wrapper-gap) auto;
 }
 
@@ -85,4 +85,18 @@ main {
     max-height: 80vh;
     margin: 0 auto;
   }
+}
+
+.err {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f44336;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
 }

@@ -1,10 +1,12 @@
 .summary {
   display: flex;
+  align-items: flex-start;
   gap: 32px;
 }
 
 .summary .paragraph-wrapper {
   font-size: 16px;
+  text-align: justify;
   line-height: 1.5;
   flex: 1;
 }
@@ -13,6 +15,10 @@
   font-size: 1.5rem;
   line-height: 1;
   margin: 0 0 1rem;
+}
+
+.summary .paragraph-wrapper p {
+  font-size: 1.25rem;
 }
 
 .summary .paragraph-wrapper .button {

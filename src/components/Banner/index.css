@@ -1,12 +1,13 @@
 .banner {
-  user-select: none;
   margin-top: calc(0 - var(--header-height));
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .banner img {
   display: block;
   width: 100%;
-  aspect-ratio: 49 / 20;
+  aspect-ratio: 49 / 17;
 }
 
 @media (max-width: 425px) {

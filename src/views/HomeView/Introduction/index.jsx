@@ -39,7 +39,7 @@ export default function Preview({ affiliation }) {
           <ReactMarkdown>{introduction[affiliation].content}</ReactMarkdown>
 
           <div className="button-wrapper">
-            <Link to={`/detail/${affiliation}`}>Learn more</Link>
+            <Link to={`/detail/${affiliation}`}>了解更多</Link>
           </div>
         </section>
       </div>
