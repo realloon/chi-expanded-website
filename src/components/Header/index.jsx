@@ -25,16 +25,22 @@ const iconLinks = [
   },
 ]
 
+const scrolltoTop = () => {
+  window.scrollTo({ top: 0 })
+}
+
 export default function Header() {
   return (
     <header className="header">
-      <h1>
+      <h1 onClick={scrolltoTop}>
         <Link to={'/'}>{pageConfig.headerTitle}</Link>
       </h1>
 
       <nav className="view-nav">
         <NavLink to={'/'}>主页</NavLink>
-        <NavLink to={'/'} title='功能开发中'>百科</NavLink>
+        <NavLink to={'/'} title="功能开发中">
+          百科
+        </NavLink>
         <NavLink to={'/update'}>更新日志</NavLink>
         <NavLink to={'/donate'}>捐赠</NavLink>
       </nav>

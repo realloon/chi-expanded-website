@@ -1,5 +1,6 @@
-@media (max-width: 425px) {
-  main {
-    margin-top: calc(var(--header-height) + 24px) !important;
-  }
+.introduction-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  margin: 72px 0;
 }

@@ -1,0 +1,23 @@
+.hash-link {
+  color: inherit;
+  text-decoration: unset;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    &::before {
+      opacity: 1;
+      left: -1.25em;
+    }
+  }
+}
+
+.hash-link::before {
+  content: '§';
+  font-size: 1rem;
+  position: absolute;
+  top: 0.5em;
+  opacity: 0;
+}

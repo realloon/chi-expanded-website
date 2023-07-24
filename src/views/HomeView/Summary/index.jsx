@@ -3,6 +3,7 @@ import pageConfig from 'configs/pageConfig.json'
 import documents from 'assets/documents.json'
 //
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import { HashLink } from 'components'
 // style
 import './index.css'
 
@@ -12,9 +13,11 @@ const { summary } = documents
 
 export default function Summary({ covers }) {
   return (
-    <article className="summary">
+    <article className="summary" id="summary">
       <section className="paragraph-wrapper">
-        <h1>{summary.title}</h1>
+        <h1>
+          <HashLink to="#summary">{summary.title}</HashLink>
+        </h1>
         <ReactMarkdown>{summary.content}</ReactMarkdown>
 
         <a className="button" href={pageConfig.modHomepageURL}>

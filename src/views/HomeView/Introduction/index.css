@@ -1,31 +1,9 @@
 .introduction {
-  padding-top: var(--detail-wrapper-gap);
-
   & > h1 {
     font-size: 1.5rem;
     position: relative;
     width: fit-content;
     margin-top: 0;
-
-    &:hover::before {
-      opacity: 1;
-    }
-
-    &::before {
-      content: '#';
-      position: absolute;
-      left: -0.75em;
-      color: #999;
-      transition: 0.2s;
-      opacity: 0;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-
-    & > a {
-      color: inherit;
-      text-decoration: unset;
-    }
   }
 
   & .content-wrapper {

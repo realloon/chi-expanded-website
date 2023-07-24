@@ -48,9 +48,11 @@ export default function HomeView() {
       <main>
         <Summary covers={summaryCovers} />
 
-        {affiliations.map(affiliation => (
-          <Introduction key={crypto.randomUUID()} affiliation={affiliation} />
-        ))}
+        <div className="introduction-wrapper">
+          {affiliations.map(affiliation => (
+            <Introduction key={crypto.randomUUID()} affiliation={affiliation} />
+          ))}
+        </div>
       </main>
     </div>
   )

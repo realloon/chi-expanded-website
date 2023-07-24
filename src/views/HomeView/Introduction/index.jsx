@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 // components
 import { Link } from 'react-router-dom'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import { HashLink } from 'components'
 //
 import './index.css'
 
@@ -25,7 +26,9 @@ export default function Preview({ affiliation }) {
       className="introduction"
     >
       <h1>
-        <a href={`#${affiliation}`}>{introduction[affiliation].title}</a>
+        <HashLink to={`#${affiliation}`}>
+          {introduction[affiliation].title}
+        </HashLink>
       </h1>
 
       <div className="content-wrapper">
